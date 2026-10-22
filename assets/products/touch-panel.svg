@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 420" width="100%" height="100%">
+  <defs>
+    <linearGradient id="body-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2a3f36"/>
+      <stop offset="100%" stop-color="#14261f"/>
+    </linearGradient>
+    <linearGradient id="screen-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#17352a"/>
+      <stop offset="60%" stop-color="#0f231c"/>
+      <stop offset="100%" stop-color="#0a1914"/>
+    </linearGradient>
+    <linearGradient id="tile-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2a4d3e" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#1a3429" stop-opacity="0.8"/>
+    </linearGradient>
+    <linearGradient id="active-tile" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3d7256"/>
+      <stop offset="100%" stop-color="#27503c"/>
+    </linearGradient>
+    <linearGradient id="accent-lime" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d4e5ae"/>
+      <stop offset="100%" stop-color="#a4c688"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Outer chassis (Brushed anodized aluminum bezel) -->
+  <rect x="10" y="10" width="400" height="400" rx="36" fill="url(#body-grad)" stroke="#4a6558" stroke-width="2"/>
+  <!-- Bevel highlight -->
+  <rect x="14" y="14" width="392" height="392" rx="32" fill="none" stroke="#607e6f" stroke-width="1" opacity="0.4"/>
+
+  <!-- Glass display boundary -->
+  <rect x="30" y="30" width="360" height="360" rx="20" fill="url(#screen-grad)" stroke="#1a3127" stroke-width="2"/>
+
+  <!-- Ambient status bar -->
+  <text x="56" y="68" fill="#d4e5ae" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="15" font-weight="600" letter-spacing="1">12:45</text>
+  <text x="108" y="68" fill="#88a192" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="12">THU OCT 22</text>
+
+  <!-- Wi-Fi & Smart Station status dots -->
+  <circle cx="340" cy="64" r="3.5" fill="#a4c688"/>
+  <circle cx="354" cy="64" r="3.5" fill="#a4c688"/>
+  <path d="M336 56 A 12 12 0 0 1 358 56" fill="none" stroke="#a4c688" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Center Climate / Status Widget -->
+  <text x="56" y="152" fill="#ffffff" font-family="Georgia, serif" font-size="64" font-weight="300" letter-spacing="-2">24°</text>
+  <text x="162" y="128" fill="#d4e5ae" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="600" text-transform="uppercase" letter-spacing="1.5">Living Room</text>
+  <text x="162" y="150" fill="#93a89c" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="13">Comfort Mode · 54% Hum</text>
+
+  <!-- Quick Scenes Grid -->
+  <!-- Scene 1: Morning (Active) -->
+  <g transform="translate(56, 186)">
+    <rect width="144" height="84" rx="14" fill="url(#active-tile)" stroke="#52876b" stroke-width="1.5"/>
+    <!-- Sun icon -->
+    <circle cx="32" cy="36" r="9" fill="url(#accent-lime)"/>
+    <path d="M32 20v4M32 48v4M16 36h4M44 36h4M21 25l3 3M40 44l3 3M21 47l3-3M40 28l3-3" stroke="#d4e5ae" stroke-width="1.8" stroke-linecap="round"/>
+    <text x="32" y="66" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="600">Morning</text>
+    <circle cx="124" cy="26" r="4" fill="#d4e5ae"/>
+  </g>
+
+  <!-- Scene 2: Away -->
+  <g transform="translate(220, 186)">
+    <rect width="144" height="84" rx="14" fill="url(#tile-grad)" stroke="#2b473a" stroke-width="1.2"/>
+    <!-- Shield / Lock icon -->
+    <path d="M32 24l11 4v7c0 7-5 13-11 15-6-2-11-8-11-15v-7z" fill="none" stroke="#93a89c" stroke-width="2"/>
+    <text x="32" y="66" fill="#ccd8d1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="500">Away</text>
+  </g>
+
+  <!-- Scene 3: Relax -->
+  <g transform="translate(56, 284)">
+    <rect width="144" height="84" rx="14" fill="url(#tile-grad)" stroke="#2b473a" stroke-width="1.2"/>
+    <!-- Lamp / Ambient icon -->
+    <path d="M26 40h12M32 22v4M25 26h14l-2 10H27z" fill="none" stroke="#93a89c" stroke-width="2" stroke-linecap="round"/>
+    <text x="32" y="66" fill="#ccd8d1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="500">Relax</text>
+  </g>
+
+  <!-- Scene 4: Cinema -->
+  <g transform="translate(220, 284)">
+    <rect width="144" height="84" rx="14" fill="url(#tile-grad)" stroke="#2b473a" stroke-width="1.2"/>
+    <!-- Moon / Star icon -->
+    <path d="M37 32a10 10 0 1 1-10-10 8 8 0 0 0 10 10z" fill="none" stroke="#93a89c" stroke-width="2"/>
+    <text x="32" y="66" fill="#ccd8d1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="500">Night</text>
+  </g>
+
+  <!-- Bottom subtle LifeSmart badge -->
+  <text x="210" y="382" text-anchor="middle" fill="#4d695c" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="9" font-weight="600" letter-spacing="2">LIFESMART NATURE</text>
+</svg>

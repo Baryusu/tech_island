@@ -513,10 +513,25 @@ dialog::backdrop {
 }
 @media (max-width: 680px) {
   .hero-device {
-    display: none;
+    display: none !important;
   }
   .product-art {
     height: 175px;
     padding: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .brand-descriptor {
+    display: none !important;
+  }
+  .nav-shell {
+    gap: 10px;
+  }
+  .nav-cta {
+    font-size: 9px;
+    padding: 8px 11px;
+    min-height: 34px;
+    gap: 8px;
   }
 }
