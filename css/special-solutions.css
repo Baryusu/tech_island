@@ -23,41 +23,60 @@ body {
 }
 
 .wrap {
-  width: min(1200px, calc(100% - 48px));
+  width: min(1260px, calc(100% - 64px));
   margin: auto;
 }
-
-/* Hero Section - compact & scaled */
-.hero {
+.catalog-hero {
   background: linear-gradient(135deg, #0d2e27 0%, #173f34 100%);
-  color: #fff;
-  padding: 48px 0 42px;
+  padding: 70px 0 64px;
+}
+.catalog-hero {
+  border-bottom: 1px solid var(--line);
 }
 
-.hero .kicker {
+.catalog-hero .wrap {
+  position: relative;
+  z-index: 2;
+}
+
+.catalog-hero .eyebrow {
   font-size: 11px;
-  letter-spacing: 0.18em;
   font-weight: 650;
-  color: #9fd37b;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
-  margin: 0 0 8px;
+  color: var(--white);
+  margin-bottom: 8px;
 }
 
-.hero h1 {
-  font-family: var(--serif);
-  font-weight: 400;
-  font-size: clamp(30px, 3.4vw, 44px);
-  line-height: 1.1;
-  margin: 0 0 12px;
-  color: #ffffff;
+.catalog-hero h1 {
+  font: normal clamp(45px, 5vw, 72px)/1.08 var(--serif);
+  letter-spacing: -0.045em;
+  max-width: 770px;
+  margin: 20px 0 20px;
+  color: var(--white);
 }
 
-.hero p {
-  max-width: 680px;
-  color: #d2e3d7;
-  font-size: 14.5px;
-  line-height: 1.6;
+.catalog-hero p {
+  font-size: 17px;
+  color: var(--white);
+  max-width: 620px;
+  line-height: 1.75;
   margin: 0;
+}
+
+.catalog-hero .catalog-hero-meta {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  font-size: 12px;
+  color: #f3f5ec;
+}
+
+.catalog-hero .catalog-hero-meta span:before {
+  content: "\2713";
+  margin-right: 8px;
+  color: #3e7b50;
 }
 
 /* Catalog Grid & Cards - scaled down to 3 columns on desktop */
@@ -83,7 +102,10 @@ body {
   border-radius: 6px;
   text-decoration: none;
   color: inherit;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
 }
 
 .catalog .cards > .card:hover {
@@ -174,7 +196,9 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  transition: color 0.15s ease, transform 0.15s ease;
+  transition:
+    color 0.15s ease,
+    transform 0.15s ease;
 }
 
 .catalog .cards > .card:hover .card-copy b {
@@ -192,7 +216,9 @@ body {
 .pool43-scene .pool-rgbw {
   opacity: var(--rgb);
   filter: hue-rotate(var(--hue));
-  transition: opacity 0.4s, filter 0.4s;
+  transition:
+    opacity 0.4s,
+    filter 0.4s;
 }
 
 .pool43-scene .pool-falls {
