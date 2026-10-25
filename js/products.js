@@ -161,7 +161,7 @@
         }
         if (modalImgContainer) {
           const pic = card.querySelector(".product-art img");
-          if (pic && pic.naturalWidth > 0) {
+          if (pic && (pic.naturalWidth > 0 || pic.getAttribute("src"))) {
             modalImgContainer.innerHTML = `<img class="modal-photo" src="${pic.getAttribute("src")}" alt="${pic.getAttribute("alt") || ""}">`;
           } else {
             modalImgContainer.innerHTML = `
