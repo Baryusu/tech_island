@@ -9,8 +9,9 @@
   --white: #fff;
   --muted: #65736b;
   --line: #dfe5db;
-  --serif: Georgia, "Times New Roman", serif;
-  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  --font-primary: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --serif: var(--font-primary);
+  --sans: var(--font-primary);
   --max: 1260px;
   --radius: 3px;
   --shadow: 0 22px 70px rgba(17, 45, 33, 0.12);
@@ -19,6 +20,7 @@
   box-sizing: border-box;
 }
 html {
+  font-family: var(--font-primary);
   scroll-behavior: smooth;
   scroll-padding-top: 110px;
 }
@@ -26,7 +28,7 @@ body {
   margin: 0;
   background: var(--paper);
   color: var(--ink);
-  font-family: var(--sans);
+  font-family: var(--font-primary);
   font-size: 15px;
   line-height: 1.75;
   -webkit-font-smoothing: antialiased;
@@ -39,6 +41,7 @@ input,
 select,
 textarea {
   font: inherit;
+  font-family: var(--font-primary);
 }
 button,
 a,
@@ -83,11 +86,18 @@ p {
   margin-top: 0;
 }
 h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-primary);
+}
+h1,
 h2 {
-  font-family: var(--serif);
-  font-weight: 400;
-  line-height: 1.1;
-  letter-spacing: -0.04em;
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
 }
 h2 {
   font-size: clamp(36px, 4.05vw, 58px);
@@ -110,8 +120,9 @@ button {
   border: 0;
 }
 em {
-  font-family: var(--serif);
-  font-weight: 400;
+  font-family: inherit;
+  font-style: italic;
+  font-weight: inherit;
 }
 .wrap {
   width: min(var(--max), calc(100% - 112px));
@@ -406,9 +417,11 @@ em {
   margin-bottom: 28px;
 }
 .hero h1 {
+  font-family: var(--font-primary);
   font-size: clamp(63px, 7.25vw, 105px);
-  line-height: 1.04;
-  letter-spacing: -0.048em;
+  font-weight: 600;
+  line-height: 1.05;
+  letter-spacing: -0.035em;
   margin-bottom: 30px;
 }
 .hero h1 em {
@@ -467,10 +480,10 @@ em {
   z-index: 2;
 }
 .hero-note b {
-  font-family: var(--serif);
+  font-family: var(--font-primary);
   font-size: 20px;
-  font-weight: 400;
-  letter-spacing: -0.025em;
+  font-weight: 600;
+  letter-spacing: -0.02em;
   font-style: italic;
 }
 .note-line {
@@ -648,10 +661,10 @@ em {
 .service-card h3 {
   font-size: 23px;
   line-height: 1.3;
-  font-family: var(--serif);
-  font-weight: 400;
+  font-family: var(--font-primary);
+  font-weight: 600;
   margin-bottom: 19px;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.025em;
 }
 .service-card p {
   font-size: 12px;
@@ -1226,8 +1239,8 @@ em {
   color: #6f8455;
 }
 .future-principles h3 {
-  font-family: var(--serif);
-  font-weight: 400;
+  font-family: var(--font-primary);
+  font-weight: 600;
   font-size: 22px;
   margin-top: 13px;
   margin-bottom: 10px;
@@ -1264,11 +1277,12 @@ em {
   border-radius: 50%;
 }
 .step-number {
-  font-family: var(--serif);
+  font-family: var(--font-primary);
   font-size: 38px;
   line-height: 1;
   color: #90a177;
-  letter-spacing: -0.06em;
+  letter-spacing: -0.04em;
+  font-weight: 600;
 }
 .process-step h3 {
   font-size: 16px;
@@ -1435,10 +1449,11 @@ em {
 }
 .form-heading h3 {
   font-size: 26px;
-  font-family: var(--serif);
+  font-family: var(--font-primary);
   line-height: 1.25;
-  font-weight: 400;
+  font-weight: 600;
   margin-bottom: 8px;
+  letter-spacing: -0.02em;
 }
 .form-heading p {
   font-size: 10px;
@@ -1726,7 +1741,7 @@ em {
   margin-bottom: 29px;
 }
 #brief-summary {
-  font-family: var(--sans);
+  font-family: var(--font-primary);
   font-size: 11px;
   line-height: 1.8;
   white-space: pre-wrap;
@@ -3508,7 +3523,7 @@ em {
   pointer-events: none;
 }
 #scene-image-caption {
-  font-family: var(--serif);
+  font-family: var(--font-primary);
   font-style: italic;
   font-size: 22px;
   letter-spacing: -0.02em;
@@ -3737,11 +3752,11 @@ em {
   line-height: 1.6 !important;
 }
 .scene-panel h3 {
-  font-family: var(--serif);
+  font-family: var(--font-primary);
   font-size: 33px;
   line-height: 1.18;
-  letter-spacing: -0.035em;
-  font-weight: 400;
+  letter-spacing: -0.025em;
+  font-weight: 600;
   margin-bottom: 17px;
 }
 .scene-panel > p:not(.scene-moment) {
@@ -3796,7 +3811,7 @@ em {
   margin-top: 3px;
 }
 .scene-benefit p {
-  font-family: var(--serif);
+  font-family: var(--font-primary);
   font-style: italic;
   font-size: 17px;
   line-height: 1.5;
