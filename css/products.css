@@ -10,6 +10,9 @@
   --serif: Georgia, "Times New Roman", serif;
   --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 * {
   box-sizing: border-box;
 }
@@ -75,6 +78,24 @@ a {
 .catalog-main {
   padding: 50px 0 90px;
 }
+.category-bar {
+  position: sticky;
+  top: 96px;
+  z-index: 20;
+  isolation: isolate;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.category-bar::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0 50%;
+  width: 100vw;
+  transform: translateX(-50%);
+  background: #e5ebe1;
+}
 .category-title {
   font: normal 30px/1.2 var(--serif);
   margin: 0 0 20px;
@@ -84,6 +105,9 @@ a {
   gap: 9px;
   flex-wrap: wrap;
   margin-bottom: 40px;
+}
+.category-bar .filters {
+  margin-bottom: 0;
 }
 .filter-chip {
   border: 1px solid #dfe7dc;
@@ -107,9 +131,131 @@ a {
   color: #fff;
   border-color: var(--forest);
 }
+.filter-chip-sublime {
+  border-color: #9c7743;
+  background: #211b17;
+  color: #e5bf7c;
+}
+.filter-chip-sublime:hover,
+.filter-chip-sublime.active {
+  border-color: #d7ad64;
+  background: #4a3020;
+  color: #fff0c9;
+}
 .chip-icon {
   font-size: 17px;
   line-height: 1;
+}
+.sublime-series {
+  position: relative;
+  overflow: hidden;
+  margin: 0 0 48px;
+  padding: 52px 58px;
+  border: 1px solid #6f4a2d;
+  border-radius: 10px;
+  background:
+    radial-gradient(circle at 78% 45%, #6a452d 0, transparent 30%),
+    linear-gradient(118deg, #171310 0%, #2b1d17 55%, #120f0d 100%);
+  color: #f3e5c4;
+  box-shadow: 0 20px 50px #27170e26;
+}
+.sublime-series::before {
+  content: "";
+  position: absolute;
+  inset: 14px;
+  border: 1px solid #b8894b80;
+  border-radius: 6px;
+  pointer-events: none;
+}
+.sublime-series-heading {
+  position: relative;
+  z-index: 1;
+}
+.sublime-eyebrow {
+  color: #d3a85e;
+  font-size: 11px;
+  font-weight: 650;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+.sublime-series h2 {
+  margin: 17px 0 4px;
+  color: #f6e8c9;
+  font: normal clamp(30px, 4vw, 52px) / 1.08 var(--serif);
+  letter-spacing: -0.035em;
+}
+.sublime-series p {
+  margin: 0;
+  color: #cdbda2;
+  font-size: 14px;
+}
+.sublime-products {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px 18px;
+  margin-top: 40px;
+}
+.sublime-product {
+  min-width: 0;
+}
+.sublime-product-tile {
+  overflow: hidden;
+  height: 180px;
+  border: 1px solid #a87a3d;
+  border-radius: 4px;
+  box-shadow: 0 14px 28px #00000055, inset 0 0 0 7px #211914;
+}
+.sublime-product-tile img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.sublime-tile-small {
+  width: 72%;
+  margin: 0 auto;
+}
+.sublime-tile-tall {
+  width: 68%;
+  height: 205px;
+  margin: 0 auto;
+}
+.sublime-tile-max {
+  height: 190px;
+}
+.sublime-tile-ultra {
+  height: 205px;
+}
+.sublime-tile-slider {
+  height: 135px;
+  margin: 22px 0;
+}
+.sublime-tile-bedside {
+  height: 120px;
+  margin: 30px 0;
+}
+.sublime-tile-line {
+  height: 62px;
+  margin: 59px 0;
+}
+.sublime-product h3 {
+  margin: 14px 0 3px;
+  color: #f5e8ca;
+  font: normal 22px / 1.2 var(--serif);
+}
+.sublime-product p,
+.sublime-product span {
+  display: block;
+  margin: 0;
+  color: #d3b77f;
+  font-size: 11px;
+}
+.sublime-product span {
+  margin-top: 5px;
+  color: #aa997d;
+  line-height: 1.45;
 }
 .list-head {
   display: flex;
@@ -155,6 +301,23 @@ a {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 20px;
+}
+.product-section-heading {
+  grid-column: 1 / -1;
+  padding: 28px 0 2px;
+  border-top: 1px solid var(--line);
+}
+.product-section-heading h2 {
+  margin: 0;
+  font: normal 34px / 1.2 var(--serif);
+}
+.product-section-heading p {
+  margin: 4px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+}
+.product-section-heading[hidden] {
+  display: none;
 }
 .product-card {
   background: #fff;
@@ -379,6 +542,11 @@ dialog::backdrop {
     height: 215px;
   }
 }
+@media (max-width: 920px) {
+  .category-bar {
+    top: 86px;
+  }
+}
 @media (max-width: 720px) {
   .wrap {
     width: calc(100% - 32px);
@@ -407,9 +575,35 @@ dialog::backdrop {
     align-items: stretch;
     flex-direction: column;
   }
+  .sublime-series {
+    padding: 38px 28px 30px;
+  }
+  .sublime-products {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px 14px;
+    margin-top: 30px;
+  }
+  .sublime-product-tile {
+    height: 145px;
+  }
+  .sublime-tile-slider {
+    height: 105px;
+    margin: 20px 0;
+  }
+  .sublime-tile-bedside {
+    height: 90px;
+    margin: 28px 0;
+  }
+  .sublime-tile-line {
+    height: 48px;
+    margin: 48px 0;
+  }
   .consult {
     padding: 32px;
     display: block;
+  }
+  .category-bar {
+    top: 80px;
   }
   .footer-inner {
     display: block;
