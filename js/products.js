@@ -179,6 +179,7 @@ import { isFirebaseConfigured, getProductsFromDb } from "./firebase-config.js";
   const search = document.getElementById("product-search");
   const resultCount = document.getElementById("result-count");
   const listingTitle = document.getElementById("listing-title");
+  const listingDescription = document.getElementById("listing-description");
   const noResults = document.getElementById("no-results");
   const categoryBar = document.querySelector(".category-bar");
   const listHead = document.querySelector(".list-head");
@@ -187,16 +188,36 @@ import { isFirebaseConfigured, getProductsFromDb } from "./firebase-config.js";
   const sublimeCategory = "Sublime Series";
   let selectedCategory = "";
   const sectionHeadings = new Map();
+  const categoryDescriptions = {
+    [sublimeCategory]:
+      "Architectural switches and controls made to complement refined interiors.",
+    "Central Control":
+      "The hubs and gateways that bring your smart devices together.",
+    Lighting:
+      "Connected controls for comfortable, responsive and efficient lighting.",
+    Security:
+      "Smart protection for entrances, rooms and the people you care about.",
+    Sensor:
+      "Quietly observe movement, environment and everyday conditions.",
+    Shading:
+      "Automate curtains and blinds for comfort, privacy and better daylight.",
+    HVAC:
+      "Connected climate control for a more comfortable and efficient home.",
+    "Energy Saving":
+      "Monitor and manage energy use with smarter, more sustainable control.",
+    Entertainment:
+      "Bring your home media and everyday devices together with ease.",
+  };
 
   if (sublimeSeries && listHead) {
     const heading = document.createElement("div");
     heading.className = "product-section-heading";
-    heading.innerHTML = `<h2>${sublimeCategory}</h2><p></p>`;
+    heading.innerHTML = `<h2>${sublimeCategory}</h2><p class="category-description">${categoryDescriptions[sublimeCategory]}</p><p class="category-count"></p>`;
     listHead.after(heading);
     heading.after(sublimeSeries);
     sectionHeadings.set(sublimeCategory, {
       element: heading,
-      count: heading.querySelector("p"),
+      count: heading.querySelector(".category-count"),
     });
   }
 
@@ -225,11 +246,11 @@ import { isFirebaseConfigured, getProductsFromDb } from "./firebase-config.js";
       if (categoryCards.length > 0) {
         const heading = document.createElement("div");
         heading.className = "product-section-heading";
-        heading.innerHTML = `<h2>${category}</h2><p></p>`;
+        heading.innerHTML = `<h2>${category}</h2><p class="category-description">${categoryDescriptions[category]}</p><p class="category-count"></p>`;
         productGrid.appendChild(heading);
         sectionHeadings.set(category, {
           element: heading,
-          count: heading.querySelector("p"),
+          count: heading.querySelector(".category-count"),
         });
 
         categoryCards.forEach((card) => productGrid.appendChild(card));
@@ -298,6 +319,11 @@ import { isFirebaseConfigured, getProductsFromDb } from "./firebase-config.js";
     if (listingTitle) {
       listingTitle.textContent = selectedCategory || "All products";
     }
+    if (listingDescription) {
+      listingDescription.textContent =
+        categoryDescriptions[selectedCategory] ||
+        "Browse the complete LifeSmart collection, organized by how each product supports your home.";
+    }
     if (noResults) {
       noResults.hidden = displayedCount !== 0;
     }
@@ -337,6 +363,7 @@ import { isFirebaseConfigured, getProductsFromDb } from "./firebase-config.js";
   const modalTitle = document.getElementById("modal-title");
   const modalCat = document.getElementById("modal-cat");
   const modalDesc = document.getElementById("modal-description");
+  const modalSpecifications = document.getElementById("modal-specifications");
   const modalImgContainer = document.getElementById("modal-image");
   const modalClose = document.getElementById("modal-close");
 
@@ -356,6 +383,40 @@ import { isFirebaseConfigured, getProductsFromDb } from "./firebase-config.js";
         if (modalDesc) {
           const p = card.querySelector(".product-info p");
           modalDesc.textContent = p ? p.textContent : "";
+        }
+        if (modalSpecifications) {
+          const title = card.querySelector("h3");
+          const productName = title ? title.textContent.trim() : "";
+          const specificationName =
+            productName === "Indoor Camera"
+              ? "Indoor Camera (5MP)"
+              : productName;
+          const specificationData = Array.isArray(
+            window.productSpecifications
+          )
+            ? window.productSpecifications.find(
+                (item) => item.title === specificationName
+              )
+            : window.productSpecifications &&
+              window.productSpecifications[specificationName];
+          const specifications = specificationData
+            ? specificationData.specifications
+            : null;
+          const specificationList = modalSpecifications.querySelector("dl");
+
+          if (specificationList && specifications) {
+            specificationList.replaceChildren();
+            Object.entries(specifications).forEach(([label, value]) => {
+              const term = document.createElement("dt");
+              const description = document.createElement("dd");
+              term.textContent = label;
+              description.textContent = value;
+              specificationList.append(term, description);
+            });
+            modalSpecifications.hidden = false;
+          } else {
+            modalSpecifications.hidden = true;
+          }
         }
         if (modalImgContainer) {
           const pic = card.querySelector(".product-art img");
