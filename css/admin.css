@@ -482,7 +482,7 @@ textarea.form-control {
 .modal-card {
   background: var(--white);
   border-radius: var(--radius-lg);
-  max-width: 560px;
+  max-width: 960px;
   width: 100%;
   max-height: 90vh;
   overflow-y: auto;
@@ -597,30 +597,71 @@ textarea.form-control {
   background: var(--green);
 }
 
-/* Specifications Builder */
+/* Two-Column Modal Form Layout */
+.modal-grid-layout {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 28px;
+  padding: 24px;
+  align-items: start;
+}
+
+.modal-col-left, .modal-col-right {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Specifications Sidebar Box */
+.specs-sidebar-box {
+  background: #f7f9f5;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.specs-box-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 10px;
+  gap: 10px;
+}
+
 #specs-container {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  max-height: 220px;
+  max-height: 420px;
   overflow-y: auto;
-  padding: 2px;
+  padding-right: 6px;
+}
+
+#specs-container::-webkit-scrollbar {
+  width: 5px;
+}
+#specs-container::-webkit-scrollbar-thumb {
+  background: #c8d3c4;
+  border-radius: 4px;
 }
 
 .spec-row {
   display: flex;
-  gap: 8px;
+  gap: 6px;
   align-items: center;
 }
 
 .spec-key {
-  flex: 1.2;
+  flex: 1.1;
   font-size: 13px !important;
   padding: 7px 10px !important;
 }
 
 .spec-val {
-  flex: 1.8;
+  flex: 1.6;
   font-size: 13px !important;
   padding: 7px 10px !important;
 }
@@ -644,4 +685,15 @@ textarea.form-control {
 .remove-spec-btn:hover {
   background: var(--danger);
   color: var(--white);
+}
+
+@media (max-width: 768px) {
+  .modal-grid-layout {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 16px;
+  }
+  #specs-container {
+    max-height: 250px;
+  }
 }
