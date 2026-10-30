@@ -53,6 +53,8 @@ import {
   const productImageFileInput = document.getElementById("product-image-file");
   const productImageManualInput = document.getElementById("product-image-url-manual");
   const productIsSublime = document.getElementById("product-is-sublime");
+  const specsContainer = document.getElementById("specs-container");
+  const addSpecRowBtn = document.getElementById("add-spec-row-btn");
   const uploadZone = document.getElementById("upload-zone");
   const uploadPrompt = document.getElementById("upload-prompt");
   const imagePreview = document.getElementById("image-preview");
@@ -226,7 +228,38 @@ import {
   if (searchInput) searchInput.addEventListener("input", renderTable);
   if (categoryFilter) categoryFilter.addEventListener("change", renderTable);
 
-  // 7. Add / Edit Modal Logic
+  // 7. Specifications Builder Helpers
+  function addSpecRow(key = "", val = "") {
+    if (!specsContainer) return;
+    const row = document.createElement("div");
+    row.className = "spec-row";
+    row.innerHTML = `
+      <input type="text" class="form-control spec-key" placeholder="Attribute (e.g. Dimensions)" value="${escapeAttr(key)}" />
+      <input type="text" class="form-control spec-val" placeholder="Value (e.g. 86×86×36mm)" value="${escapeAttr(val)}" />
+      <button type="button" class="remove-spec-btn" title="Remove attribute">✕</button>
+    `;
+    row.querySelector(".remove-spec-btn").addEventListener("click", () => row.remove());
+    specsContainer.appendChild(row);
+  }
+
+  function getSpecificationsFromForm() {
+    const specs = {};
+    if (!specsContainer) return specs;
+    specsContainer.querySelectorAll(".spec-row").forEach((row) => {
+      const k = (row.querySelector(".spec-key")?.value || "").trim();
+      const v = (row.querySelector(".spec-val")?.value || "").trim();
+      if (k && v) {
+        specs[k] = v;
+      }
+    });
+    return specs;
+  }
+
+  if (addSpecRowBtn) {
+    addSpecRowBtn.addEventListener("click", () => addSpecRow());
+  }
+
+  // 8. Add / Edit Modal Logic
   function openAddModal() {
     productForm.reset();
     editProductId.value = "";
@@ -235,6 +268,10 @@ import {
     imagePreview.style.display = "none";
     imagePreview.src = "";
     uploadPrompt.style.display = "block";
+    if (specsContainer) {
+      specsContainer.innerHTML = "";
+      addSpecRow();
+    }
     modalHeading.textContent = "Add New Product";
     productModal.classList.add("is-active");
   }
@@ -250,6 +287,26 @@ import {
     productDescInput.value = product.description || "";
     productIsSublime.checked = Boolean(product.isSublime);
     productImageManualInput.value = product.imageUrl || product.image || "";
+
+    // Populate Specifications
+    if (specsContainer) {
+      specsContainer.innerHTML = "";
+      let specs = product.specifications;
+      if ((!specs || Object.keys(specs).length === 0) && window.productSpecifications) {
+        const match = window.productSpecifications.find(
+          (s) => s.title.toLowerCase() === (product.name || "").toLowerCase()
+        );
+        if (match && match.specifications) {
+          specs = match.specifications;
+        }
+      }
+
+      if (specs && Object.keys(specs).length > 0) {
+        Object.entries(specs).forEach(([k, v]) => addSpecRow(k, v));
+      } else {
+        addSpecRow();
+      }
+    }
 
     selectedFile = null;
     const currentSrc = resolveImageSrc(product.imageUrl || product.image);
@@ -345,6 +402,7 @@ import {
           category: productCategoryInput.value,
           description: productDescInput.value.trim(),
           imageUrl: finalImageUrl,
+          specifications: getSpecificationsFromForm(),
           isSublime: productIsSublime.checked
         };
 
@@ -458,6 +516,11 @@ import {
       .replace(/>/g, "&gt;")
       .replace(/"/g, "&quot;")
       .replace(/'/g, "&#039;");
+  }
+
+  function escapeAttr(str) {
+    if (!str) return "";
+    return str.replace(/"/g, "&quot;").replace(/'/g, "&#039;");
   }
 
   function formatAuthError(msg) {

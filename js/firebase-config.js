@@ -164,7 +164,7 @@ export async function getProductsFromDb() {
   }
 }
 
-export async function addProductToDb({ name, category, description, imageUrl, isSublime = false }) {
+export async function addProductToDb({ name, category, description, imageUrl, specifications = {}, isSublime = false }) {
   if (!isFirebaseConfigured() || !db) {
     throw new Error("Firestore is not configured.");
   }
@@ -174,6 +174,7 @@ export async function addProductToDb({ name, category, description, imageUrl, is
     category: category.trim(),
     description: description.trim(),
     imageUrl: imageUrl ? imageUrl.trim() : "",
+    specifications: specifications || {},
     isSublime: Boolean(isSublime),
     createdAt: serverTimestamp(),
     updatedAt: serverTimestamp()
@@ -211,6 +212,7 @@ export async function seedInitialProducts(productsArray, progressCallback) {
       category: item.category,
       description: item.description,
       imageUrl: item.image, // points to local assets/products/...
+      specifications: item.specifications || {},
       isSublime: Boolean(item.isSublime),
       createdAt: serverTimestamp(),
       updatedAt: serverTimestamp()

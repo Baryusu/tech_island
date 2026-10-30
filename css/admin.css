@@ -596,3 +596,52 @@ textarea.form-control {
   border-radius: 50%;
   background: var(--green);
 }
+
+/* Specifications Builder */
+#specs-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 220px;
+  overflow-y: auto;
+  padding: 2px;
+}
+
+.spec-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.spec-key {
+  flex: 1.2;
+  font-size: 13px !important;
+  padding: 7px 10px !important;
+}
+
+.spec-val {
+  flex: 1.8;
+  font-size: 13px !important;
+  padding: 7px 10px !important;
+}
+
+.remove-spec-btn {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  color: var(--danger);
+  border-radius: var(--radius);
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: all 0.15s ease;
+}
+
+.remove-spec-btn:hover {
+  background: var(--danger);
+  color: var(--white);
+}

@@ -6,7 +6,23 @@
     "alt": "DEFED Smart Station PRO",
     "name": "DEFED Smart Station PRO",
     "description": "Faster. Stronger. Further.",
-    "isSublime": false
+    "isSublime": false,
+    "specifications": {
+      "Dimension": "170*170*37mm (excluding antenna)",
+      "Casing": "ABS+PC;",
+      "Radio Protocol": "CoSS, WiFi, Zigbee/Matter, 4G; Z-Wave(optional);",
+      "Signal Range": "400m without antenna, 800m with antenna (CoSS/Open field)",
+      "Operating Temperature": "-5~45℃",
+      "Operating Humidity": "5~90％",
+      "Interface": "RJ45, DC Power supply, SIM card slot(optional)",
+      "Power Supply": "DC12V 1A, Battery, PoE;",
+      "Battery Type": "18650 battery*2 (should purchase separately);",
+      "Battery Life": "18 hours battery backup power",
+      "Indicator": "LED",
+      "Button": "Power button, tamper button",
+      "Static Consumption": "<2.5W",
+      "Weight": "452g (without antenna, with battery), 295g (without battery and antenna);"
+    }
   },
   {
     "category": "Central Control",
@@ -15,7 +31,23 @@
     "alt": "DEFED Smart Station",
     "name": "DEFED Smart Station",
     "description": "Smart Gateway",
-    "isSublime": false
+    "isSublime": false,
+    "specifications": {
+      "Product": "DEFED Smart Station",
+      "Color": "White",
+      "Radio Protocol": "CoSS, WiFi, ZigBee, 4G, Z-Wave",
+      "LED Indicator": "Supported",
+      "Material": "PC+ABS",
+      "Power Supply": "DC 12V1A/ Battery Backup/ PoE",
+      "Operating Temperature": "-5~45℃",
+      "Operating Humidity": "5~90%",
+      "Backup Battery": "18650*2",
+      "Signal Range": "500m (CoSS) (open field)",
+      "Weight": "452g (Battery Included)/ 395g",
+      "Dimension": "170*170*37mm",
+      "Casing": "ABS+PC",
+      "Interface": "DC/ RJ45/ SIM card slot (optional)"
+    }
   },
   {
     "category": "Central Control",
@@ -24,7 +56,17 @@
     "alt": "Smart Station",
     "name": "Smart Station",
     "description": "Stable Living for Villas",
-    "isSublime": false
+    "isSublime": false,
+    "specifications": {
+      "Product": "Smart Station",
+      "Color": "White",
+      "Protocol": "CoSS/ CoSS+ZigBee/ CoSS+Z-wave",
+      "Signal Distance": "CoSS: 400m / ZigBee: 50m / Z-wave: 50m",
+      "Power Supply": "DC 5V",
+      "Dimension": "110.8*110.8*28mm",
+      "Operating Temperature": "-5~45℃",
+      "Operating Humidity": "5~90%"
+    }
   },
   {
     "category": "Central Control",
@@ -33,7 +75,27 @@
     "alt": "Nature",
     "name": "Nature",
     "description": "Big Screen Control",
-    "isSublime": false
+    "isSublime": false,
+    "specifications": {
+      "Product": "Nature - Smart Control Panel",
+      "Dimension": "Exposed dimension: 342*122*16.3mm; Backbox dimension: 335*114*70mm",
+      "Casing": "Aircraft aluminum",
+      "Network": "Wi-Fi 2.4GHz/ Ethernet",
+      "Power Supply": "AC 100-240V 50/60Hz",
+      "Interface": "Live, Neutral, Earth wire in / Ethernet RJ45 / HDMI in / USB",
+      "Weight": "1260g (panel only)",
+      "Screen": "10.25 inch touch screen, 1920×720",
+      "CPU": "4 Core ARM",
+      "Oprating System": "Android 11",
+      "Speaker": "Supported",
+      "Microphone": "Supported",
+      "Installation": "In-wall concealed with pre-embeddedback box (standard)",
+      "Operating Temperature": "-5~45℃",
+      "Operating Humidity": "5~90％",
+      "Power Consumption": "<20W",
+      "Button": "Customizable scene-switch button×4, power button",
+      "RAM": "2GB"
+    }
   },
   {
     "category": "Central Control",
@@ -42,7 +104,28 @@
     "alt": "Nature 7 PRO",
     "name": "Nature 7 PRO",
     "description": "All-in-One Panel",
-    "isSublime": false
+    "isSublime": false,
+    "specifications": {
+      "Color": "Matte grey/White",
+      "Dimensions": "Exposed dimension: 249*113*16mm, Whole dimension: 249*113*28.6mm",
+      "Weight": "525g",
+      "Casing": "PC",
+      "Installation": "In-wall concealed with pre-embedded box (standard)",
+      "Operating Temperature": "-5~45℃",
+      "Operating Humidity": "5~90％",
+      "Power Supply": "DC 12V/PoE 48V",
+      "Power Consumption": "DC 12V/PoE 48V",
+      "Interface": "RJ45×1, Extension (1+8way sense, RS485)",
+      "Button": "Customizable scene-switch button×4, Power button",
+      "Screen": "7 inch touch screen",
+      "Resolution": "1024×600 (IPS)",
+      "CPU": "4 Core A55",
+      "RAM": "2GB",
+      "Oprating System": "Android 11",
+      "Speaker": "Yes",
+      "Microphone": "Yes",
+      "Network": "Wi-Fi 2.4GHz, LAN port, Zigbee, CoSS"
+    }
   },
   {
     "category": "Central Control",
@@ -51,7 +134,29 @@
     "alt": "Nature X PRO",
     "name": "Nature X PRO",
     "description": "Smart Desktop Hub",
-    "isSublime": false
+    "isSublime": false,
+    "specifications": {
+      "Radio Protocol": "CoSS, Zigbee, Wi-Fi",
+      "Signal Range": "200m (CoSS) (Open Field)",
+      "Casing": "ABS + Zinc alloy",
+      "Size": "143*112*98mm",
+      "Weight": "900g",
+      "Operating Temperature": "-5~45℃",
+      "Operating Humidity": "5~90%",
+      "CPU": "Quad-core Cortex-A7",
+      "Interface": "Type-C Power input",
+      "LED Indicator": "9+4 16 million colors LED",
+      "Screen": "1.39 inch",
+      "Resolution": "454*454",
+      "Input": "DC 5V 2A",
+      "Sensor": "Temperature sensor, Humidity sensor, CO₂ sensor, PM2.5 sensor",
+      "Microphone": "Yes",
+      "Speaker": "Yes",
+      "CO2 sensor": "0~500ug/m3",
+      "PM2.5 sensor": "400~2000ppm",
+      "Content": "Nature X PRO, USB-C cable, User's guide",
+      "Operation System": "Android"
+    }
   },
   {
     "category": "Central Control",
@@ -60,7 +165,26 @@
     "alt": "Nature Mini PRO",
     "name": "Nature Mini PRO",
     "description": "Compact &amp; Complete",
-    "isSublime": false
+    "isSublime": false,
+    "specifications": {
+      "Color": "White/Gray/Black",
+      "Dimensions": "Outside the wall: 86*86*11mm; Whole product: 86*86*36mm",
+      "Casing": "Bottom Cover: PC; Top Cover: ABS+PC",
+      "Wireless Protocol": "Wi-Fi / CoSS / ZigBee",
+      "Signal Range": "200m",
+      "Installation": "In-wall concealed with 86 back box",
+      "Operating Temperature": "-5~45℃",
+      "Operating Humidity": "5~90％",
+      "Power Supply": "AC 100-240V 50/60Hz , POE (Optional)",
+      "Power Consumption": "＜0.6W",
+      "Maximum Overload": "Resistive Load 500W (One Way); Capacitive/Reductive Load 200W (One Way)",
+      "Network": "Wi-Fi 2.4GHz+5GHz",
+      "Wiring": "Live/Neutral/Light1/Light2/Light3 wire",
+      "Screen": "4 inch",
+      "Resolution": "480*480",
+      "Operation System": "Linux",
+      "Speaker": "Yes"
+    }
   },
   {
     "category": "Central Control",
@@ -69,7 +193,22 @@
     "alt": "Nature Mini PRO (PoE)",
     "name": "Nature Mini PRO (PoE)",
     "description": "PoE Control Center",
-    "isSublime": false
+    "isSublime": false,
+    "specifications": {
+      "Color": "White/Gray/Black",
+      "Dimension": "Projection Size: 86*86*11mm; Overall Dimensions: 86*86*36mm",
+      "Casing": "Flameresistant PC",
+      "Interface": "PoE, DC In +12V, GND",
+      "Speaker": "Supported",
+      "Microphone": "Supported",
+      "Device Capacity": "500",
+      "Remote Control": "Supported",
+      "Power Supply": "48V PoE / DC 12V",
+      "Installation": "In-wall concealed with 86 back box",
+      "Screen": "4 inch, 480*480",
+      "Radio Protocol": "CoSS, Wi-Fi, Zigbee",
+      "Signal Range": "200m (CoSS/Open field)"
+    }
   },
   {
     "category": "Central Control",
@@ -78,7 +217,27 @@
     "alt": "Nature Mini L",
     "name": "Nature Mini L",
     "description": "120mm Smart Panel",
-    "isSublime": false
+    "isSublime": false,
+    "specifications": {
+      "Radio Protocol": "Nature Mini L",
+      "Signal Range": "200m (open field)",
+      "Dimensions": "Outside the wall: 120*70*11mm Overall: 120*70*36.5mm",
+      "Casing": "Bottom Cover: PC; Top Cover: ABS+PC",
+      "Installation": "In-wall concealed with 120 back box",
+      "Wireless Protocol": "Wi-Fi / CoSS / ZigBee",
+      "Operating Temperature": "-5~45℃",
+      "Operating Humidity": "5~90％",
+      "Power Supply": "AC 100-240V 50/60Hz",
+      "Power Consumption": "＜0.6W",
+      "Maximum Overload": "Resistive Load: 500W per channel Inductive/Capacitive Load: 200W per channel",
+      "Network": "WiFi 2.4GHz+5GHz",
+      "Interface": "Live/Neutral/Light1/Light2/Light3 wire in",
+      "Screen": "4 inch",
+      "Resolution": "480*800",
+      "Operation System": "Linux",
+      "Microphone": "Yes",
+      "Speaker": "Yes"
+    }
   },
   {
     "category": "Security",
@@ -87,7 +246,28 @@
     "alt": "Smart Door Lock C200",
     "name": "Smart Door Lock C200",
     "description": "Multi-Access",
-    "isSublime": false
+    "isSublime": false,
+    "specifications": {
+      "Color": "Black/Gold",
+      "Dimension": "360*73*23mm",
+      "Casing": "Aluminum alloys + IML",
+      "Radio Protocol": "CoSS",
+      "Range": "200m (open field)",
+      "Unlocking Ways": "Fingerprint/Password/Mechanical Key /LifeSmart App/Electronic Encryption Card",
+      "User Capacity": "50 groups",
+      "Fingerprint Reader": "Semiconductor sensor",
+      "Password Input": "Touch key",
+      "Password Function": "Virtual password; Password protection",
+      "Chip System": "Dual CPU and dual system",
+      "Fingerprint Identification Time": "< 0.5s",
+      "Up-down Hook": "Support",
+      "Cylinder Lock": "Grade C",
+      "Mechanical Keys": "2",
+      "Power Supply": "4 AA dry batteries; Type-C emergency power supply",
+      "Operating Temperature": "-25°C-70°C",
+      "Suitable Door Thickness": "40-120mm",
+      "Suitable Lock Body": "J6068 (Standard)"
+    }
   },
   {
     "category": "Security",
@@ -96,7 +276,20 @@
     "alt": "Outdoor Camera",
     "name": "Outdoor Camera",
     "description": "Home Guardian",
-    "isSublime": false
+    "isSublime": false,
+    "specifications": {
+      "Dimension": "70*70*184mm;",
+      "Weight": "411g",
+      "Casing": "Aluminium alloy",
+      "Resolution": "1920 × 1080",
+      "Fov": "110°",
+      "Night View": "IR 15m",
+      "Compression": "H.264",
+      "Interface": "Power port/Ethernet port/PoE power port/Antenna port/TF card slot",
+      "Network": "Wi-Fi (2.4GHz)",
+      "Power Supply": "DC 12V",
+      "Ingress Protection": "IP66"
+    }
   },
   {
     "category": "Security",
@@ -105,7 +298,27 @@
     "alt": "Indoor Camera",
     "name": "Indoor Camera",
     "description": "5MP HD Camera",
-    "isSublime": false
+    "isSublime": false,
+    "specifications": {
+      "Imaging Device": "1/3\"",
+      "Effective Pixels": "5MP: 2688(H)×1664(V)",
+      "Scanning System": "Progressive CMOS",
+      "Video Compression": "H.265/H.264",
+      "Wi-Fi": "IEEE802.11b/g/n",
+      "Video Compression Format": "H.265/H.264",
+      "Video Quality Ajustment": "128Kbps ~ 4Mbps",
+      "Operating Conditions": "-10°C~+45°C, Less Than 95%RH",
+      "Ingress Protection": "IP66",
+      "Power Supply": "DC 5V1A",
+      "Power Consumption": "< 3.75W",
+      "Fixed Lens": "3.6mm",
+      "Field of View": "87°(H), 48°(V), 108°(D)",
+      "Night Vision": "10m(33ft) Distance",
+      "Lens Type": "8X Digital Zoom",
+      "Smart Features": "Motion Detection, Human Detection, ; Configurable Region, Abnormal Sound Alarm",
+      "Dimension": "77.4× 77.4 × 106.2mm",
+      "Weight": "197g"
+    }
   },
   {
     "category": "Security",
@@ -114,7 +327,20 @@
     "alt": "DEFED Motion Sensor",
     "name": "DEFED Motion Sensor",
     "description": "High-Security Detector",
-    "isSublime": false
+    "isSublime": false,
+    "specifications": {
+      "LED Indicator": "Supported",
+      "Static Consumption": "≤0.05mw",
+      "IR Detection Range": "Up to 12m",
+      "IR Detection Angle": "Up to 90°",
+      "Power Supply": "Battery CR123A, 3V",
+      "Battery Life": "Up to 7 years",
+      "Dimension": "100*59.2*67.3mm (with bracket）100*59.2*50mm（sensor only）",
+      "Casing": "ABS+PC",
+      "Net Weight (with battery)": "110g (with battery)",
+      "Radio Protocol": "CoSS",
+      "Signal Range(Open Field)": "800m"
+    }
   },
   {
     "category": "Security",
@@ -123,7 +349,23 @@
     "alt": "DEFED Indoor Siren",
     "name": "DEFED Indoor Siren",
     "description": "Indoor Safety Alarm",
-    "isSublime": false
+    "isSublime": false,
+    "specifications": {
+      "Installation": "Wall mount",
+      "Operating Temperature": "-5~45℃",
+      "Operating Humidity": "5~90%",
+      "Static Consumption": "≤0.3mw",
+      "Interface": "Interface for extended LED",
+      "Power Supply": "2 Battery CR123A, 3V",
+      "Sound Volume": "87~105dB at a distance of 1m",
+      "Buzzer Operating Frequency": "3500 ± 500Hz",
+      "Radio Protocol": "CoSS",
+      "Battery Life": "Up to 5 years",
+      "Signal Range": "800m (Open Field)",
+      "Net Weight": "130g (with battery)",
+      "Dimension": "85.6*85.6*34mm",
+      "Casing": "ABS+PC"
+    }
   },
   {
     "category": "Security",
@@ -132,7 +374,24 @@
     "alt": "DEFED Door/Window Sensor",
     "name": "DEFED Door/Window Sensor",
     "description": "Door Window Guardian",
-    "isSublime": false
+    "isSublime": false,
+    "specifications": {
+      "Radio Protocol": "CoSS",
+      "Radio Frequency": "433MHz",
+      "Signal Range": "800m (open field)",
+      "Dimensions": "Sensor: 22*22*89mm, Magnet: 10*12*89mm",
+      "Weight": "44g",
+      "Casing": "PC",
+      "Operating Temperature": "-5~45℃",
+      "Operating Humidity": "5~90％",
+      "Power Supply": "1 Battery CR123A, 3V",
+      "Static Power Consumption": "≤0.01mw",
+      "Battery Life": "Up to 10 years",
+      "Sensitive Element": "Magnetic sensor, temperature sensor",
+      "Activation Distance": "2.5cm",
+      "Interface": "NC interface for extended sensor",
+      "LED Indicator": "LED×1"
+    }
   },
   {
     "category": "Security",
@@ -141,7 +400,20 @@
     "alt": "DEFED Key Fob",
     "name": "DEFED Key Fob",
     "description": "Control With Ease",
-    "isSublime": false
+    "isSublime": false,
+    "specifications": {
+      "Dimension": "74*39*11.9mm",
+      "Weight": "19g",
+      "Casing": "PC",
+      "Radio Protocol": "CoSS",
+      "Signal Range": "800 (open field)",
+      "Operating Temperature": "-5~45℃",
+      "Operating Humidity": "5~90%",
+      "Power Supply": "1 Battery CR2450, 3V",
+      "Battery Life": "Up to 10 years",
+      "Standby Power": "≤0.01mw",
+      "Indicator": "LED"
+    }
   },
   {
     "category": "Security",
@@ -150,7 +422,25 @@
     "alt": "Environmental Sensor (Gas/CO₂)",
     "name": "Environmental Sensor (Gas/CO₂)",
     "description": "Home Safety Alarm",
-    "isSublime": false
+    "isSublime": false,
+    "specifications": {
+      "of Gas Sensor Radio Protocol": "CoSS",
+      "Signal Range": "200m (open field)",
+      "Dimensions": "71*71*32mm",
+      "Weight": "55g",
+      "Casing": "ABS",
+      "Operating Temperature": "-5~45℃",
+      "Operating Humidity": "5~90％",
+      "Concentration Range": "300~10000ppm, sensitivity adjustable",
+      "Power Supply": "DC 5V",
+      "Power Consumption": "100mW",
+      "Interface": "Micro USB power supply*1",
+      "Button": "Pairing button",
+      "Indicator": "LED",
+      "Sound Alarm": "Alarm sound pressure>70db/m",
+      "Radio Protocol": "CoSS",
+      "Detection": "Concentrations of Carbon Dioxide"
+    }
   },
   {
     "category": "Security",
@@ -159,7 +449,22 @@
     "alt": "Independent Photoelectric Smoke Detector (ZigBee)",
     "name": "Independent Photoelectric Smoke Detector (ZigBee)",
     "description": "Optical Smoke Sensor",
-    "isSublime": false
+    "isSublime": false,
+    "specifications": {
+      "Radio Protocol": "ZigBee 3.0",
+      "Signal Range": "50m (open field)",
+      "Dimensions": "φ90*37mm",
+      "Weight": "106g",
+      "Casing": "PC, ABS",
+      "Operating Temperature": "-10~50℃",
+      "Operating Humidity": "≤95%RH",
+      "Power Supply": "DC 3V (CR123A battery)",
+      "Standby Current": "<15uA",
+      "Alarm Current": "<40mA",
+      "Battery Life": "More than three years (20times/day)",
+      "Remote Frequency": "2.4GHz",
+      "Alarm Sound Pressure": "≥80 dB, 3m in front of the smoke detecor"
+    }
   },
   {
     "category": "Security",
@@ -168,7 +473,23 @@
     "alt": "Household Gas Detector (ZigBee)",
     "name": "Household Gas Detector (ZigBee)",
     "description": "Smart Gas Monitor",
-    "isSublime": false
+    "isSublime": false,
+    "specifications": {
+      "Radio Protocol": "ZigBee 3.0",
+      "Signal Range": "80m (open field)",
+      "Dimensions": "¢80×¢65x45mm",
+      "Weight": "108g",
+      "Casing": "PC, ABS",
+      "Operating Temperature": "0~55℃",
+      "Operating Humidity": "≤95%RH",
+      "Power Supply": "AC 100–240V",
+      "Standby Current": "<100mA",
+      "Alarm Current": "<150mA",
+      "Detection Gas Type": "Methane (natural gas)",
+      "Alarm Gas Concentration": "8%LEL",
+      "Concentration Error Range": "±3%LEL",
+      "Sound Alarm": "Alarm sound pressure ≥70db (1m in front of the detector)"
+    }
   },
   {
     "category": "Security",
@@ -177,7 +498,22 @@
     "alt": "Water Leak Sensor",
     "name": "Water Leak Sensor",
     "description": "24/7 Water Monitor",
-    "isSublime": false
+    "isSublime": false,
+    "specifications": {
+      "Radio Protocol": "CoSS",
+      "Signal Range": "100m (open field)",
+      "Dimensions": "50*72*20mm",
+      "Weight": "31g",
+      "Casing": "ABS+PC",
+      "Operating Temperature": "-5~45℃",
+      "Operating Humidity": "5~90％",
+      "Power Supply": "1 Battery CR2450, 3V",
+      "Power Consumption": "Static consumption<30μw, Alarm consumption<100mw",
+      "Battery Life": "Up to 1 year",
+      "Interface": "Water sensing probe",
+      "Button": "Pairing button",
+      "Indicator": "LED"
+    }
   },
   {
     "category": "Sensor",
@@ -186,7 +522,19 @@
     "alt": "Motion Sensor PRO",
     "name": "Motion Sensor PRO",
     "description": "Tiny Motion Detector",
-    "isSublime": false
+    "isSublime": false,
+    "specifications": {
+      "Battery Type": "CR123A",
+      "Standby Time": "Up to 5 years",
+      "Operating voltage": "DC 3V",
+      "Operating temperature": "-5~45℃",
+      "Operating humidity": "5~90%",
+      "Radio Protocol": "CoSS",
+      "Signal Range（Open Field）": "200m",
+      "Dimensions": "66*42*25mm",
+      "Weight": "ABS",
+      "Casing": "24g(without batteries)"
+    }
   },
   {
     "category": "Sensor",
@@ -195,7 +543,23 @@
     "alt": "CUBE Door/Window Sensor",
     "name": "CUBE Door/Window Sensor",
     "description": "Open/Close Tracker",
-    "isSublime": false
+    "isSublime": false,
+    "specifications": {
+      "Radio Protocol": "CoSS",
+      "Signal Range": "100m (open field)",
+      "Dimensions": "38.4*38.4*14.6mm",
+      "Weight": "20g",
+      "Casing": "ABS+PC",
+      "Operating Temperature": "-5~45℃",
+      "Operating Humidity": "5-90%",
+      "Power Supply": "1 Battery CR2450, 3V",
+      "Static Consumption": "<1mW",
+      "Battery Life": "Up to 1 year",
+      "Sensitive Element": "Magnetic sensor, vibration sensor",
+      "Detection": "Slide and shake detection of the door and window",
+      "Button": "Customizable button, Pairing",
+      "Indicator": "LED"
+    }
   },
   {
     "category": "Sensor",
@@ -204,7 +568,22 @@
     "alt": "CUBE Environmental Sensor",
     "name": "CUBE Environmental Sensor",
     "description": "Pleasant Home Environment",
-    "isSublime": false
+    "isSublime": false,
+    "specifications": {
+      "Radio Protocol": "CoSS",
+      "Signal Range": "100m (open field)",
+      "Weight": "24g",
+      "Casing": "ABS+PC",
+      "Operating Temperature": "-5~45℃",
+      "Operating Humidity": "5~90％",
+      "Power Supply": "1 Battery CR2450, 3V",
+      "Static Consumption": "<1mW",
+      "Battery Life": "Up to 1 year",
+      "Sensitive Element": "Temperature sensor, Humidity sensor, Light sensor",
+      "Button": "Pairing button",
+      "Indicator": "LED",
+      "Display": "LCD"
+    }
   },
   {
     "category": "Sensor",
@@ -213,7 +592,22 @@
     "alt": "Human Presence Sensor (Radar Detector, ZigBee)",
     "name": "Human Presence Sensor (Radar Detector, ZigBee)",
     "description": "Easy Ceiling Installation",
-    "isSublime": false
+    "isSublime": false,
+    "specifications": {
+      "Radio Protocol": "CoSS",
+      "Signal Range": "100m",
+      "Casing": "ABS",
+      "Dimensions": "Φ65xΦ52x49.5mm",
+      "Operating Temperature": "0°C~50°C",
+      "Operating Humidity": "-25℃~+80℃",
+      "Operating Voltage": "AC 110V-240V 50/60Hz",
+      "Mounting Height": "2.5-4m",
+      "Detection": "0-4m,set via app",
+      "Hold Time": "3-7200s,set via app",
+      "Detection Range (Radius) (Note 3)": "Big motion: 3-4m, Minor motion: 2.5-3.5m, Breathing: 2.5-3.5m",
+      "Cut-out Size": "Cut a hole of 55mm on the ceiling",
+      "Installation": "Flush Mounted"
+    }
   },
   {
     "category": "Sensor",
@@ -222,7 +616,22 @@
     "alt": "In-wall Air Quality Detector (ZigBee)",
     "name": "In-wall Air Quality Detector (ZigBee)",
     "description": "Live Climate Data",
-    "isSublime": false
+    "isSublime": false,
+    "specifications": {
+      "Radio Protocol": "ZigBee 3.0",
+      "Signal Range": "80m (open field)",
+      "Dimensions": "86*86*60mm",
+      "Weight": "172g",
+      "Casing": "PC, ABS",
+      "Installation": "In-wall concealed with 86 back box",
+      "Operating Temperature": "–10~55℃",
+      "Operating Humidity": "≤95% (non-condensing)",
+      "Power Supply": "AC 100-240V",
+      "Operating current": "≤100mA",
+      "Sensor Type": "PM2.5, temperature, humidity",
+      "PM2.5 Range": "0~999ug/m3",
+      "Screen": "TFT"
+    }
   },
   {
     "category": "Energy Saving",
@@ -231,7 +640,20 @@
     "alt": "General Controller",
     "name": "General Controller",
     "description": "Third-Party Integration",
-    "isSublime": false
+    "isSublime": false,
+    "specifications": {
+      "Radio Protocol": "CoSS",
+      "Signal Range": "200m (open field)",
+      "Dimensions": "83.6*47.0*22.3mm",
+      "Weight": "50g",
+      "Casing": "ABS",
+      "Operating Temperature": "-5~45℃",
+      "Operating Humidity": "5~90％",
+      "Power Supply": "DC 12V/24V",
+      "Standby Power": "<1.5W",
+      "Maximum Overload": "3A",
+      "Interfaces": "5 control modes, 3 interfaces maximum"
+    }
   },
   {
     "category": "Energy Saving",
@@ -240,7 +662,20 @@
     "alt": "RS485 Converter",
     "name": "RS485 Converter",
     "description": "RS485 Integration Hub",
-    "isSublime": false
+    "isSublime": false,
+    "specifications": {
+      "Radio Protocol": "CoSS",
+      "Radio Frequency": "433MHz",
+      "Signal Range": "200m (open field)",
+      "Dimensions": "83.6*47.0*22.3mm",
+      "Weight": "50g",
+      "Casing": "ABS",
+      "Operating Temperature": "-5~45℃",
+      "Operating Humidity": "5~90％",
+      "Power Supply": "AC 100-240V or DC12V",
+      "Standby Power Consumption": "<1.5W",
+      "Interfaces": "AD+, BD-, GND, DC+, 5V output"
+    }
   },
   {
     "category": "Energy Saving",
@@ -249,7 +684,8 @@
     "alt": "Smart Plug (CoSS EU &amp; FR, with Monitor Energy Usage)",
     "name": "Smart Plug (CoSS EU &amp; FR, with Monitor Energy Usage)",
     "description": "Traditional to Smart",
-    "isSublime": false
+    "isSublime": false,
+    "specifications": {}
   },
   {
     "category": "Energy Saving",
@@ -258,7 +694,23 @@
     "alt": "Smart Plug (ZigBee US, with Monitor Energy Usage)",
     "name": "Smart Plug (ZigBee US, with Monitor Energy Usage)",
     "description": "Traditional to Smart",
-    "isSublime": false
+    "isSublime": false,
+    "specifications": {
+      "Radio Protocol": "ZigBee 3.0",
+      "Signal Range": "50m (open field)",
+      "Dimension": "83*37*52mm",
+      "Weight": "73g",
+      "Casing": "PC+ABS(V0 Fire-protection)",
+      "Installation": "Plug and play",
+      "Operating Temperature": "-20℃-+50℃",
+      "Operating Humidity": "<80%",
+      "Operating Voltage": "AC 100-240V 50/60Hz",
+      "Operating Frequency": "2400～2483.5MHz",
+      "Maximum Load": "1800W(16A)",
+      "Power Consumption": "≤0.4W",
+      "Socket Standard": "US Socket",
+      "Certification": "CE, FCC"
+    }
   },
   {
     "category": "Energy Saving",
@@ -267,7 +719,22 @@
     "alt": "Smart Plug (ZigBee UK, with Monitor Energy Usage)",
     "name": "Smart Plug (ZigBee UK, with Monitor Energy Usage)",
     "description": "Traditional to Smart",
-    "isSublime": false
+    "isSublime": false,
+    "specifications": {
+      "Radio Protocol": "ZigBee 3.0",
+      "Signal Range": "50m (open field)",
+      "Dimension": "58*58*56mm",
+      "Weight": "73g",
+      "Casing": "PC",
+      "Installation": "Plug and play",
+      "Operating Temperature": "-5~45℃",
+      "Operating Humidity": "5~90%",
+      "Operating Voltage": "AC 100-240V 50/60Hz",
+      "Operating Frequency": "2400～2483.5MHz",
+      "Maximum Load": "3120W(13A)",
+      "Power Consumption": "＜1.3W",
+      "Socket Standard": "UK Socket"
+    }
   },
   {
     "category": "Energy Saving",
@@ -276,7 +743,22 @@
     "alt": "HA Interface Adaptor",
     "name": "HA Interface Adaptor",
     "description": "Dry Contact Integration",
-    "isSublime": false
+    "isSublime": false,
+    "specifications": {
+      "Radio Protocol": "CoSS",
+      "Signal Range": "100m (open field)",
+      "Dimension": "92*32*18.7mm",
+      "Weight": "29g",
+      "Casing": "ABS+PC",
+      "Operating Temperature": "-5~45℃",
+      "Operating Humidity": "5~90%",
+      "Operating Voltage": "AC 100-240V 50/60Hz",
+      "Power Consumption": "＜1W",
+      "Relay Overload": "DC 30V 2A, AC 125V 0.5A",
+      "Interfaces": "HA interface × 3, Relay interface × 3, Input indication interface × 3",
+      "Indicator Light": "Pairing, Interface overall status (INFO), Interface status X 9",
+      "Installation": "Wall mount"
+    }
   },
   {
     "category": "Lighting",
@@ -285,7 +767,22 @@
     "alt": "BLEND Switch PRO (Metal)",
     "name": "BLEND Switch PRO (Metal)",
     "description": "Elegant Smart Switch",
-    "isSublime": false
+    "isSublime": false,
+    "specifications": {
+      "Color": "Red, Gold, Graphit, White",
+      "Dimension": "86*86*36mm",
+      "Material": "Metal",
+      "Installation": "In-wall concealed with 86 back box",
+      "Wiring": "Live+Neutral",
+      "Operating Temperature": "-5~45°C",
+      "Operating Humidity": "5~90%",
+      "Power Supply": "AC 100-240V 50/60Hz",
+      "Power Consumption": "<0.6W",
+      "Maximum Overload": "Resistive load: 500W per channel; Inductive/Capacitive load: 200W per channel",
+      "Radio Protocol": "CoSS",
+      "Range (Open field)": "200m",
+      "Ways": "1/2/3"
+    }
   },
   {
     "category": "Lighting",
@@ -294,7 +791,22 @@
     "alt": "Nature Switch",
     "name": "Nature Switch",
     "description": "Red Dot Winner",
-    "isSublime": false
+    "isSublime": false,
+    "specifications": {
+      "Wiring": "Live+neutral",
+      "Control Unit": "16A magnetic latching relay",
+      "Operating Temperature": "-5~45℃",
+      "Operating Humidity": "5~90％",
+      "Power Supply": "AC 100-240V 50/60Hz",
+      "Maximum Overload": "Resistive load 500W (one way), Capacitive/Reductive load 200W (one way)",
+      "LED Indicator": "16Million colors",
+      "Radio Protocol": "CoSS",
+      "Signal Range (Open Field)": "200m",
+      "Color": "White glass+white frame / Black glass+white frame / Black glass+gray frame",
+      "Dimension": "86*86*35mm",
+      "Weight": "126g(1 way), 138g(2 way), 150g(3 way)",
+      "Casing": "Bottom cover: PC, top cover: ABS+PC, front panel: glass"
+    }
   },
   {
     "category": "Lighting",
@@ -303,7 +815,21 @@
     "alt": "Nature Switch (Matte)",
     "name": "Nature Switch (Matte)",
     "description": "Fingerprint-Free Finish",
-    "isSublime": false
+    "isSublime": false,
+    "specifications": {
+      "Installation": "In-wall concealed with 86 back box",
+      "Operating Temperature": "-5~45°C",
+      "Operating Humidity": "5~90%",
+      "Interface": "L out 1 2 3. Lin, N",
+      "Power Supply": "AC 100-240V ~ 50/60Hz",
+      "Static Consumption": "<0.6W",
+      "Maximum Overload": "Resistive load 500W; Capacitive load 200VA",
+      "Radio Protocol": "CoSS",
+      "Signal Range (open field)": "200m(CoSS)",
+      "Color": "Grey frame with black glass/ grey frame with; white glass/ white frame with white glass",
+      "Dimension": "Outside the wall : 86*86*11mm; Whole; product: 86*86*36mm",
+      "Casing": "PC+ABS"
+    }
   },
   {
     "category": "Lighting",
@@ -312,7 +838,28 @@
     "alt": "BLEND Switch PRO",
     "name": "BLEND Switch PRO",
     "description": "Neutral-Free Option",
-    "isSublime": false
+    "isSublime": false,
+    "specifications": {
+      "Product": "BLEND Switch PRO (No Neutral)",
+      "Color": "White/Gray/Black",
+      "Dimensions": "86*86*36mm",
+      "Casing": "Bottom Cover: PC; Top Cover: ABS+PC",
+      "Wiring": "Live wire access, 1st line live wire exit, 2nd line live wire exit, 3rd line live wire exit",
+      "Control Unit": "16A magnetic latching relay",
+      "Operating Temperature": "-5~45°C",
+      "Operating Humidity": "5~90%",
+      "Power Supply": "90V-250V AC, 5V-30V DC",
+      "Power Consumption": "<1mW",
+      "Maximum Overload": "Resistive load: 500W per channel; Inductive/Capacitive load: 200W per channel",
+      "Indicator": "16Milion colors, brightness adjusted",
+      "Radio Protocol": "CoSS",
+      "Range (Open Field)": "200m",
+      "Dimension": "86*86*36mm",
+      "Material": "Bottom Cover: PC; Top Cover: ABS+PC",
+      "Installation": "In-wall concealed with 86 back box",
+      "Battery Type": "CR123A",
+      "Range(Open field)": "200m"
+    }
   },
   {
     "category": "Lighting",
@@ -321,7 +868,23 @@
     "alt": "Smart Switch Air",
     "name": "Smart Switch Air",
     "description": "Thinnest Smart Switch",
-    "isSublime": false
+    "isSublime": false,
+    "specifications": {
+      "Color": "White",
+      "Dimension": "Outside the wall: 86*86*8mm; Whole product: 86*86*34mm",
+      "Casing": "PC",
+      "Installation": "In-wall concealed with 86 back box",
+      "Operating Temperature": "-5℃～45°C",
+      "Operating Humidity": "5~90％",
+      "Wiring": "L out 1 2 3 4, L in, N",
+      "Power Supply": "AC 110-240V~50/60Hz",
+      "Static Consumption": "<2.5W",
+      "Maximum Overload": "Resistive load 500W; Capacitive load 200VA",
+      "Radio Protocol": "CoSS",
+      "Signal Range (Open Field)": "200m",
+      "Ways": "4",
+      "Buttons": "8"
+    }
   },
   {
     "category": "Lighting",
@@ -330,7 +893,22 @@
     "alt": "Triac Dimmer Switch",
     "name": "Triac Dimmer Switch",
     "description": "Precise Light Control",
-    "isSublime": false
+    "isSublime": false,
+    "specifications": {
+      "Radio Protocol": "CoSS",
+      "Signal Range": "200m (open field)",
+      "Color": "White Frame Black Glass",
+      "Dimension": "Outside the wall:86*86*28mm, Whole product:86*86*53mm",
+      "Casing": "Panel: Glass, Top cover: ABS+PC, Base: PC, Knob: Anodized aluminum alloy",
+      "Weight": "135g",
+      "Installation": "In-wall concealed with 86 back box",
+      "Operating Temperature": "-5~45℃",
+      "Operating Humidity": "5~90%",
+      "Interface": "L out, L in, N",
+      "Power Supply": "AC 100-240V～50/60Hz",
+      "Static Consumption": "<0.6W",
+      "Maximum Overload": "Resistive load 350W，Capacitive load 200VA"
+    }
   },
   {
     "category": "Lighting",
@@ -339,7 +917,8 @@
     "alt": "Dimmer &amp; Motion Sensor Switch",
     "name": "Dimmer &amp; Motion Sensor Switch",
     "description": "Motion Meets Light",
-    "isSublime": false
+    "isSublime": false,
+    "specifications": {}
   },
   {
     "category": "Lighting",
@@ -348,7 +927,20 @@
     "alt": "Nature Switch L",
     "name": "Nature Switch L",
     "description": "Perfect 120 Fit",
-    "isSublime": false
+    "isSublime": false,
+    "specifications": {
+      "Radio Protocol": "CoSS",
+      "Signal Range": "200m (open field)",
+      "Dimension": "Outside the wall:70*120*11mm, Whole product:70*120*37mm",
+      "Casing": "PC+ABS",
+      "Installation": "In-wall concealed with 120 back box",
+      "Operating Temperature": "-5~45℃",
+      "Operating Humidity": "5~90%",
+      "Interface": "L out 1 2 3, L in, N",
+      "Power Supply": "AC 100-240V～50/60Hz",
+      "Static Consumption": "<0.6W",
+      "Maximum Overload": "Resistive load 500W, Capacitive load 200VA"
+    }
   },
   {
     "category": "Lighting",
@@ -357,7 +949,27 @@
     "alt": "Polar Switch",
     "name": "Polar Switch",
     "description": "Smart 120 Switch",
-    "isSublime": false
+    "isSublime": false,
+    "specifications": {
+      "for Single Live Version Product": "Polar Switch (Single Live)",
+      "Wiring": "Live+Neutral",
+      "Radio Protocol": "CoSS",
+      "Signal Range": "200m (open field)",
+      "Way": "1/2/3 ways for choice",
+      "Weight": "1way-121g, 2 ways-127g, 3 ways-133g",
+      "Dimension": "120*70*35mm",
+      "Casing": "Bottom Cover:PC, Top Cover:ABS+PC",
+      "Control Unit": "16A magnetic latching relay",
+      "Operating Temperature": "-5~45℃",
+      "Operating Humidity": "5~90％",
+      "Power Supply": "AC 100-240V 50/60Hz",
+      "Static Consumption": "＜0.6W",
+      "Maximum Overload": "Resistive load 500W (one way）Capacitive/Reductive load 200W (one way)",
+      "Battery Type": "CR123A",
+      "Battery Lfie": "5 years",
+      "Product": "Polar Switch (Live & Neutral)",
+      "Ways": "1/2/3 ways"
+    }
   },
   {
     "category": "Lighting",
@@ -366,7 +978,20 @@
     "alt": "CUBE Clicker",
     "name": "CUBE Clicker",
     "description": "Wire-Free Control",
-    "isSublime": false
+    "isSublime": false,
+    "specifications": {
+      "Radio Protocol": "CoSS",
+      "Signal Range": "100m (open field)",
+      "Dimension": "38.4*38.4*14.6mm",
+      "Weight": "20g",
+      "Casing": "ABS+PC",
+      "Operating Temperature": "-5~45℃",
+      "Operating Humidity": "5~90%",
+      "Power Supply": "1 Battery CR2450, 3V",
+      "Battery Life": "Up to 1 year",
+      "Button": "Control button, pairing button",
+      "Indicator": "LED"
+    }
   },
   {
     "category": "Lighting",
@@ -375,7 +1000,20 @@
     "alt": "Nature Switch (Heavy Duty)",
     "name": "Nature Switch (Heavy Duty)",
     "description": "High-Power Control",
-    "isSublime": false
+    "isSublime": false,
+    "specifications": {
+      "Radio Protocol": "CoSS",
+      "Signal Range": "200m (open field)",
+      "Color": "White/Gray Frame Black Glass",
+      "Dimension": "Outside the wall:86*86*11mmWhole product:86*86*37.5mm",
+      "Casing": "Flameresistant PC",
+      "Installation": "In-wall concealed with 86 back box",
+      "Operating Temperature": "-5~45℃",
+      "Operating Humidity": "5~90%",
+      "Interface": "L in, L out, N in, N out, Earth",
+      "Indicator": "Customizable RGB LED icon",
+      "Power Supply": "AC 100-240V~ 20A"
+    }
   },
   {
     "category": "Lighting",
@@ -384,7 +1022,23 @@
     "alt": "CUBE Switch Module",
     "name": "CUBE Switch Module",
     "description": "Turn Smart Instantly",
-    "isSublime": false
+    "isSublime": false,
+    "specifications": {
+      "Control Unit": "8A magnetic latching relay (one way)",
+      "Size": "42*32*16mm",
+      "Weight": "1 way-20g, 2 ways-25g",
+      "Radio Protocol": "CoSS",
+      "Signal Range": "100m (open field)",
+      "Operating Temperature": "-5~45℃",
+      "Operating Humidity": "5~90%",
+      "Power Supply": "AC 100-240V 50/60Hz",
+      "Static Consumption": "＜0.3W",
+      "Maximum Overload": "Resistive load 300w per channel, inductive/capacitive lead:150w per channel",
+      "Indicator": "LED",
+      "Button": "Pairing button",
+      "Wiring": "Live+Neutral",
+      "Casing": "Flameresistant PC"
+    }
   },
   {
     "category": "Lighting",
@@ -393,7 +1047,24 @@
     "alt": "CUBE Switch Module PRO",
     "name": "CUBE Switch Module PRO",
     "description": "Upgrade Switch Fast",
-    "isSublime": false
+    "isSublime": false,
+    "specifications": {
+      "Control Unit": "16A Magnetic latching relay",
+      "Size": "47*44*22mm",
+      "Weight": "50g",
+      "Ways": "3",
+      "Radio Protocol": "CoSS",
+      "Signal Range": "100m (open field)",
+      "Operating Temperature": "-5~45℃",
+      "Operating Humidity": "5~90%",
+      "Power Supply": "AC 100-240V 50/60Hz",
+      "Static Consumption": "＜0.3W",
+      "Maximum Overload": "Resistive load 300w per channel, inductive/capacitive lead:150w per channel",
+      "Indicator": "LED",
+      "Button": "Pairing button",
+      "Wiring": "Live+Neutral",
+      "Casing": "Flameresistant PC"
+    }
   },
   {
     "category": "Lighting",
@@ -402,7 +1073,22 @@
     "alt": "DALI Controller",
     "name": "DALI Controller",
     "description": "Seamless DALI Integration",
-    "isSublime": false
+    "isSublime": false,
+    "specifications": {
+      "Radio Protocol": "CoSS",
+      "Signal Range": "100m (open field)",
+      "Operating Temperature": "-5~45℃",
+      "Operating Humidity": "5~90%",
+      "Installation": "Recessed installation in maintenance, openings/inaccessible areas",
+      "Operating Voltage": "DC 12V",
+      "Standby Power Consumption": "<1.5W",
+      "Supported DALI Devices": "64 devices max",
+      "Supported DALI Scenes": "16 scenes max",
+      "Supported DALI Groups": "16 groups max",
+      "Dimension": "83.6*47.0*22.3mm (L*W*H)",
+      "Weight": "ABS",
+      "Casing": "50g±1"
+    }
   },
   {
     "category": "Lighting",
@@ -411,7 +1097,20 @@
     "alt": "CV Dimming Controller (CoSS)",
     "name": "CV Dimming Controller (CoSS)",
     "description": "Smart LED Dimmer",
-    "isSublime": false
+    "isSublime": false,
+    "specifications": {
+      "Radio Protocol": "CoSS",
+      "Signal Range": "100m (open field)",
+      "Casing": "PC",
+      "Dimensions": "88*38*22mm",
+      "Operating Temperature": "-5~45℃",
+      "Operating Humidity": "0~90%",
+      "Input Voltage": "DC12-48V",
+      "Output Voltage": "Same as input voltage",
+      "Port": "DCin(+)、GND、LED+、LED-C、LED-W",
+      "Maximum Load Current": "6.25A",
+      "Static Power": "<0.2W"
+    }
   },
   {
     "category": "Shading",
@@ -420,7 +1119,21 @@
     "alt": "Silent Track Curtain Motor",
     "name": "Silent Track Curtain Motor",
     "description": "Silent Smart Curtains",
-    "isSublime": false
+    "isSublime": false,
+    "specifications": {
+      "Model": "BCM500DS",
+      "Casing": "Aluminum Alloy",
+      "Dimension": "50mm*55mm*315mm",
+      "Rated Torque": "1.2 N.m",
+      "Moving Speed": "12cm/s",
+      "Power Consumption": "40W",
+      "Power Supply": "AC100-240V 50/60Hz",
+      "Maximal Load": "50Kg",
+      "Ingress Protection": "IP20",
+      "Insulation Class": "CLASS F",
+      "Signal Range": "200m (open field )",
+      "Radio Protocol": "CoSS"
+    }
   },
   {
     "category": "Shading",
@@ -429,7 +1142,28 @@
     "alt": "Smart Curtain Motor",
     "name": "Smart Curtain Motor",
     "description": "Precise Curtain Control",
-    "isSublime": false
+    "isSublime": false,
+    "specifications": {
+      "Model Number": "LS133WH",
+      "Moving Speed": "14cm/s",
+      "Rated Torque": "1.2Nm",
+      "Operating Temperature": "-5~45℃",
+      "Operating Humidity": "5~90%",
+      "Ingress Protection": "IP40",
+      "Power Supply": "AC 100V-240V 50/60Hz",
+      "Power Consumption": "13W",
+      "Power Cable Length": "125cm",
+      "Interface": "Serial port, Weak Current switch interface",
+      "Indicator": "LED",
+      "Maximal Track Length": "8m",
+      "Maximal Load": "50Kg",
+      "Radio Protocol": "CoSS",
+      "Signal Range（Open Field）": "100m",
+      "Dimensions": "365*60*50mm",
+      "Weight": "1.3KG",
+      "Casing": "Aircraft aluminum",
+      "Button": "Reset/Receiver pairing button, Smart station pairing button"
+    }
   },
   {
     "category": "Shading",
@@ -438,7 +1172,21 @@
     "alt": "Smart Curtain Motor V2",
     "name": "Smart Curtain Motor V2",
     "description": "Stable and Flexible",
-    "isSublime": false
+    "isSublime": false,
+    "specifications": {
+      "Model Number": "MP60",
+      "Rated Voltage": "AC100-240V 50/60Hz",
+      "Weight-bearing Overload": "40Kg",
+      "Levels Of Protection": "IP41",
+      "Insulation Grade": "CLASS F",
+      "Accreditation": "CE/CCC/ROSH",
+      "Dimension": "50.6mm*60mm*275mm",
+      "Casing": "Alufer",
+      "Rating Torque": "1.5 N.m",
+      "Unloaded Speed": "75(factory default)/85/95rpm",
+      "Radio Protocol": "CoSS",
+      "Signal Range(Open Field)": "200m"
+    }
   },
   {
     "category": "Shading",
@@ -447,7 +1195,21 @@
     "alt": "DC Tubular Motor (V2)",
     "name": "DC Tubular Motor (V2)",
     "description": "Quiet Blind Motor",
-    "isSublime": false
+    "isSublime": false,
+    "specifications": {
+      "规格参数 Model Number": "TP35-5/26EHU",
+      "Installation": "In-wall concealed with 86 back box",
+      "Operating Temperature": "-15℃-55°C",
+      "Operating Humidity": "5~75％",
+      "Interface": "Live, Neutral, Curtain open, Curtain",
+      "Static Consumption": "AC 100-240V 50/60Hz",
+      "Maximum Overload": "<1.5W",
+      "Dimensions": "36.4*540.5mm",
+      "Casing": "Aluminum alloys",
+      "Radio Protocol": "CoSS",
+      "Signal Range (Open Field)": "200m",
+      "Insulation Class": "CLASS F"
+    }
   },
   {
     "category": "Shading",
@@ -456,7 +1218,22 @@
     "alt": "BLEND Curtain Controller PRO",
     "name": "BLEND Curtain Controller PRO",
     "description": "Curtain Control Switch",
-    "isSublime": false
+    "isSublime": false,
+    "specifications": {
+      "Model Number": "LS240-WCN、LS240-GCN",
+      "Installation": "In-wall concealed with 86 back box",
+      "Operating Temperature": "-5~45°C",
+      "Operating Humidity": "5~90%",
+      "Interface": "Live, Neutral, Curtain open, Curtain close",
+      "Power Supply": "AC 100-240V 50/60Hz",
+      "Static Consumption": "<1.5W",
+      "Maximum Overload": "200W",
+      "Color": "White/Gray",
+      "Dimensions": "86*86*36.5mm",
+      "Casing": "Panel: ABS+PC, Control Accessory: PC",
+      "Radio Protocol": "CoSS",
+      "Range(Open field)": "200m"
+    }
   },
   {
     "category": "HVAC",
@@ -465,7 +1242,28 @@
     "alt": "Nature Mini PRO (Thermostat)",
     "name": "Nature Mini PRO (Thermostat)",
     "description": "Temperature Control Hub",
-    "isSublime": false
+    "isSublime": false,
+    "specifications": {
+      "Model Number": "LS268-WT1/GT1",
+      "Installation": "In-wall concealed with 86 back box",
+      "Operating Temperature": "-5~45℃",
+      "Operating Humidity": "5~90%",
+      "Network": "Wi-Fi 2.4GHz/5GHz",
+      "Interface": "Low, Med, High, Val1, Val2, Live, Neutral",
+      "Screen": "4 inch",
+      "Resolution": "480*480",
+      "Operation System": "Linux",
+      "Power Supply": "AC 100-240V 50/60Hz",
+      "Speaker": "Yes",
+      "Color": "White/Gray",
+      "Dimension": "Outside the wall: 86*86*11mm; Whole product: 86*86*36mm",
+      "Casing": "Flameresistant PC",
+      "Net Weight": "156.8g(1 way) / 165.3g(2 way) / 173.9g(3 way)",
+      "Gross Weight": "226.1g(1 way) / 234.2g(2 way) / 242.8g(3 way)",
+      "Radio Protocol": "CoSS, ZigBee, Wi-Fi",
+      "Signal Range(Open Field)": "200m",
+      "Controllable Devices": "Switches, lights, curtain motors, tubular motors, underfloor thermostats, fan coil thermostat, air conditioner gateways, electrical appliances(via SPOT-universal infrared controllers), etc."
+    }
   },
   {
     "category": "HVAC",
@@ -474,7 +1272,21 @@
     "alt": "Nature Thermostat (24V System)",
     "name": "Nature Thermostat (24V System)",
     "description": "Easy HVAC Control",
-    "isSublime": false
+    "isSublime": false,
+    "specifications": {
+      "Model Number": "LS220-WT2/LS220-GT2",
+      "Installation": "In-wall concealed with 86 back box",
+      "Operating Temperature": "-5~45℃",
+      "Operating Humidity": "5~90%",
+      "Interface": "Y, W, G, C, R",
+      "Screen": "LCD",
+      "Power Supply": "AC24V",
+      "Radio Protocol": "CoSS",
+      "Signal Range (Open Field)": "200m",
+      "Color": "White Frame White Glass; Gray Frame Black Glass",
+      "Dimension": "Outside the wall: 86*86*11mm; Whole product: 86*86*36mm",
+      "Casing": "Flameresistant PC"
+    }
   },
   {
     "category": "HVAC",
@@ -483,7 +1295,26 @@
     "alt": "Smart Central Air-conditioning Gateway",
     "name": "Smart Central Air-conditioning Gateway",
     "description": "Intelligent Climate Hub",
-    "isSublime": false
+    "isSublime": false,
+    "specifications": {
+      "Model Number": "LS175",
+      "Operating Temperature": "-20~85℃",
+      "Operating Humidity": "<80%",
+      "Power Supply": "DC 12V",
+      "Static Consumption": "<1.2W",
+      "Indicator": "Indicator",
+      "Display": "Backlit display",
+      "Interface": "Control output*14, DC power in, RJ45",
+      "Button": "Dial switch*2, Set, Up, Down",
+      "Radio Protocol": "CoSS",
+      "Signal Range (Open Field)": "100m",
+      "Mode": "Cooling / heating / ventilation / dehumidification",
+      "Temperature Range": "19-30℃",
+      "Set Stepping": "1℃",
+      "Dimensions": "105*86*58mm",
+      "Weight": "200g",
+      "Casing": "Flameresitant ABS"
+    }
   },
   {
     "category": "Entertainment",
@@ -492,7 +1323,26 @@
     "alt": "SPOT-Universal Remote Controller",
     "name": "SPOT-Universal Remote Controller",
     "description": "IR Device Integration",
-    "isSublime": false
+    "isSublime": false,
+    "specifications": {
+      "Operating Temperature": "-5~45℃",
+      "Operating Humidity": "5~90％",
+      "Power Supply": "DC 5V",
+      "Interfaces": "Micro USB power supply USB output",
+      "Button": "Configuration button",
+      "Indicator": "16 million color",
+      "Remote Range": "360°, 5-10m",
+      "Remote Frequency": "38KHz",
+      "Features": "App control, voice control, code library match, code library update, remote control learning",
+      "Model Number": "WiFi Series: LS136(CoSS); CoSS Series: LS136 / LS152(Japan)",
+      "Power Consumption": "WiFi Series: ≤1.3W; CoSS Series: ≤1W",
+      "Radio Protocol": "WiFi Series: Wi-Fi 2.4GHz; CoSS Series: CoSS",
+      "Signal Range（Open Field）": "WiFi Series: 50m; CoSS Series: 100m",
+      "Dimensions": "128*128*53mm",
+      "Weight": "260g",
+      "Casing": "ABS",
+      "Color": "Ivory white"
+    }
   },
   {
     "category": "Entertainment",
@@ -501,7 +1351,24 @@
     "alt": "SPOT Mini",
     "name": "SPOT Mini",
     "description": "Smart IR Hub",
-    "isSublime": false
+    "isSublime": false,
+    "specifications": {
+      "Model Number": "LS251WH/LS252WH(Japan)",
+      "Installation": "Wall mount/plug and play",
+      "Operating Temperature": "-5~45℃",
+      "Operating Humidity": "5~90%",
+      "Interface": "Micro USB",
+      "Button": "Paring button",
+      "Power Supply": "DC 5V/2A",
+      "Power Consumption": "<1W",
+      "Remote Frequency": "38KHz",
+      "Remote Range": "Vertical Direction：180°Horizontal Direction：360° Distance: 5-12m",
+      "Dimension": "φ79.5*25mm",
+      "Casing": "PC, ABS",
+      "Net Weight": "70g",
+      "Radio Protocol": "CoSS",
+      "Signal Range(Open Field)": "200m"
+    }
   },
   {
     "category": "Sublime Series",
@@ -510,7 +1377,8 @@
     "alt": "SUBLIME Classic in Dune Gold",
     "name": "Classic",
     "description": "86 × 86mm · Dune Gold · Outlets, USB and Ethernet",
-    "isSublime": true
+    "isSublime": true,
+    "specifications": {}
   },
   {
     "category": "Sublime Series",
@@ -519,7 +1387,8 @@
     "alt": "SUBLIME Standard in Hammered Dawn Gold",
     "name": "Standard",
     "description": "86 × 150mm · Hammered Dawn Gold · Multi-standard back box adapter",
-    "isSublime": true
+    "isSublime": true,
+    "specifications": {}
   },
   {
     "category": "Sublime Series",
@@ -528,7 +1397,8 @@
     "alt": "SUBLIME Pro 6 in Feather Moonlight Silver",
     "name": "Pro 6",
     "description": "172 × 150mm · Feather Moonlight Silver · Button, text and screen interaction",
-    "isSublime": true
+    "isSublime": true,
+    "specifications": {}
   },
   {
     "category": "Sublime Series",
@@ -537,7 +1407,8 @@
     "alt": "SUBLIME Pro 8 in Shining Obsidian Black",
     "name": "Pro 8",
     "description": "172 × 150mm · Shining Obsidian Black · Button, text and screen interaction",
-    "isSublime": true
+    "isSublime": true,
+    "specifications": {}
   },
   {
     "category": "Sublime Series",
@@ -546,7 +1417,8 @@
     "alt": "SUBLIME Max in Silk Imperial Gold",
     "name": "Max",
     "description": "258 × 150mm · Silk Imperial Gold · Lighting, shading, HVAC and scenes",
-    "isSublime": true
+    "isSublime": true,
+    "specifications": {}
   },
   {
     "category": "Sublime Series",
@@ -555,7 +1427,8 @@
     "alt": "SUBLIME Ultra in Oil Painting Patina Jade",
     "name": "Ultra",
     "description": "316 × 170mm · Oil Painting Patina Jade · SUBLIME OS, offline voice and intercom",
-    "isSublime": true
+    "isSublime": true,
+    "specifications": {}
   },
   {
     "category": "Sublime Series",
@@ -564,7 +1437,8 @@
     "alt": "SUBLIME Slider Pro in Damascus Obsidian Black",
     "name": "Slider Pro",
     "description": "172 × 86mm · Damascus Obsidian Black · Buttons and slider",
-    "isSublime": true
+    "isSublime": true,
+    "specifications": {}
   },
   {
     "category": "Sublime Series",
@@ -573,7 +1447,8 @@
     "alt": "SUBLIME Bedside Pro in Shining Obsidian Black",
     "name": "Bedside Pro",
     "description": "316 × 86mm · Shining Obsidian Black · Eight buttons and a 5-pin layout",
-    "isSublime": true
+    "isSublime": true,
+    "specifications": {}
   },
   {
     "category": "Sublime Series",
@@ -582,6 +1457,7 @@
     "alt": "SUBLIME The Line in Mirror Steel Radiant Gold",
     "name": "The Line",
     "description": "316 × 42mm · Mirror Steel Radiant Gold · 3.5mm profile for wall, desk or cabinetry",
-    "isSublime": true
+    "isSublime": true,
+    "specifications": {}
   }
 ]

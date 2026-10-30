@@ -82,6 +82,7 @@ import { isFirebaseConfigured, getProductsFromDb } from "./firebase-config.js";
                   class="product-card"
                   data-category="${escapeAttr(p.category || 'Central Control')}"
                   data-name="${escapeAttr((p.searchName || p.name || '').toLowerCase())}"
+                  data-specs="${escapeAttr(JSON.stringify(p.specifications || {}))}"
                 >
                   <div class="product-art">
                     <img
@@ -385,26 +386,37 @@ import { isFirebaseConfigured, getProductsFromDb } from "./firebase-config.js";
           modalDesc.textContent = p ? p.textContent : "";
         }
         if (modalSpecifications) {
-          const title = card.querySelector("h3");
-          const productName = title ? title.textContent.trim() : "";
-          const specificationName =
-            productName === "Indoor Camera"
-              ? "Indoor Camera (5MP)"
-              : productName;
-          const specificationData = Array.isArray(
-            window.productSpecifications
-          )
-            ? window.productSpecifications.find(
-                (item) => item.title === specificationName
-              )
-            : window.productSpecifications &&
-              window.productSpecifications[specificationName];
-          const specifications = specificationData
-            ? specificationData.specifications
-            : null;
+          let specifications = null;
+          if (card.dataset.specs) {
+            try {
+              const parsed = JSON.parse(card.dataset.specs);
+              if (parsed && Object.keys(parsed).length > 0) {
+                specifications = parsed;
+              }
+            } catch (err) {}
+          }
+          if (!specifications) {
+            const title = card.querySelector("h3");
+            const productName = title ? title.textContent.trim() : "";
+            const specificationName =
+              productName === "Indoor Camera"
+                ? "Indoor Camera (5MP)"
+                : productName;
+            const specificationData = Array.isArray(
+              window.productSpecifications
+            )
+              ? window.productSpecifications.find(
+                  (item) => item.title === specificationName
+                )
+              : window.productSpecifications &&
+                window.productSpecifications[specificationName];
+            specifications = specificationData
+              ? specificationData.specifications
+              : null;
+          }
           const specificationList = modalSpecifications.querySelector("dl");
 
-          if (specificationList && specifications) {
+          if (specificationList && specifications && Object.keys(specifications).length > 0) {
             specificationList.replaceChildren();
             Object.entries(specifications).forEach(([label, value]) => {
               const term = document.createElement("dt");
