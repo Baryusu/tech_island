@@ -1,0 +1,587 @@
+[
+  {
+    "category": "Central Control",
+    "searchName": "defed smart station pro",
+    "image": "assets/products/defed-smart-station-pro.webp",
+    "alt": "DEFED Smart Station PRO",
+    "name": "DEFED Smart Station PRO",
+    "description": "Faster. Stronger. Further.",
+    "isSublime": false
+  },
+  {
+    "category": "Central Control",
+    "searchName": "defed smart station",
+    "image": "assets/products/defed-smart-station.webp",
+    "alt": "DEFED Smart Station",
+    "name": "DEFED Smart Station",
+    "description": "Smart Gateway",
+    "isSublime": false
+  },
+  {
+    "category": "Central Control",
+    "searchName": "smart station",
+    "image": "assets/products/smart-station.webp",
+    "alt": "Smart Station",
+    "name": "Smart Station",
+    "description": "Stable Living for Villas",
+    "isSublime": false
+  },
+  {
+    "category": "Central Control",
+    "searchName": "nature",
+    "image": "assets/products/nature.webp",
+    "alt": "Nature",
+    "name": "Nature",
+    "description": "Big Screen Control",
+    "isSublime": false
+  },
+  {
+    "category": "Central Control",
+    "searchName": "nature 7 pro",
+    "image": "assets/products/nature-7-pro.webp",
+    "alt": "Nature 7 PRO",
+    "name": "Nature 7 PRO",
+    "description": "All-in-One Panel",
+    "isSublime": false
+  },
+  {
+    "category": "Central Control",
+    "searchName": "nature x pro",
+    "image": "assets/products/nature-x-pro.webp",
+    "alt": "Nature X PRO",
+    "name": "Nature X PRO",
+    "description": "Smart Desktop Hub",
+    "isSublime": false
+  },
+  {
+    "category": "Central Control",
+    "searchName": "nature mini pro",
+    "image": "assets/products/nature-mini-pro.webp",
+    "alt": "Nature Mini PRO",
+    "name": "Nature Mini PRO",
+    "description": "Compact &amp; Complete",
+    "isSublime": false
+  },
+  {
+    "category": "Central Control",
+    "searchName": "nature mini pro poe",
+    "image": "assets/products/nature-mini-pro-poe.webp",
+    "alt": "Nature Mini PRO (PoE)",
+    "name": "Nature Mini PRO (PoE)",
+    "description": "PoE Control Center",
+    "isSublime": false
+  },
+  {
+    "category": "Central Control",
+    "searchName": "nature mini l",
+    "image": "assets/products/nature-mini-l.webp",
+    "alt": "Nature Mini L",
+    "name": "Nature Mini L",
+    "description": "120mm Smart Panel",
+    "isSublime": false
+  },
+  {
+    "category": "Security",
+    "searchName": "smart door lock c200",
+    "image": "assets/products/smart-door-lock-c200.webp",
+    "alt": "Smart Door Lock C200",
+    "name": "Smart Door Lock C200",
+    "description": "Multi-Access",
+    "isSublime": false
+  },
+  {
+    "category": "Security",
+    "searchName": "outdoor camera",
+    "image": "assets/products/outdoor-camera.webp",
+    "alt": "Outdoor Camera",
+    "name": "Outdoor Camera",
+    "description": "Home Guardian",
+    "isSublime": false
+  },
+  {
+    "category": "Security",
+    "searchName": "indoor camera",
+    "image": "assets/products/indoor-camera.webp",
+    "alt": "Indoor Camera",
+    "name": "Indoor Camera",
+    "description": "5MP HD Camera",
+    "isSublime": false
+  },
+  {
+    "category": "Security",
+    "searchName": "defed motion sensor",
+    "image": "assets/products/defed-motion-sensor.webp",
+    "alt": "DEFED Motion Sensor",
+    "name": "DEFED Motion Sensor",
+    "description": "High-Security Detector",
+    "isSublime": false
+  },
+  {
+    "category": "Security",
+    "searchName": "defed indoor siren",
+    "image": "assets/products/defed-indoor-siren.webp",
+    "alt": "DEFED Indoor Siren",
+    "name": "DEFED Indoor Siren",
+    "description": "Indoor Safety Alarm",
+    "isSublime": false
+  },
+  {
+    "category": "Security",
+    "searchName": "defed door window sensor",
+    "image": "assets/products/defed-door-window-sensor.webp",
+    "alt": "DEFED Door/Window Sensor",
+    "name": "DEFED Door/Window Sensor",
+    "description": "Door Window Guardian",
+    "isSublime": false
+  },
+  {
+    "category": "Security",
+    "searchName": "defed key fob",
+    "image": "assets/products/defed-key-fob.webp",
+    "alt": "DEFED Key Fob",
+    "name": "DEFED Key Fob",
+    "description": "Control With Ease",
+    "isSublime": false
+  },
+  {
+    "category": "Security",
+    "searchName": "environmental sensor gas co",
+    "image": "assets/products/environmental-sensor-gas-co2.webp",
+    "alt": "Environmental Sensor (Gas/CO₂)",
+    "name": "Environmental Sensor (Gas/CO₂)",
+    "description": "Home Safety Alarm",
+    "isSublime": false
+  },
+  {
+    "category": "Security",
+    "searchName": "independent photoelectric smoke detector zigbee",
+    "image": "assets/products/independent-photoelectric-smoke-detector-zigbee.webp",
+    "alt": "Independent Photoelectric Smoke Detector (ZigBee)",
+    "name": "Independent Photoelectric Smoke Detector (ZigBee)",
+    "description": "Optical Smoke Sensor",
+    "isSublime": false
+  },
+  {
+    "category": "Security",
+    "searchName": "household gas detector zigbee",
+    "image": "assets/products/household-gas-detector-zigbee.webp",
+    "alt": "Household Gas Detector (ZigBee)",
+    "name": "Household Gas Detector (ZigBee)",
+    "description": "Smart Gas Monitor",
+    "isSublime": false
+  },
+  {
+    "category": "Security",
+    "searchName": "water leak sensor",
+    "image": "assets/products/water-leak-sensor.webp",
+    "alt": "Water Leak Sensor",
+    "name": "Water Leak Sensor",
+    "description": "24/7 Water Monitor",
+    "isSublime": false
+  },
+  {
+    "category": "Sensor",
+    "searchName": "motion sensor pro",
+    "image": "assets/products/motion-sensor-pro.webp",
+    "alt": "Motion Sensor PRO",
+    "name": "Motion Sensor PRO",
+    "description": "Tiny Motion Detector",
+    "isSublime": false
+  },
+  {
+    "category": "Sensor",
+    "searchName": "cube door window sensor",
+    "image": "assets/products/cube-door-window-sensor.webp",
+    "alt": "CUBE Door/Window Sensor",
+    "name": "CUBE Door/Window Sensor",
+    "description": "Open/Close Tracker",
+    "isSublime": false
+  },
+  {
+    "category": "Sensor",
+    "searchName": "cube environmental sensor",
+    "image": "assets/products/cube-environmental-sensor.webp",
+    "alt": "CUBE Environmental Sensor",
+    "name": "CUBE Environmental Sensor",
+    "description": "Pleasant Home Environment",
+    "isSublime": false
+  },
+  {
+    "category": "Sensor",
+    "searchName": "human presence sensor radar detector zigbee",
+    "image": "assets/products/human-presence-sensor-radar-detector-zigbee.webp",
+    "alt": "Human Presence Sensor (Radar Detector, ZigBee)",
+    "name": "Human Presence Sensor (Radar Detector, ZigBee)",
+    "description": "Easy Ceiling Installation",
+    "isSublime": false
+  },
+  {
+    "category": "Sensor",
+    "searchName": "in wall air quality detector zigbee",
+    "image": "assets/products/in-wall-air-quality-detector-zigbee.webp",
+    "alt": "In-wall Air Quality Detector (ZigBee)",
+    "name": "In-wall Air Quality Detector (ZigBee)",
+    "description": "Live Climate Data",
+    "isSublime": false
+  },
+  {
+    "category": "Energy Saving",
+    "searchName": "general controller",
+    "image": "assets/products/general-controller.webp",
+    "alt": "General Controller",
+    "name": "General Controller",
+    "description": "Third-Party Integration",
+    "isSublime": false
+  },
+  {
+    "category": "Energy Saving",
+    "searchName": "rs485 converter",
+    "image": "assets/products/rs485-converter.webp",
+    "alt": "RS485 Converter",
+    "name": "RS485 Converter",
+    "description": "RS485 Integration Hub",
+    "isSublime": false
+  },
+  {
+    "category": "Energy Saving",
+    "searchName": "smart plug coss eu fr with monitor energy usage",
+    "image": "assets/products/smart-plug-coss-eu-fr.webp",
+    "alt": "Smart Plug (CoSS EU &amp; FR, with Monitor Energy Usage)",
+    "name": "Smart Plug (CoSS EU &amp; FR, with Monitor Energy Usage)",
+    "description": "Traditional to Smart",
+    "isSublime": false
+  },
+  {
+    "category": "Energy Saving",
+    "searchName": "smart plug zigbee us with monitor energy usage",
+    "image": "assets/products/smart-plug-zigbee-us.webp",
+    "alt": "Smart Plug (ZigBee US, with Monitor Energy Usage)",
+    "name": "Smart Plug (ZigBee US, with Monitor Energy Usage)",
+    "description": "Traditional to Smart",
+    "isSublime": false
+  },
+  {
+    "category": "Energy Saving",
+    "searchName": "smart plug zigbee uk with monitor energy usage",
+    "image": "assets/products/smart-plug-zigbee-uk.webp",
+    "alt": "Smart Plug (ZigBee UK, with Monitor Energy Usage)",
+    "name": "Smart Plug (ZigBee UK, with Monitor Energy Usage)",
+    "description": "Traditional to Smart",
+    "isSublime": false
+  },
+  {
+    "category": "Energy Saving",
+    "searchName": "ha interface adaptor",
+    "image": "assets/products/ha-interface-adaptor.webp",
+    "alt": "HA Interface Adaptor",
+    "name": "HA Interface Adaptor",
+    "description": "Dry Contact Integration",
+    "isSublime": false
+  },
+  {
+    "category": "Lighting",
+    "searchName": "blend switch pro metal",
+    "image": "assets/products/blend-switch-pro-metal.webp",
+    "alt": "BLEND Switch PRO (Metal)",
+    "name": "BLEND Switch PRO (Metal)",
+    "description": "Elegant Smart Switch",
+    "isSublime": false
+  },
+  {
+    "category": "Lighting",
+    "searchName": "nature switch",
+    "image": "assets/products/nature-switch.webp",
+    "alt": "Nature Switch",
+    "name": "Nature Switch",
+    "description": "Red Dot Winner",
+    "isSublime": false
+  },
+  {
+    "category": "Lighting",
+    "searchName": "nature switch matte",
+    "image": "assets/products/nature-switch-matte.webp",
+    "alt": "Nature Switch (Matte)",
+    "name": "Nature Switch (Matte)",
+    "description": "Fingerprint-Free Finish",
+    "isSublime": false
+  },
+  {
+    "category": "Lighting",
+    "searchName": "blend switch pro",
+    "image": "assets/products/blend-switch-pro.webp",
+    "alt": "BLEND Switch PRO",
+    "name": "BLEND Switch PRO",
+    "description": "Neutral-Free Option",
+    "isSublime": false
+  },
+  {
+    "category": "Lighting",
+    "searchName": "smart switch air",
+    "image": "assets/products/smart-switch-air.webp",
+    "alt": "Smart Switch Air",
+    "name": "Smart Switch Air",
+    "description": "Thinnest Smart Switch",
+    "isSublime": false
+  },
+  {
+    "category": "Lighting",
+    "searchName": "triac dimmer switch",
+    "image": "assets/products/triac-dimmer-switch.webp",
+    "alt": "Triac Dimmer Switch",
+    "name": "Triac Dimmer Switch",
+    "description": "Precise Light Control",
+    "isSublime": false
+  },
+  {
+    "category": "Lighting",
+    "searchName": "dimmer motion sensor switch",
+    "image": "assets/products/dimmer-motion-sensor-switch.webp",
+    "alt": "Dimmer &amp; Motion Sensor Switch",
+    "name": "Dimmer &amp; Motion Sensor Switch",
+    "description": "Motion Meets Light",
+    "isSublime": false
+  },
+  {
+    "category": "Lighting",
+    "searchName": "nature switch l",
+    "image": "assets/products/nature-switch-l.webp",
+    "alt": "Nature Switch L",
+    "name": "Nature Switch L",
+    "description": "Perfect 120 Fit",
+    "isSublime": false
+  },
+  {
+    "category": "Lighting",
+    "searchName": "polar switch",
+    "image": "assets/products/polar-switch.webp",
+    "alt": "Polar Switch",
+    "name": "Polar Switch",
+    "description": "Smart 120 Switch",
+    "isSublime": false
+  },
+  {
+    "category": "Lighting",
+    "searchName": "cube clicker",
+    "image": "assets/products/cube-clicker.webp",
+    "alt": "CUBE Clicker",
+    "name": "CUBE Clicker",
+    "description": "Wire-Free Control",
+    "isSublime": false
+  },
+  {
+    "category": "Lighting",
+    "searchName": "nature switch heavy duty",
+    "image": "assets/products/nature-switch-heavy-duty.webp",
+    "alt": "Nature Switch (Heavy Duty)",
+    "name": "Nature Switch (Heavy Duty)",
+    "description": "High-Power Control",
+    "isSublime": false
+  },
+  {
+    "category": "Lighting",
+    "searchName": "cube switch module",
+    "image": "assets/products/cube-switch-module.webp",
+    "alt": "CUBE Switch Module",
+    "name": "CUBE Switch Module",
+    "description": "Turn Smart Instantly",
+    "isSublime": false
+  },
+  {
+    "category": "Lighting",
+    "searchName": "cube switch module pro",
+    "image": "assets/products/cube-switch-module-pro.webp",
+    "alt": "CUBE Switch Module PRO",
+    "name": "CUBE Switch Module PRO",
+    "description": "Upgrade Switch Fast",
+    "isSublime": false
+  },
+  {
+    "category": "Lighting",
+    "searchName": "dali controller",
+    "image": "assets/products/dali-controller.webp",
+    "alt": "DALI Controller",
+    "name": "DALI Controller",
+    "description": "Seamless DALI Integration",
+    "isSublime": false
+  },
+  {
+    "category": "Lighting",
+    "searchName": "cv dimming controller coss",
+    "image": "assets/products/cv-dimming-controller-coss.webp",
+    "alt": "CV Dimming Controller (CoSS)",
+    "name": "CV Dimming Controller (CoSS)",
+    "description": "Smart LED Dimmer",
+    "isSublime": false
+  },
+  {
+    "category": "Shading",
+    "searchName": "silent track curtain motor",
+    "image": "assets/products/silent-track-curtain-motor.webp",
+    "alt": "Silent Track Curtain Motor",
+    "name": "Silent Track Curtain Motor",
+    "description": "Silent Smart Curtains",
+    "isSublime": false
+  },
+  {
+    "category": "Shading",
+    "searchName": "smart curtain motor",
+    "image": "assets/products/smart-curtain-motor.webp",
+    "alt": "Smart Curtain Motor",
+    "name": "Smart Curtain Motor",
+    "description": "Precise Curtain Control",
+    "isSublime": false
+  },
+  {
+    "category": "Shading",
+    "searchName": "smart curtain motor v2",
+    "image": "assets/products/smart-curtain-motor-v2.webp",
+    "alt": "Smart Curtain Motor V2",
+    "name": "Smart Curtain Motor V2",
+    "description": "Stable and Flexible",
+    "isSublime": false
+  },
+  {
+    "category": "Shading",
+    "searchName": "dc tubular motor v2",
+    "image": "assets/products/dc-tubular-motor-v2.webp",
+    "alt": "DC Tubular Motor (V2)",
+    "name": "DC Tubular Motor (V2)",
+    "description": "Quiet Blind Motor",
+    "isSublime": false
+  },
+  {
+    "category": "Shading",
+    "searchName": "blend curtain controller pro",
+    "image": "assets/products/blend-curtain-controller-pro.webp",
+    "alt": "BLEND Curtain Controller PRO",
+    "name": "BLEND Curtain Controller PRO",
+    "description": "Curtain Control Switch",
+    "isSublime": false
+  },
+  {
+    "category": "HVAC",
+    "searchName": "nature mini pro thermostat",
+    "image": "assets/products/nature-mini-pro-thermostat.webp",
+    "alt": "Nature Mini PRO (Thermostat)",
+    "name": "Nature Mini PRO (Thermostat)",
+    "description": "Temperature Control Hub",
+    "isSublime": false
+  },
+  {
+    "category": "HVAC",
+    "searchName": "nature thermostat 24v system",
+    "image": "assets/products/nature-thermostat-24v-system.webp",
+    "alt": "Nature Thermostat (24V System)",
+    "name": "Nature Thermostat (24V System)",
+    "description": "Easy HVAC Control",
+    "isSublime": false
+  },
+  {
+    "category": "HVAC",
+    "searchName": "smart central air conditioning gateway",
+    "image": "assets/products/smart-central-air-conditioning-gateway.webp",
+    "alt": "Smart Central Air-conditioning Gateway",
+    "name": "Smart Central Air-conditioning Gateway",
+    "description": "Intelligent Climate Hub",
+    "isSublime": false
+  },
+  {
+    "category": "Entertainment",
+    "searchName": "spot universal remote controller",
+    "image": "assets/products/spot-universal-remote-controller.webp",
+    "alt": "SPOT-Universal Remote Controller",
+    "name": "SPOT-Universal Remote Controller",
+    "description": "IR Device Integration",
+    "isSublime": false
+  },
+  {
+    "category": "Entertainment",
+    "searchName": "spot mini",
+    "image": "assets/products/spot-mini.webp",
+    "alt": "SPOT Mini",
+    "name": "SPOT Mini",
+    "description": "Smart IR Hub",
+    "isSublime": false
+  },
+  {
+    "category": "Sublime Series",
+    "searchName": "classic",
+    "image": "assets/products/sublime/background-0.webp",
+    "alt": "SUBLIME Classic in Dune Gold",
+    "name": "Classic",
+    "description": "86 × 86mm · Dune Gold · Outlets, USB and Ethernet",
+    "isSublime": true
+  },
+  {
+    "category": "Sublime Series",
+    "searchName": "standard",
+    "image": "assets/products/sublime/background-1.webp",
+    "alt": "SUBLIME Standard in Hammered Dawn Gold",
+    "name": "Standard",
+    "description": "86 × 150mm · Hammered Dawn Gold · Multi-standard back box adapter",
+    "isSublime": true
+  },
+  {
+    "category": "Sublime Series",
+    "searchName": "pro 6",
+    "image": "assets/products/sublime/background-2.webp",
+    "alt": "SUBLIME Pro 6 in Feather Moonlight Silver",
+    "name": "Pro 6",
+    "description": "172 × 150mm · Feather Moonlight Silver · Button, text and screen interaction",
+    "isSublime": true
+  },
+  {
+    "category": "Sublime Series",
+    "searchName": "pro 8",
+    "image": "assets/products/sublime/background-3.webp",
+    "alt": "SUBLIME Pro 8 in Shining Obsidian Black",
+    "name": "Pro 8",
+    "description": "172 × 150mm · Shining Obsidian Black · Button, text and screen interaction",
+    "isSublime": true
+  },
+  {
+    "category": "Sublime Series",
+    "searchName": "max",
+    "image": "assets/products/sublime/background-4.webp",
+    "alt": "SUBLIME Max in Silk Imperial Gold",
+    "name": "Max",
+    "description": "258 × 150mm · Silk Imperial Gold · Lighting, shading, HVAC and scenes",
+    "isSublime": true
+  },
+  {
+    "category": "Sublime Series",
+    "searchName": "ultra",
+    "image": "assets/products/sublime/background-8.webp",
+    "alt": "SUBLIME Ultra in Oil Painting Patina Jade",
+    "name": "Ultra",
+    "description": "316 × 170mm · Oil Painting Patina Jade · SUBLIME OS, offline voice and intercom",
+    "isSublime": true
+  },
+  {
+    "category": "Sublime Series",
+    "searchName": "slider pro",
+    "image": "assets/products/sublime/background-5.webp",
+    "alt": "SUBLIME Slider Pro in Damascus Obsidian Black",
+    "name": "Slider Pro",
+    "description": "172 × 86mm · Damascus Obsidian Black · Buttons and slider",
+    "isSublime": true
+  },
+  {
+    "category": "Sublime Series",
+    "searchName": "bedside pro",
+    "image": "assets/products/sublime/background-6.webp",
+    "alt": "SUBLIME Bedside Pro in Shining Obsidian Black",
+    "name": "Bedside Pro",
+    "description": "316 × 86mm · Shining Obsidian Black · Eight buttons and a 5-pin layout",
+    "isSublime": true
+  },
+  {
+    "category": "Sublime Series",
+    "searchName": "the line",
+    "image": "assets/products/sublime/background-7.webp",
+    "alt": "SUBLIME The Line in Mirror Steel Radiant Gold",
+    "name": "The Line",
+    "description": "316 × 42mm · Mirror Steel Radiant Gold · 3.5mm profile for wall, desk or cabinetry",
+    "isSublime": true
+  }
+]

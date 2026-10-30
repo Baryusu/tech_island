@@ -1,6 +1,8 @@
 "use strict";
 
-(() => {
+import { isFirebaseConfigured, getProductsFromDb } from "./firebase-config.js";
+
+(async () => {
   // --- Header Navigation ---
   const header = document.querySelector(".site-header");
   const menu = document.getElementById("main-nav");
@@ -55,6 +57,89 @@
     updateHeader();
   }
 
+  // --- Dynamic Firebase Products Loading (Optional / Non-breaking) ---
+  const productGrid = document.getElementById("product-grid");
+  const sublimeContainer = document.querySelector(".sublime-products");
+
+  if (isFirebaseConfigured() && productGrid) {
+    try {
+      const dbProducts = await getProductsFromDb();
+      if (dbProducts && dbProducts.length > 0) {
+        // Render standard products
+        const standardList = dbProducts.filter((p) => !p.isSublime);
+        const sublimeList = dbProducts.filter((p) => p.isSublime);
+
+        if (standardList.length > 0) {
+          productGrid.innerHTML = standardList
+            .map((p) => {
+              const src = p.imageUrl || p.image || "";
+              const formattedSrc = (src.startsWith("http") || src.startsWith("data:"))
+                ? src
+                : (src.startsWith("../") ? src : `../${src}`);
+
+              return `
+                <article
+                  class="product-card"
+                  data-category="${escapeAttr(p.category || 'Central Control')}"
+                  data-name="${escapeAttr((p.searchName || p.name || '').toLowerCase())}"
+                >
+                  <div class="product-art">
+                    <img
+                      src="${formattedSrc}"
+                      loading="lazy"
+                      alt="${escapeAttr(p.name || '')}"
+                    />
+                  </div>
+                  <div class="product-info">
+                    <span class="product-category">${escapeHtml(p.category || 'General')}</span>
+                    <h3>${escapeHtml(p.name || '')}</h3>
+                    <p>${escapeHtml(p.description || '')}</p>
+                    <button
+                      type="button"
+                      class="details-btn"
+                      aria-label="View details for ${escapeAttr(p.name || '')}"
+                      data-product="${escapeAttr(p.name || '')}"
+                    >
+                      Explore product <span>↗</span>
+                    </button>
+                  </div>
+                </article>
+              `;
+            })
+            .join("");
+        }
+
+        if (sublimeList.length > 0 && sublimeContainer) {
+          sublimeContainer.innerHTML = sublimeList
+            .map((p) => {
+              const src = p.imageUrl || p.image || "";
+              const formattedSrc = (src.startsWith("http") || src.startsWith("data:"))
+                ? src
+                : (src.startsWith("../") ? src : `../${src}`);
+
+              return `
+                <article class="sublime-product">
+                  <div class="sublime-product-tile sublime-tile-small">
+                    <img
+                      src="${formattedSrc}"
+                      alt="${escapeAttr(p.name || '')}"
+                      loading="lazy"
+                    />
+                  </div>
+                  <h3>${escapeHtml(p.name || '')}</h3>
+                  <p>${escapeHtml(p.description || '')}</p>
+                  <span>LifeSmart Sublime</span>
+                </article>
+              `;
+            })
+            .join("");
+        }
+      }
+    } catch (err) {
+      console.warn("Could not load dynamic products from Firebase, using static HTML fallback:", err);
+    }
+  }
+
   // --- Image Fallbacks ---
   const createPendingPlaceholder = () => {
     const pending = document.createElement("div");
@@ -97,7 +182,6 @@
   const noResults = document.getElementById("no-results");
   const categoryBar = document.querySelector(".category-bar");
   const listHead = document.querySelector(".list-head");
-  const productGrid = document.getElementById("product-grid");
   const sublimeSeries = document.getElementById("sublime-series");
   const sublimeProducts = document.querySelectorAll(".sublime-product");
   const sublimeCategory = "Sublime Series";
@@ -117,7 +201,7 @@
   }
 
   if (productGrid) {
-    const categoryOrder = [
+    const defaultOrder = [
       "Central Control",
       "Lighting",
       "Security",
@@ -127,6 +211,12 @@
       "Energy Saving",
       "Entertainment",
     ];
+    // Include any custom categories added in Admin
+    const customCats = [
+      ...new Set(cards.map((c) => c.dataset.category).filter(Boolean)),
+    ].filter((cat) => !defaultOrder.includes(cat) && cat !== sublimeCategory);
+
+    const categoryOrder = [...defaultOrder, ...customCats];
 
     categoryOrder.forEach((category) => {
       const categoryCards = cards.filter(
@@ -291,5 +381,21 @@
     modal.addEventListener("click", (e) => {
       if (e.target === modal) modal.close();
     });
+  }
+
+  // Helper Sanitizers
+  function escapeHtml(str) {
+    if (!str) return "";
+    return str
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#039;");
+  }
+
+  function escapeAttr(str) {
+    if (!str) return "";
+    return str.replace(/"/g, "&quot;").replace(/'/g, "&#039;");
   }
 })();
