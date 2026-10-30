@@ -469,6 +469,11 @@ import { isFirebaseConfigured, getProductsFromDb } from "./firebase-config.js";
 
   function escapeAttr(str) {
     if (!str) return "";
-    return str.replace(/"/g, "&quot;").replace(/'/g, "&#039;");
+    return String(str)
+      .replace(/&/g, "&amp;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#039;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;");
   }
 })();
