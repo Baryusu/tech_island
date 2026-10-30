@@ -273,6 +273,10 @@ a {
   color: var(--muted);
   margin: 4px 0 0;
 }
+#listing-description {
+  max-width: 620px;
+  line-height: 1.5;
+}
 .search-wrap {
   display: flex;
   align-items: center;
@@ -315,6 +319,13 @@ a {
   margin: 4px 0 0;
   color: var(--muted);
   font-size: 12px;
+}
+.product-section-heading .category-description {
+  max-width: 620px;
+  line-height: 1.5;
+}
+.product-section-heading .category-count {
+  margin-top: 6px;
 }
 .product-section-heading[hidden] {
   display: none;
@@ -516,6 +527,35 @@ dialog::backdrop {
 .modal-inner p {
   color: var(--muted);
   font-size: 14px;
+}
+.modal-specifications {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+}
+.modal-specifications h3 {
+  margin: 0 0 12px;
+  font: normal 24px var(--serif);
+}
+.modal-specifications dl {
+  display: grid;
+  grid-template-columns: minmax(125px, 0.8fr) minmax(0, 1.5fr);
+  margin: 0;
+  font-size: 12px;
+}
+.modal-specifications dt,
+.modal-specifications dd {
+  padding: 9px 0;
+  border-bottom: 1px solid #e8ede5;
+}
+.modal-specifications dt {
+  color: var(--forest);
+  font-weight: 650;
+}
+.modal-specifications dd {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.5;
 }
 .modal-links {
   display: flex;
