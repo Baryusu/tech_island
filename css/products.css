@@ -7,7 +7,9 @@
   --paper: #f8f8f2;
   --muted: #65736b;
   --line: #dfe5db;
-  --font-primary: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-primary:
+    "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif;
   --serif: var(--font-primary);
   --sans: var(--font-primary);
 }
@@ -86,7 +88,7 @@ a {
   color: #3e7b50;
 }
 .catalog-main {
-  padding: 50px 0 90px;
+  padding: 50px 0 24px;
 }
 .category-bar {
   position: sticky;
@@ -222,7 +224,9 @@ a {
   height: 180px;
   border: 1px solid #a87a3d;
   border-radius: 4px;
-  box-shadow: 0 14px 28px #00000055, inset 0 0 0 7px #211914;
+  box-shadow:
+    0 14px 28px #00000055,
+    inset 0 0 0 7px #211914;
 }
 .sublime-product-tile img {
   display: block;
@@ -470,56 +474,135 @@ a {
   display: none;
 }
 .consult {
-  margin-top: 75px;
-  background: linear-gradient(105deg, #e6efe1, #f2f5ec);
-  border-radius: 7px;
-  padding: 50px 58px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 30px;
+  background: #eaf1e7;
+  border-top: 1px solid #dae5d7;
+  margin-top: 32px;
+  margin-bottom: 16px;
+  padding: 56px 0;
+}
+.consult .eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  font-weight: 700;
+  color: #4e7a57;
+  margin-bottom: 8px;
 }
 .consult h2 {
   font-family: var(--font-primary);
-  font-size: 42px;
+  font-size: 32px;
   font-weight: 600;
-  line-height: 1.15;
   letter-spacing: -0.025em;
-  margin: 12px 0;
+  color: #173b32;
+  margin: 0 0 12px;
 }
-.consult p {
-  max-width: 560px;
-  color: var(--muted);
-  font-size: 14px;
+.consult .consult-description {
+  font-size: 15px;
+  color: #526757;
+  max-width: 680px;
+  line-height: 1.6;
+  margin: 0 0 24px;
 }
-.primary {
-  display: inline-block;
-  background: var(--forest);
-  color: white;
-  border-radius: 4px;
-  padding: 15px 22px;
+.consult-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   font-size: 12px;
-  white-space: nowrap;
+  font-weight: 650;
+  letter-spacing: 0.06em;
+  padding: 14px 26px;
+  border-radius: 4px;
+  background: #173b32;
+  color: #ffffff;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
 }
-.disclaimer {
-  margin-top: 30px;
-  color: #829084;
+.consult-cta:hover {
+  background: #255848;
+  transform: translateY(-1px);
+}
+.consult .disclaimer {
+  font-size: 11.5px;
+  line-height: 1.6;
+  color: #728475;
+  max-width: 780px;
+  margin: 24px 0 0;
+  padding-top: 18px;
+  border-top: 1px solid #d5e0d1;
+}
+.site-footer {
+  background: #0a2922;
+  padding: 48px 0 27px;
+}
+.footer-top {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+  padding-bottom: 35px;
+  border-bottom: 1px solid #1e4a3a;
+}
+.footer-brand img {
+  width: 88px;
+  height: 72px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+.footer-top > p {
   font-size: 11px;
-  max-width: 1000px;
+  color: #8ab89e;
+  line-height: 1.9;
+  margin: 0;
+  padding-left: 33px;
+  border-left: 1px solid #1e4a3a;
 }
-.footer {
-  background: var(--deep);
-  color: #e6eee6;
-  padding: 40px 0;
+.footer-top em {
+  font-size: 20px;
+  color: #c8e6d4;
+  letter-spacing: -0.02em;
 }
-.footer-inner {
+.back-top {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  font-size: 8px;
+  letter-spacing: 0.13em;
+  color: #6aab85;
+}
+.back-top .icon {
+  height: 17px;
+  width: 17px;
+  stroke: currentColor;
+}
+.footer-bottom {
   display: flex;
   justify-content: space-between;
   gap: 24px;
+  color: #7aab8e;
+  font-size: 8px;
+  padding-top: 22px;
 }
-.footer a {
-  font-size: 12px;
-  margin-left: 20px;
+.footer-bottom > div {
+  display: flex;
+  gap: 25px;
+}
+.footer-bottom .inline-button {
+  text-decoration: none;
+  color: inherit;
+}
+.footer-bottom a {
+  color: inherit;
+}
+.footer-bottom a:hover,
+.footer-bottom .inline-button:hover {
+  text-decoration: underline;
+}
+.footer-disclaimer {
+  font-size: 7.5px;
+  color: #4e7a62;
+  line-height: 1.9;
+  margin: 18px 0 0;
+  max-width: 1060px;
 }
 dialog {
   border: 0;
@@ -792,10 +875,6 @@ dialog::backdrop {
   .sublime-tile-line {
     height: 48px;
     margin: 48px 0;
-  }
-  .consult {
-    padding: 32px;
-    display: block;
   }
   .category-bar {
     top: 80px;

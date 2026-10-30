@@ -9,7 +9,9 @@
   --white: #fff;
   --muted: #65736b;
   --line: #dfe5db;
-  --font-primary: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-primary:
+    "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif;
   --serif: var(--font-primary);
   --sans: var(--font-primary);
   --max: 1260px;
@@ -1590,32 +1592,34 @@ em {
 }
 /* Footer */
 .site-footer {
-  background: #fbfcf5;
+  background: #0a2922;
   padding: 48px 0 27px;
 }
 .footer-top {
   display: flex;
   align-items: center;
   gap: 45px;
-  padding-bottom: 35px;
-  border-bottom: 1px solid #dfe5d5;
+  padding-top: 36px;
+  padding-bottom: 36px;
+  border-bottom: 1px solid #1e4a3a;
 }
 .footer-brand img {
   width: 88px;
   height: 72px;
   object-fit: contain;
+  filter: brightness(0) invert(1);
 }
 .footer-top > p {
   font-size: 11px;
-  color: #5c7150;
+  color: #8ab89e;
   line-height: 1.9;
   margin: 0;
   padding-left: 33px;
-  border-left: 1px solid #dbe3d0;
+  border-left: 1px solid #1e4a3a;
 }
 .footer-top em {
   font-size: 20px;
-  color: #2b4c34;
+  color: #c8e6d4;
   letter-spacing: -0.02em;
 }
 .back-top {
@@ -1625,18 +1629,19 @@ em {
   gap: 11px;
   font-size: 8px;
   letter-spacing: 0.13em;
-  color: #678153;
+  color: #6aab85;
 }
 .back-top .icon {
   height: 17px;
   width: 17px;
+  stroke: currentColor;
 }
 .footer-bottom {
   display: flex;
   justify-content: space-between;
   gap: 24px;
-  color: #758368;
-  font-size: 8px;
+  color: #7aab8e;
+  font-size: 16px;
   padding-top: 22px;
 }
 .footer-bottom > div {
@@ -1645,6 +1650,10 @@ em {
 }
 .footer-bottom .inline-button {
   text-decoration: none;
+  color: inherit;
+}
+.footer-bottom a {
+  color: inherit;
 }
 .footer-bottom a:hover,
 .footer-bottom .inline-button:hover {
@@ -1652,7 +1661,7 @@ em {
 }
 .footer-disclaimer {
   font-size: 7.5px;
-  color: #859076;
+  color: #4e7a62;
   line-height: 1.9;
   margin: 18px 0 0;
   max-width: 1060px;
