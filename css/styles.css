@@ -132,7 +132,7 @@ em {
   margin-inline: auto;
 }
 .section {
-  padding: 110px 0;
+  padding: 64px 0;
   scroll-margin-top: 0;
 }
 .eyebrow {
@@ -408,8 +408,8 @@ em {
 .hero-content {
   position: relative;
   z-index: 1;
-  padding-top: 84px;
-  padding-bottom: 104px;
+  padding-top: 56px;
+  padding-bottom: 64px;
   pointer-events: none;
 }
 .hero-content a {
@@ -1376,8 +1376,8 @@ em {
 .consultation {
   background: var(--forest);
   color: #f5f7ec;
-  padding-top: 105px;
-  padding-bottom: 105px;
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
 .consultation-layout {
   display: grid;
@@ -1788,7 +1788,8 @@ em {
     min-height: 810px;
   }
   .hero-content {
-    padding-top: 107px;
+    padding-top: 72px;
+    padding-bottom: 80px;
   }
   .hero-visual {
     width: 54%;
@@ -1818,7 +1819,7 @@ em {
     gap: 24px;
   }
   .section {
-    padding: 88px 0;
+    padding: 56px 0;
   }
   .two-col {
     gap: 50px;
@@ -1907,7 +1908,7 @@ em {
     font-size: 70px;
   }
   .hero-content {
-    padding-top: 80px;
+    padding-top: 52px;
   }
   .hero-copy {
     font-size: 16px;
@@ -2180,7 +2181,7 @@ em {
     width: calc(100% - 42px);
   }
   .section {
-    padding: 69px 0;
+    padding: 48px 0;
   }
   .eyebrow {
     font-size: 8px;
@@ -2279,8 +2280,8 @@ em {
       linear-gradient(0deg, #143226 0%, transparent 45%, #143a2d66 100%);
   }
   .hero-content {
-    padding-top: 70px;
-    padding-bottom: 74px;
+    padding-top: 48px;
+    padding-bottom: 52px;
   }
   .hero .eyebrow {
     font-size: 7px;

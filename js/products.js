@@ -282,13 +282,13 @@ import { isFirebaseConfigured, getProductsFromDb } from "./firebase-config.js";
       chips.forEach((c) => c.classList.toggle("active", c === btn));
       update();
 
-      if (categoryBar && listHead) {
-        const headerOffset = header ? header.offsetHeight : 0;
+      if (listHead) {
+        const siteHeader = document.querySelector(".site-header");
+        const headerOffset = siteHeader ? siteHeader.offsetHeight : 70;
         const targetTop =
           listHead.getBoundingClientRect().top +
           window.scrollY -
           headerOffset -
-          categoryBar.offsetHeight -
           20;
 
         window.scrollTo({
@@ -413,9 +413,11 @@ import { isFirebaseConfigured, getProductsFromDb } from "./firebase-config.js";
           const match = simulations.find(item => item.keywords.some(kw => combined.includes(kw)));
           if (match) {
             modalDemoLink.href = match.url;
-            modalDemoLink.textContent = "Live Simulation: " + match.label + " ↗";
+            const cleanLabel = match.label.replace(/\s*Demo$/i, "");
+            modalDemoLink.textContent = "Live Simulation: " + cleanLabel + " ↗";
             modalDemoLink.style.display = "inline-flex";
           } else {
+            modalDemoLink.href = "#";
             modalDemoLink.style.display = "none";
           }
         }
