@@ -579,7 +579,7 @@ a {
   justify-content: space-between;
   gap: 24px;
   color: #7aab8e;
-  font-size: 8px;
+  font-size: 12px;
   padding-top: 22px;
 }
 .footer-bottom > div {
@@ -598,7 +598,7 @@ a {
   text-decoration: underline;
 }
 .footer-disclaimer {
-  font-size: 7.5px;
+  font-size: 11px;
   color: #4e7a62;
   line-height: 1.9;
   margin: 18px 0 0;
