@@ -959,6 +959,8 @@
             ],
             note: "Detailed engineering, product selection and support deliverables are confirmed in the project proposal.",
             interest: "Complete smart home",
+            demoUrl: "pages/smart-spaces.html",
+            demoLabel: "Explore Smart Spaces Concept Catalog →",
           },
           network: {
             title: "A connected home starts here.",
@@ -984,6 +986,8 @@
             ],
             note: "Coverage and performance are checked against the site conditions and agreed design. No internet provider or wireless system can promise universal uninterrupted service.",
             interest: "Networking & Wi-Fi",
+            demoUrl: "pages/special-solutions.html",
+            demoLabel: "Explore Special Solutions Portfolio →",
           },
           comfort: {
             title: "Comfort that belongs in the background.",
@@ -1009,6 +1013,8 @@
             ],
             note: "Fixture, appliance and controller compatibility is verified before implementation. Air-quality capabilities depend on the actual detectors specified.",
             interest: "Lighting & comfort",
+            demoUrl: "pages/doors-windows.html",
+            demoLabel: "Explore Doors, Windows & Curtains Simulation →",
           },
           protection: {
             title: "Protect what matters. Respond sooner.",
@@ -1059,6 +1065,8 @@
             ],
             note: "Techisland provides planning and smart integration; solar panel supply and installation remain with the chosen solar specialist. Actual savings vary and are not guaranteed.",
             interest: "Energy & solar integration",
+            demoUrl: "pages/energy.html",
+            demoLabel: "Explore Solar & Energy Simulation →",
           },
           ev: {
             title: "Your next car belongs in today’s plan.",
@@ -1084,6 +1092,8 @@
             ],
             note: "Charging and solar-aware functions depend on the specific vehicle, charger, inverter and electrical design. Electrical protections and installation remain subject to specialist approval.",
             interest: "EV charging integration",
+            demoUrl: "pages/electric-gate.html",
+            demoLabel: "Explore Smart Gate & Access Simulation →",
           },
         };
         let selectedService;
@@ -1106,6 +1116,17 @@
               article.append(heading, text);
               target.append(article);
             });
+                        const demoLink = $("#service-dialog-demo");
+            if (demoLink) {
+              if (selectedService.demoUrl) {
+                demoLink.href = selectedService.demoUrl;
+                const span = demoLink.querySelector("span");
+                if (span) span.textContent = selectedService.demoLabel || "Explore Live Simulation";
+                demoLink.style.display = "inline-flex";
+              } else {
+                demoLink.style.display = "none";
+              }
+            }
             showDialog($("#service-dialog"));
           }),
         );

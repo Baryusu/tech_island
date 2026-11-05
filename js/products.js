@@ -3,60 +3,6 @@
 import { isFirebaseConfigured, getProductsFromDb } from "./firebase-config.js";
 
 (async () => {
-  // --- Header Navigation ---
-  const header = document.querySelector(".site-header");
-  const menu = document.getElementById("main-nav");
-  const menuToggle = document.querySelector(".menu-toggle");
-
-  if (menu && menuToggle) {
-    const svgIcon = (name) =>
-      `<svg class="icon" aria-hidden="true"><use href="#i-${name}"></use></svg>`;
-
-    const setMenu = (open) => {
-      menu.classList.toggle("is-open", open);
-      menuToggle.setAttribute("aria-expanded", String(open));
-      menuToggle.setAttribute(
-        "aria-label",
-        open ? "Close navigation" : "Open navigation"
-      );
-      menuToggle.innerHTML = svgIcon(open ? "close" : "menu");
-    };
-
-    menuToggle.addEventListener("click", () =>
-      setMenu(menuToggle.getAttribute("aria-expanded") !== "true")
-    );
-
-    menu.querySelectorAll("a").forEach((link) =>
-      link.addEventListener("click", () => setMenu(false))
-    );
-
-    document.addEventListener("click", (event) => {
-      if (header && !event.composedPath().includes(header)) setMenu(false);
-    });
-
-    document.addEventListener("keydown", (event) => {
-      if (event.key === "Escape" && menu.classList.contains("is-open")) {
-        setMenu(false);
-        menuToggle.focus();
-      }
-    });
-
-    window.addEventListener(
-      "resize",
-      () => {
-        if (window.innerWidth > 720) setMenu(false);
-      },
-      { passive: true }
-    );
-  }
-
-  if (header) {
-    const updateHeader = () =>
-      header.classList.toggle("scrolled", window.scrollY > 8);
-    window.addEventListener("scroll", updateHeader, { passive: true });
-    updateHeader();
-  }
-
   // --- Dynamic Firebase Products Loading (Optional / Non-breaking) ---
   const productGrid = document.getElementById("product-grid");
   const sublimeContainer = document.querySelector(".sublime-products");
@@ -440,6 +386,37 @@ import { isFirebaseConfigured, getProductsFromDb } from "./firebase-config.js";
                 <span class="line-icon" style="font-size: 48px;">◇</span>
                 <small>Image coming soon</small>
               </div>`;
+          }
+        }
+
+                const modalDemoLink = document.getElementById("modal-demo-link");
+        if (modalDemoLink) {
+          const h3 = card.querySelector("h3");
+          const titleText = h3 ? h3.textContent.trim() : "";
+          const catText = card.dataset.category || "";
+          const combined = (titleText + " " + catText).toLowerCase();
+
+          const simulations = [
+            { keywords: ["curtain", "shading", "blind", "shade"], url: "doors-windows.html", label: "Doors & Curtains Demo" },
+            { keywords: ["gate", "barrier"], url: "electric-gate.html", label: "Smart Gate Demo" },
+            { keywords: ["lock", "door", "window"], url: "doors-windows.html", label: "Doors & Windows Demo" },
+            { keywords: ["camera", "doorbell", "intercom", "indoor cam"], url: "video-doorbell.html", label: "Video Doorbell Demo" },
+            { keywords: ["sprinkler", "water", "irrigation"], url: "sprinklers.html", label: "Smart Sprinklers Demo" },
+            { keywords: ["pool"], url: "pool-automation.html", label: "Pool Automation Demo" },
+            { keywords: ["audio", "sound", "speaker", "sonos", "entertainment"], url: "sonos.html", label: "Sonos Audio Demo" },
+            { keywords: ["elderly", "care", "panic", "health"], url: "elderly-safety.html", label: "Elderly Safety Demo" },
+            { keywords: ["energy", "meter", "power", "plug", "energy saving"], url: "energy.html", label: "Energy & Solar Demo" },
+            { keywords: ["security", "sensor", "station", "motion", "smoke", "gas", "leak"], url: "security.html", label: "Security & Alarm Demo" },
+            { keywords: ["nature", "central control", "panel", "switch", "sublime"], url: "doors-windows.html", label: "Interactive Scene Demo" }
+          ];
+
+          const match = simulations.find(item => item.keywords.some(kw => combined.includes(kw)));
+          if (match) {
+            modalDemoLink.href = match.url;
+            modalDemoLink.textContent = "Live Simulation: " + match.label + " ↗";
+            modalDemoLink.style.display = "inline-flex";
+          } else {
+            modalDemoLink.style.display = "none";
           }
         }
 

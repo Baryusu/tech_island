@@ -35,15 +35,3 @@
 #alarm-house.door-open #door-leaf{transform:scaleX(.28)!important;}
 #alarm-house.window-open #window-leaf{transform:scaleX(.32)!important;}
 @media(prefers-reduced-motion:reduce){#door-leaf,#window-leaf{transition:none;}}
-
-.ti-lead-cta{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;background:#eaf3e8;border:1px solid #d4e6d0;border-radius:10px;padding:18px 22px;margin:26px auto;max-width:1180px;color:#214335}
-.ti-lead-cta strong{display:block;font-size:20px;font-family:var(--font-primary);font-weight:600;letter-spacing:-0.02em}.ti-lead-cta p{margin:4px 0 0;font-size:13px;color:#617365}
-.ti-want-btn,.ti-send-btn{border:0;border-radius:28px;background:#1b513d;color:white;font-weight:700;font-size:15px;padding:13px 24px;cursor:pointer;min-height:46px}
-.ti-want-btn:hover,.ti-send-btn:hover{background:#286b50}
-.ti-modal[hidden]{display:none!important}.ti-modal{position:fixed;inset:0;z-index:99999;display:grid;place-items:center;padding:16px;background:rgba(9,30,23,.7);overflow:auto}
-.ti-modal-box{position:relative;width:min(490px,100%);max-height:calc(100vh - 32px);overflow:auto;background:#fff;border-radius:13px;padding:26px;color:#193d2e;box-shadow:0 15px 65px #0005}
-.ti-modal-box h2{font-family:var(--font-primary);font-size:31px;font-weight:600;line-height:1.2;letter-spacing:-0.025em;margin:4px 0 6px}.ti-modal-box p{font-size:13px;color:#65786a;line-height:1.5;margin:0 0 15px}
-.ti-close{position:absolute;right:14px;top:10px;background:#f0f4ed;border:0;border-radius:50%;font-size:25px;width:38px;height:38px;cursor:pointer;color:#294b39}
-.ti-lead-form{display:grid;gap:11px}.ti-lead-form label{font-size:12px;font-weight:700;display:grid;gap:5px}.ti-lead-form input,.ti-lead-form textarea,.ti-lead-form select{box-sizing:border-box;width:100%;font-family:var(--font-primary);font-size:15px;border:1px solid #cddbcf;border-radius:6px;padding:11px;color:#213d30;background:#fff}
-.ti-lead-form textarea{min-height:75px;resize:vertical}.ti-lead-form small{font-size:11px;color:#687c6b;line-height:1.5}.ti-lead-feedback{font-size:12px;color:#286847;line-height:1.5;min-height:1.5em}.ti-lead-copy{font-size:12px;color:#286847;background:#f1f6f1;border:1px solid #d5e5d6;padding:10px;border-radius:6px;cursor:pointer}
-@media(max-width:650px){.ti-lead-cta{margin:18px 14px;padding:17px}.ti-modal-box{padding:22px 18px}.ti-lead-cta strong{font-size:18px}}

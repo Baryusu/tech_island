@@ -43,6 +43,7 @@ textarea {
   width: min(1260px, calc(100% - 64px));
   margin: auto;
 }
+
 .catalog-hero {
   background: linear-gradient(135deg, #0d2e27 0%, #173f34 100%);
   padding: 70px 0 64px;

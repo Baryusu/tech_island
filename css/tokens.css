@@ -1,0 +1,179 @@
+/* Techisland — Design Tokens & Base Typography */
+:root {
+  /* Colors */
+  --ink: #213d34;
+  --forest: #173b32;
+  --deep: #102b24;
+  --green: #356a48;
+  --lime: #d4e5ae;
+  --paper: #f8f8f2;
+  --white: #ffffff;
+  --muted: #65736b;
+  --line: #dfe5db;
+
+  /* Typography */
+  --font-primary: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --serif: var(--font-primary);
+  --sans: var(--font-primary);
+
+  /* Layout & Elevations */
+  --max: 1260px;
+  --radius: 3px;
+  --radius-md: 6px;
+  --radius-lg: 12px;
+  --shadow: 0 22px 70px rgba(17, 45, 33, 0.12);
+  --shadow-sm: 0 4px 18px rgba(17, 45, 33, 0.08);
+}
+
+/* Global Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-primary);
+  scroll-behavior: smooth;
+  scroll-padding-top: 110px;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-primary);
+  font-size: 15px;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+}
+
+body.dialog-open {
+  overflow: hidden;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  font-family: var(--font-primary);
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  cursor: pointer;
+  border: 0;
+  color: inherit;
+}
+
+button,
+a {
+  touch-action: manipulation;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid #87b767;
+  outline-offset: 4px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Headings & Text */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  font-family: var(--font-primary);
+}
+
+h1,
+h2 {
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 19px;
+}
+
+em {
+  font-family: inherit;
+  font-style: italic;
+  font-weight: inherit;
+}
+
+/* Core Utilities */
+.wrap {
+  width: min(var(--max), calc(100% - 112px));
+  margin-inline: auto;
+}
+
+@media (max-width: 900px) {
+  .wrap {
+    width: min(var(--max), calc(100% - 48px));
+  }
+}
+
+@media (max-width: 600px) {
+  .wrap {
+    width: min(var(--max), calc(100% - 32px));
+  }
+}
+
+.icon {
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  vertical-align: -0.15em;
+  fill: currentColor;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: var(--radius);
+  transition: background-color 0.2s, opacity 0.2s, transform 0.15s;
+}
+
+.button-forest {
+  background: var(--forest);
+  color: var(--white);
+}
+
+.button-forest:hover {
+  background: var(--green);
+}
+

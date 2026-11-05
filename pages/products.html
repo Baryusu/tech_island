@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Products | Techisland</title>
+    <link rel="icon" type="image/png" href="../assets/logo.png" />
     <link rel="stylesheet" href="../css/header.css" />
     <link rel="stylesheet" href="../css/products.css" />
   </head>
@@ -1833,8 +1834,9 @@
             <div id="modal-image"></div>
             <p id="modal-description"></p>
             <div class="modal-links">
-              <a href="../index.html#consultation">Request consultation ↗</a
-              ><a href="special-solutions.html">Explore special solutions</a>
+              <a href="../index.html#consultation" class="modal-btn-primary">Request consultation ↗</a>
+              <a href="#" id="modal-demo-link" class="modal-btn-accent" style="display: none;">Live Simulation ↗</a>
+              <a href="special-solutions.html" class="modal-btn-secondary">Explore special solutions</a>
             </div>
           </div>
           <aside class="modal-col-sidebar">
@@ -1854,6 +1856,7 @@
         </div>
       </div>
     </dialog>
+    <script src="../js/header.js" defer></script>
     <script src="../js/product-specifications.js"></script>
     <script type="module" src="../js/products.js"></script>
   </body>
