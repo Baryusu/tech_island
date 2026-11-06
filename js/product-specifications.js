@@ -1,4 +1,4 @@
-﻿window.productSpecifications = [
+window.productSpecifications = [
     {
         "title":  "RS485 Converter",
         "url":  "https://iot.ilifesmart.com/product/485-Converter/",
@@ -346,7 +346,7 @@
                            }
     },
     {
-        "title":  "Dimmer \u0026 Motion Sensor Switch",
+        "title":  "Dimmer Motion Sensor Switch",
         "url":  "https://iot.ilifesmart.com/product/Dimmer-Motion-Sensor-Switch/",
         "specifications":  {
                                "Radio Protocol":  "CoSS",
