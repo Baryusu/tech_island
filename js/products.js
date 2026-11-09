@@ -322,7 +322,12 @@ import { isFirebaseConfigured, getProductsFromDb } from "./firebase-config.js";
 
         if (modalTitle) {
           const h3 = card.querySelector("h3");
-          modalTitle.textContent = h3 ? h3.textContent : "";
+          const title = h3 ? h3.textContent.trim() : "";
+          modalTitle.textContent = title || "Product Details";
+          modal.setAttribute(
+            "aria-label",
+            title ? `${title} - Product Details` : "Product Details"
+          );
         }
         if (modalCat) {
           modalCat.textContent = card.dataset.category || "";

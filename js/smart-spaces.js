@@ -2,7 +2,9 @@
   const d = document.getElementById("inquiry");
   document.querySelectorAll("[data-space]").forEach((b) =>
     b.addEventListener("click", () => {
-      document.getElementById("space").value = b.dataset.space;
+      const spaceName = b.dataset.space || "Smart Spaces";
+      document.getElementById("space").value = spaceName;
+      d.setAttribute("aria-label", "Inquiry for " + spaceName);
       d.showModal();
     }),
   );

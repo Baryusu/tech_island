@@ -2522,13 +2522,15 @@
       id="service-dialog"
       class="site-dialog service-dialog"
       aria-labelledby="service-dialog-title"
+      aria-label="Service Details"
+      aria-modal="true"
     >
-      <button class="dialog-close" aria-label="Close service details">
+      <button class="dialog-close" aria-label="Close service details" type="button">
         <svg class="icon" aria-hidden="true"><use href="#i-close"></use></svg>
       </button>
       <div class="dialog-content">
         <p class="eyebrow" id="service-dialog-eyebrow">TECHISLAND SERVICES</p>
-        <h2 id="service-dialog-title"></h2>
+        <h2 id="service-dialog-title">Service Details</h2>
         <p class="dialog-lead" id="service-dialog-intro"></p>
         <div id="service-dialog-details"></div>
         <p class="dialog-service-note" id="service-dialog-note"></p>
@@ -2542,8 +2544,14 @@
         </a>
       </div>
     </dialog>
-    <dialog id="brief-dialog" class="site-dialog brief-dialog" aria-labelledby="brief-dialog-title">
-      <button class="dialog-close" aria-label="Close consultation brief">
+    <dialog
+      id="brief-dialog"
+      class="site-dialog brief-dialog"
+      aria-labelledby="brief-dialog-title"
+      aria-label="Consultation brief summary"
+      aria-modal="true"
+    >
+      <button class="dialog-close" aria-label="Close consultation brief" type="button">
         <svg class="icon" aria-hidden="true"><use href="#i-close"></use></svg>
       </button>
       <div class="dialog-content">

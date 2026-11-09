@@ -99,6 +99,8 @@ document.addEventListener("DOMContentLoaded", () => {
       dialog.id = "privacy-dialog";
       dialog.className = "site-dialog";
       dialog.setAttribute("aria-labelledby", "privacy-dialog-title");
+      dialog.setAttribute("aria-label", "Privacy and website notes");
+      dialog.setAttribute("aria-modal", "true");
       dialog.innerHTML = `
         <button class="dialog-close" aria-label="Close privacy and website notes" type="button">
           <svg class="icon" aria-hidden="true"><use href="#i-close"></use></svg>

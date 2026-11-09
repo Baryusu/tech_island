@@ -1815,18 +1815,23 @@
         </p>
       </div>
     </footer>
-    <dialog id="product-modal" aria-labelledby="modal-title">
+    <dialog
+      id="product-modal"
+      aria-labelledby="modal-title"
+      aria-label="Product Details"
+      aria-modal="true"
+    >
       <div class="modal-inner">
         <div class="modal-top">
           <div>
             <span class="eyebrow" id="modal-cat"></span>
-            <h2 id="modal-title"></h2>
+            <h2 id="modal-title">Product Details</h2>
           </div>
           <button
             class="modal-close"
             type="button"
             id="modal-close"
-            aria-label="Close"
+            aria-label="Close product details dialog"
           >
             ✕
           </button>
