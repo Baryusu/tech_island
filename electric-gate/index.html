@@ -1,0 +1,599 @@
+﻿<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Electric Gate Control | Techisland</title>
+    <link rel="icon" type="image/png" href="../assets/logo.png" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/electric-gate.css" />
+  </head>
+  <body data-ti-solution="Electric Gate Control">
+    <svg
+      class="icon-library"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+      style="display: none"
+    >
+      <defs>
+        <symbol id="i-up-right" viewBox="0 0 24 24">
+          <path d="M6 18 18 6M6 6h12v12" />
+        </symbol>
+        <symbol id="i-menu" viewBox="0 0 24 24">
+          <path d="M4 7h16M4 12h16M4 17h16" />
+        </symbol>
+        <symbol id="i-close" viewBox="0 0 24 24">
+          <path d="m6 6 12 12M18 6 6 18" />
+        </symbol>
+      </defs>
+    </svg>
+    <header class="site-header" id="top">
+      <div class="nav-shell">
+        <a
+          class="brand"
+          href="../"
+          aria-label="Techisland Smarthome, home"
+          ><img
+            src="../assets/logo.png"
+            alt="Techisland"
+            width="650"
+            height="530"
+          /><span class="brand-descriptor"
+            >SMART HOME<br />DESIGN STUDIO</span
+          ></a
+        >
+        <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+          <a href="../#approach">Our approach</a
+          ><a href="../#services">Our services</a
+          ><a href="../smart-spaces/">Smart Spaces</a
+          ><a href="../products/">Products</a
+          ><a href="../special-solutions/" class="active">Special Solutions</a
+          ><a href="../#how-it-works">How it works</a
+          ><a href="../#process">The process</a
+          ><a class="nav-mobile-cta" href="../#consultation"
+            >Design my home
+            <svg class="icon" aria-hidden="true">
+              <use href="#i-up-right"></use></svg
+          ></a>
+        </nav>
+        <a class="button button-forest nav-cta" href="../#consultation"
+          >Design my home
+          <svg class="icon" aria-hidden="true">
+            <use href="#i-up-right"></use></svg
+        ></a>
+        <button
+          class="menu-toggle"
+          aria-controls="main-nav"
+          aria-expanded="false"
+          aria-label="Open navigation"
+        >
+          <svg class="icon" aria-hidden="true"><use href="#i-menu"></use></svg>
+        </button>
+      </div>
+    </header>
+    <section class="hero">
+      <div class="wrap">
+        <p class="kicker">Control</p>
+        <h1>Electric Gate Control</h1>
+        <p>
+          Control your home’s electric gate through the LifeSmart app, supported
+          Apple Watch voice commands, and authorized family access. Demonstrate
+          automatic closing after an adjustable delay.
+        </p>
+      </div>
+    </section>
+    <section class="gate-demo">
+      <div class="wrap">
+        <div class="gate-intro">
+          <div>
+            <p class="kicker">INTERACTIVE SMART GATE</p>
+            <h2>Welcome home, without leaving your car.</h2>
+          </div>
+          <p>
+            Choose how to open the gate, watch it move, and see the automatic
+            close countdown. Share access with approved household members.
+          </p>
+        </div>
+        <div class="gate-grid">
+          <div class="gate-visual">
+            <svg
+              id="gate-scene"
+              viewBox="0 0 900 540"
+              role="img"
+              aria-label="Modern house entrance and motorized sliding gate that opens and closes"
+            >
+              <defs>
+                <linearGradient id="gsky" x2="0" y2="1">
+                  <stop stop-color="#dcebe6" />
+                  <stop offset="1" stop-color="#a8c5b7" />
+                </linearGradient>
+                <linearGradient id="gwall" x2="0" y2="1">
+                  <stop stop-color="#f3f0e8" />
+                  <stop offset="1" stop-color="#c5c4b5" />
+                </linearGradient>
+                <linearGradient id="gdrive" x2="0" y2="1">
+                  <stop stop-color="#b7b9b0" />
+                  <stop offset="1" stop-color="#e4e0d5" />
+                </linearGradient>
+              </defs>
+              <rect width="900" height="540" fill="url(#gsky)" />
+              <path d="M0 385H900V540H0Z" fill="url(#gdrive)" />
+              <path
+                d="M0 442H900"
+                stroke="#fff"
+                stroke-width="3"
+                opacity=".6"
+              />
+              <path d="M90 237L352 76L630 230V391H90Z" fill="url(#gwall)" />
+              <path
+                d="M72 238L352 62L653 237"
+                stroke="#566f5f"
+                stroke-width="24"
+                fill="none"
+                stroke-linejoin="round"
+              />
+              <rect
+                x="180"
+                y="245"
+                width="130"
+                height="145"
+                fill="#799c9a"
+                stroke="#f5f5ec"
+                stroke-width="13"
+              />
+              <path d="M245 250V390" stroke="#f5f5ec" stroke-width="7" />
+              <rect x="383" y="233" width="108" height="157" fill="#485c4f" />
+              <circle cx="476" cy="316" r="5" fill="#d7d0b2" />
+              <rect
+                x="513"
+                y="266"
+                width="84"
+                height="124"
+                fill="#91aba5"
+                stroke="#f5f5ec"
+                stroke-width="10"
+              />
+              <path d="M40 395H860" stroke="#d8d1c1" stroke-width="15" />
+              <rect x="25" y="295" width="92" height="124" fill="#c4bdac" />
+              <rect x="780" y="295" width="95" height="124" fill="#c4bdac" />
+              <rect
+                x="42"
+                y="312"
+                width="56"
+                height="21"
+                rx="3"
+                fill="#345847"
+              />
+              <text
+                x="70"
+                y="327"
+                text-anchor="middle"
+                fill="white"
+                font-size="12"
+                font-weight="700"
+              >
+                GATE
+              </text>
+              <g id="gate-panel" class="gate-panel">
+                <rect
+                  x="115"
+                  y="315"
+                  width="666"
+                  height="103"
+                  rx="4"
+                  fill="#2d4439"
+                  stroke="#6e8576"
+                  stroke-width="5"
+                />
+                <path
+                  d="M134 325V410M166 325V410M198 325V410M230 325V410M262 325V410M294 325V410M326 325V410M358 325V410M390 325V410M422 325V410M454 325V410M486 325V410M518 325V410M550 325V410M582 325V410M614 325V410M646 325V410M678 325V410M710 325V410M742 325V410"
+                  stroke="#a7b6a7"
+                  stroke-width="7"
+                />
+                <path d="M117 354H780" stroke="#152d25" stroke-width="10" />
+              </g>
+              <rect
+                x="760"
+                y="378"
+                width="39"
+                height="37"
+                rx="5"
+                fill="#f0f1e9"
+                stroke="#567366"
+                stroke-width="4"
+              />
+              <circle
+                id="gate-indicator"
+                cx="780"
+                cy="394"
+                r="8"
+                fill="#6da68a"
+              />
+              <g id="gate-car" opacity="0">
+                <path
+                  d="M340 373H503L526 399H315Z"
+                  fill="#d9e5e3"
+                  stroke="#5a7670"
+                  stroke-width="5"
+                />
+                <rect
+                  x="352"
+                  y="362"
+                  width="133"
+                  height="24"
+                  rx="8"
+                  fill="#a6c1bd"
+                />
+                <circle cx="361" cy="406" r="15" fill="#253a34" />
+                <circle cx="486" cy="406" r="15" fill="#253a34" />
+              </g>
+              <g id="gate-label">
+                <rect
+                  x="310"
+                  y="454"
+                  width="280"
+                  height="51"
+                  rx="12"
+                  fill="#153e31"
+                />
+                <text
+                  id="gate-svg-status"
+                  x="450"
+                  y="485"
+                  text-anchor="middle"
+                  fill="white"
+                  font-size="23"
+                  font-weight="700"
+                >
+                  GATE CLOSED
+                </text>
+              </g>
+            </svg>
+            <div class="gate-caption">
+              Modern home entrance · Animated demonstration
+            </div>
+          </div>
+          <aside class="gate-controls">
+            <p class="kicker">SMART GATE CONTROLS</p>
+            <h3>
+              Gate status
+              <span id="gate-status" class="status-pill">CLOSED</span>
+            </h3>
+            <div class="gate-action-grid">
+              <section
+                class="gate-device-control"
+                aria-label="LifeSmart app controls"
+              >
+                <svg
+                  class="gate-device-icon"
+                  viewBox="0 0 100 118"
+                  role="img"
+                  aria-label="iPhone displaying the LifeSmart app"
+                >
+                  <rect
+                    x="23"
+                    y="3"
+                    width="54"
+                    height="110"
+                    rx="13"
+                    fill="#172d29"
+                  />
+                  <rect
+                    x="27"
+                    y="9"
+                    width="46"
+                    height="97"
+                    rx="9"
+                    fill="#e8f0e9"
+                  />
+                  <rect
+                    x="42"
+                    y="12"
+                    width="16"
+                    height="4"
+                    rx="2"
+                    fill="#172d29"
+                  />
+                  <rect
+                    x="32"
+                    y="28"
+                    width="36"
+                    height="57"
+                    rx="5"
+                    fill="#fff"
+                  />
+                  <text
+                    x="50"
+                    y="52"
+                    text-anchor="middle"
+                    fill="#244b3b"
+                    font-size="9"
+                    font-weight="700"
+                  >
+                    LifeSmart
+                  </text>
+                  <path
+                    d="M40 64L49 73L62 59"
+                    fill="none"
+                    stroke="#64ad70"
+                    stroke-width="4"
+                    stroke-linecap="round"
+                  />
+                  <rect
+                    x="37"
+                    y="89"
+                    width="26"
+                    height="6"
+                    rx="3"
+                    fill="#8ebba0"
+                  /></svg
+                ><b>LifeSmart App</b
+                ><small>iPhone · Shared household access</small>
+                <div class="gate-command-pair">
+                  <button type="button" id="gate-phone-open">Open gate</button
+                  ><button type="button" id="gate-phone-close">
+                    Close gate
+                  </button>
+                </div>
+              </section>
+              <section
+                class="gate-device-control"
+                aria-label="Apple Watch voice controls"
+              >
+                <svg
+                  class="gate-device-icon"
+                  viewBox="0 0 100 118"
+                  role="img"
+                  aria-label="Apple Watch with microphone and voice-command waves"
+                >
+                  <rect
+                    x="37"
+                    y="1"
+                    width="26"
+                    height="31"
+                    rx="8"
+                    fill="#71847c"
+                  />
+                  <rect
+                    x="37"
+                    y="84"
+                    width="26"
+                    height="33"
+                    rx="8"
+                    fill="#71847c"
+                  />
+                  <rect
+                    x="17"
+                    y="27"
+                    width="66"
+                    height="66"
+                    rx="19"
+                    fill="#263a35"
+                  />
+                  <rect
+                    x="22"
+                    y="32"
+                    width="56"
+                    height="56"
+                    rx="15"
+                    fill="#101f1c"
+                  />
+                  <rect
+                    x="48"
+                    y="43"
+                    width="5"
+                    height="19"
+                    rx="2.5"
+                    fill="#a9e0bf"
+                  />
+                  <path
+                    d="M41 55a9 9 0 0 0 18 0M50 64v8m-8 0h16"
+                    fill="none"
+                    stroke="#a9e0bf"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M30 44q-8 13 0 26M70 44q8 13 0 26"
+                    fill="none"
+                    stroke="#77b9b4"
+                    stroke-width="3"
+                  />
+                  <circle cx="86" cy="58" r="5" fill="#8ca99d" /></svg
+                ><b>Apple Watch Voice</b><small>Simulated voice commands</small>
+                <div class="gate-command-pair">
+                  <button type="button" id="gate-watch-open">“Open gate”</button
+                  ><button type="button" id="gate-watch-close">
+                    “Close gate”
+                  </button>
+                </div>
+              </section>
+            </div>
+            <div class="gate-row">
+              <span>Authorized users</span
+              ><strong>Family sharing enabled*</strong>
+            </div>
+            <div class="gate-row">
+              <span>Gate motor</span><strong id="gate-motor">OFF</strong>
+            </div>
+            <div class="gate-row">
+              <span>Auto-close</span><strong id="gate-auto">READY</strong>
+            </div>
+            <div class="gate-countdown">
+              <div class="gate-count-head">
+                <span>Automatic close countdown</span><b id="gate-seconds">—</b>
+              </div>
+              <div class="gate-track"><span id="gate-progress"></span></div>
+              <small
+                >Demo: 8-second countdown represents a configurable
+                delay.</small
+              >
+            </div>
+            <p class="gate-feedback" id="gate-feedback" aria-live="polite">
+              Choose Open or Close on either device to control the gate.
+            </p>
+          </aside>
+        </div>
+        <div class="gate-benefits">
+          <div>
+            <b>App control</b>
+            <p>Open or close the compatible gate using approved access.</p>
+          </div>
+          <div>
+            <b>Voice convenience</b>
+            <p>
+              Demonstration of a supported voice-command workflow; actual Apple
+              Watch compatibility depends on integration.
+            </p>
+          </div>
+          <div>
+            <b>Household access</b>
+            <p>
+              Grant appropriate gate-control permissions to multiple authorized
+              family members.
+            </p>
+          </div>
+          <div>
+            <b>Automatic closing</b>
+            <p>
+              Return the gate to closed after a configured delay, subject to
+              gate safety sensors and obstruction protection.
+            </p>
+          </div>
+        </div>
+        <p class="gate-caution">
+          Illustrative interface only. Actual installation requires a compatible
+          motor/controller, safe access permissions, and independently
+          functioning obstruction detection. Automatic closing must not occur
+          when the path is obstructed.
+        </p>
+      </div>
+    </section>
+    <section class="ti-lead-cta" aria-label="Request this smart home solution">
+      <div>
+        <strong>Want this solution in your home?</strong>
+        <p>Tell us about your project and our team can get in touch.</p>
+      </div>
+      <button class="ti-want-btn" type="button" data-ti-want>
+        I WANT ONE →
+      </button>
+    </section>
+    <div
+      class="ti-modal"
+      id="ti-lead-modal"
+      hidden
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="ti-lead-title"
+    >
+      <div class="ti-modal-box">
+        <button class="ti-close" type="button" aria-label="Close contact form">
+          ×
+        </button>
+        <h2 id="ti-lead-title">I want this solution</h2>
+        <p>
+          Interested in <strong id="ti-lead-solution"></strong>? Share your
+          contact details to prepare an inquiry.
+        </p>
+        <form id="ti-lead-form" class="ti-lead-form">
+          <label
+            >Full name *<input
+              name="fullName"
+              autocomplete="name"
+              maxlength="100"
+              required /></label
+          ><label
+            >Mobile / WhatsApp number *<input
+              name="phone"
+              autocomplete="tel"
+              type="tel"
+              maxlength="40"
+              required /></label
+          ><label
+            >Email address *<input
+              name="email"
+              type="email"
+              autocomplete="email"
+              maxlength="150"
+              required /></label
+          ><label
+            >Project city / location<input
+              name="location"
+              maxlength="120"
+              autocomplete="address-level2" /></label
+          ><label
+            >Project type<select name="projectType">
+              <option>New home construction</option>
+              <option>Existing home / renovation</option>
+              <option>Commercial property</option>
+              <option>Other</option>
+            </select></label
+          ><label
+            >Tell us about your project<textarea
+              name="message"
+              maxlength="1000"
+              placeholder="What would you like to automate?"
+            ></textarea></label
+          ><small
+            >Clicking “Prepare inquiry email” opens your email application with
+            these details. Please review and send the email to complete your
+            inquiry. Nothing is submitted or stored on this website
+            automatically.</small
+          ><button type="submit" class="ti-send-btn">
+            Prepare inquiry email →</button
+          ><button class="ti-lead-copy" id="ti-lead-copy" type="button" hidden>
+            Copy inquiry text (if email does not open)
+          </button>
+          <div
+            class="ti-lead-feedback"
+            id="ti-lead-feedback"
+            role="status"
+            aria-live="polite"
+          ></div>
+        </form>
+      </div>
+    </div>
+    <footer class="site-footer">
+      <div class="wrap">
+        <div class="footer-top">
+          <a href="../" class="footer-brand" aria-label="Techisland home">
+            <img src="../assets/logo.png" width="650" height="530" alt="Techisland" />
+          </a>
+          <p>
+            We take care of the technology.
+            <br />
+            <em>You focus on living.</em>
+          </p>
+          <a href="#top" class="back-top">
+            BACK TO TOP
+            <svg class="icon" aria-hidden="true">
+              <use href="#i-up-right"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="footer-bottom">
+          <span>
+            &copy;
+            <span id="year">2026</span>
+            Techisland. Making spaces come alive.
+          </span>
+          <div>
+            <a href="../#services">Services</a>
+            <a href="../#questions">FAQs</a>
+            <button class="inline-button" type="button" data-open-privacy>
+              Privacy &amp; website notes
+            </button>
+          </div>
+        </div>
+        <p class="footer-disclaimer">
+          Architectural images are conceptual visualisations, not a completed-project portfolio.
+          Features depend on the agreed design and compatible equipment. Safety integrations
+          supplement, not replace, appropriate certified protection systems and emergency
+          procedures. Energy savings are not guaranteed.
+        </p>
+      </div>
+    </footer>
+    <script src="../js/electric-gate.js"></script>
+      <script src="../js/header.js"></script>
+  </body>
+</html>

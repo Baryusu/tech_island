@@ -1,0 +1,788 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Elderly Safety &amp; Care | Techisland</title>
+    <link rel="icon" type="image/png" href="../assets/logo.png" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/elderly-safety.css" />
+  </head>
+  <body data-ti-solution="Elderly Safety &amp; Care">
+    <svg
+      class="icon-library"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+      style="display: none"
+    >
+      <defs>
+        <symbol id="i-up-right" viewBox="0 0 24 24">
+          <path d="M6 18 18 6M6 6h12v12" />
+        </symbol>
+        <symbol id="i-menu" viewBox="0 0 24 24">
+          <path d="M4 7h16M4 12h16M4 17h16" />
+        </symbol>
+        <symbol id="i-close" viewBox="0 0 24 24">
+          <path d="m6 6 12 12M18 6 6 18" />
+        </symbol>
+      </defs>
+    </svg>
+    <header class="site-header" id="top">
+      <div class="nav-shell">
+        <a
+          class="brand"
+          href="../"
+          aria-label="Techisland Smarthome, home"
+          ><img
+            src="../assets/logo.png"
+            alt="Techisland"
+            width="650"
+            height="530"
+          /><span class="brand-descriptor"
+            >SMART HOME<br />DESIGN STUDIO</span
+          ></a
+        >
+        <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+          <a href="../#approach">Our approach</a
+          ><a href="../#services">Our services</a
+          ><a href="../smart-spaces/">Smart Spaces</a
+          ><a href="../products/">Products</a
+          ><a href="../special-solutions/" class="active">Special Solutions</a
+          ><a href="../#how-it-works">How it works</a
+          ><a href="../#process">The process</a
+          ><a class="nav-mobile-cta" href="../#consultation"
+            >Design my home
+            <svg class="icon" aria-hidden="true">
+              <use href="#i-up-right"></use></svg
+          ></a>
+        </nav>
+        <a class="button button-forest nav-cta" href="../#consultation"
+          >Design my home
+          <svg class="icon" aria-hidden="true">
+            <use href="#i-up-right"></use></svg
+        ></a>
+        <button
+          class="menu-toggle"
+          aria-controls="main-nav"
+          aria-expanded="false"
+          aria-label="Open navigation"
+        >
+          <svg class="icon" aria-hidden="true"><use href="#i-menu"></use></svg>
+        </button>
+      </div>
+    </header>
+    <section class="care-intro">
+      <div class="wrap">
+        <p class="kicker">SPECIAL SOLUTIONS</p>
+        <h1>Elderly Safety &amp; Convenience</h1>
+        <p>A safer, more comfortable home for the people who matter most.</p>
+      </div>
+    </section>
+    <section class="care-main">
+      <div class="wrap">
+        <div class="care-layout">
+          <div class="care-room">
+            <div
+              id="room-remote-overlay"
+              class="room-remote-overlay"
+              hidden
+              aria-label="Interactive eight-button room remote"
+            >
+              <div class="room-remote-head">
+                ROOM REMOTE <span>SELECT A BUTTON</span>
+              </div>
+              <div class="room-remote-keys" id="room-remote-keys"></div>
+            </div>
+            <svg
+              id="e-scene"
+              viewBox="0 0 860 625"
+              role="img"
+              aria-label="Elegant elderly bedroom with upholstered bed, bedside panic button labeled Try Me, window, bathroom doorway and room controls"
+            >
+              <defs>
+                <linearGradient id="wallG" x1="0" y1="0" x2="1" y2="1">
+                  <stop stop-color="#f5f3ed" />
+                  <stop offset="1" stop-color="#d9dfd5" />
+                </linearGradient>
+                <linearGradient id="floorG" x1="0" y1="0" x2=".4" y2="1">
+                  <stop stop-color="#d6c9b5" />
+                  <stop offset="1" stop-color="#ab9982" />
+                </linearGradient>
+                <linearGradient id="linenG" x1="0" y1="0" x2="0" y2="1">
+                  <stop stop-color="#fffdf7" />
+                  <stop offset="1" stop-color="#d9dfd5" />
+                </linearGradient>
+                <linearGradient id="glassG" x1="0" y1="0" x2="1" y2="1">
+                  <stop stop-color="#d5e9e4" />
+                  <stop offset="1" stop-color="#8eaaa3" />
+                </linearGradient>
+                <filter id="shadowG">
+                  <feGaussianBlur stdDeviation="13" />
+                </filter>
+              </defs>
+              <rect width="860" height="625" fill="url(#wallG)" />
+              <path d="M0 0L112 60V395L0 478Z" fill="#e0e1d7" />
+              <path d="M0 468L860 404V625H0Z" fill="url(#floorG)" />
+              <path d="M0 469L860 403" stroke="#f8f6ee" stroke-width="13" />
+              <path
+                d="M0 484L860 421"
+                stroke="#9f907d"
+                stroke-width="2"
+                opacity=".4"
+              />
+              <!-- Narrow architectural window, leaving dedicated left wall for permanent TV -->
+              <rect
+                x="26"
+                y="102"
+                width="84"
+                height="260"
+                rx="4"
+                fill="#f5f8f3"
+                stroke="#aab7ad"
+                stroke-width="10"
+              />
+              <rect
+                x="37"
+                y="113"
+                width="62"
+                height="237"
+                fill="url(#glassG)"
+              />
+              <path
+                d="M68 114V350M38 231H99"
+                stroke="#e9f1eb"
+                stroke-width="5"
+              />
+              <path
+                d="M39 329L57 274L76 292L99 245"
+                fill="none"
+                stroke="#779d8a"
+                stroke-width="8"
+                opacity=".55"
+              />
+              <g id="curtains" aria-label="Bedroom curtains">
+                <!-- Curtain panels meet at the middle when closed, fully covering the window. -->
+                <g class="curtain-panel curtain-panel-left">
+                  <path d="M25 101H69V362H25Z" fill="#bfc2b1" />
+                  <path
+                    d="M33 104V359M43 104V359M54 104V359M64 104V359"
+                    stroke="#9ca796"
+                    stroke-width="2"
+                    opacity=".55"
+                  />
+                </g>
+                <g class="curtain-panel curtain-panel-right">
+                  <path d="M68 101H112V362H68Z" fill="#bfc2b1" />
+                  <path
+                    d="M76 104V359M87 104V359M98 104V359M107 104V359"
+                    stroke="#9ca796"
+                    stroke-width="2"
+                    opacity=".55"
+                  />
+                </g>
+                <path
+                  d="M22 100H114"
+                  stroke="#a5a89b"
+                  stroke-width="5"
+                  stroke-linecap="round"
+                />
+              </g>
+              <!-- Permanently wall-mounted television; only its display changes state -->
+              <g id="tv-box" aria-label="Wall mounted television">
+                <rect
+                  x="128"
+                  y="140"
+                  width="195"
+                  height="112"
+                  rx="7"
+                  fill="#26352f"
+                  opacity=".18"
+                  transform="translate(4 6)"
+                />
+                <rect
+                  x="128"
+                  y="140"
+                  width="195"
+                  height="112"
+                  rx="6"
+                  fill="#202a28"
+                  stroke="#47564f"
+                  stroke-width="7"
+                />
+                <rect
+                  x="136"
+                  y="148"
+                  width="179"
+                  height="96"
+                  rx="2"
+                  fill="#111b1a"
+                />
+                <g id="tv-screen" opacity="0">
+                  <rect
+                    x="136"
+                    y="148"
+                    width="179"
+                    height="96"
+                    rx="2"
+                    fill="#7da9a3"
+                  />
+                  <path
+                    d="M136 228L192 169L225 202L265 158L315 224V244H136Z"
+                    fill="#385e58"
+                  />
+                  <path
+                    d="M136 238L182 201L221 225L259 188L315 234V244H136Z"
+                    fill="#a1bdb1"
+                  />
+                  <circle cx="282" cy="174" r="12" fill="#e6e1c3" />
+                  <text
+                    x="225"
+                    y="234"
+                    text-anchor="middle"
+                    font-size="12"
+                    font-weight="700"
+                    fill="#fff"
+                  >
+                    TV ON
+                  </text>
+                </g>
+                <circle
+                  id="tv-power-led"
+                  cx="311"
+                  cy="247"
+                  r="2.3"
+                  fill="#788e80"
+                />
+              </g>
+              <!-- wall molding and artwork -->
+              <rect
+                x="400"
+                y="78"
+                width="164"
+                height="102"
+                rx="3"
+                fill="#f8f7f0"
+                stroke="#b3b9aa"
+                stroke-width="9"
+              />
+              <path
+                d="M420 145Q456 105 492 130T544 106"
+                fill="none"
+                stroke="#819c8b"
+                stroke-width="9"
+              />
+              <path d="M424 155L537 155" stroke="#c8d2c4" stroke-width="3" />
+              <!-- bathroom doorway -->
+              <rect
+                x="701"
+                y="112"
+                width="130"
+                height="315"
+                rx="6"
+                fill="#eef3ec"
+                stroke="#a4b6aa"
+                stroke-width="12"
+              />
+              <rect x="713" y="123" width="106" height="293" fill="#d4e7e2" />
+              <path
+                d="M714 280H819"
+                stroke="#f6f9f2"
+                stroke-width="8"
+                opacity=".8"
+              />
+              <path
+                d="M764 133V413"
+                stroke="#f6f9f2"
+                stroke-width="7"
+                opacity=".6"
+              />
+              <circle
+                cx="776"
+                cy="294"
+                r="29"
+                fill="#f8faf5"
+                stroke="#87a89b"
+                stroke-width="6"
+              />
+              <circle id="presence" cx="776" cy="294" r="16" fill="#73a88c" />
+              <text
+                x="715"
+                y="451"
+                fill="#365847"
+                font-size="17"
+                font-weight="600"
+              >
+                BATHROOM
+              </text>
+              <!-- area rug -->
+              <ellipse
+                cx="440"
+                cy="558"
+                rx="308"
+                ry="54"
+                fill="#7e776b"
+                opacity=".16"
+                filter="url(#shadowG)"
+              />
+              <path
+                d="M147 506L657 464L744 594L210 625Z"
+                fill="#e7e2d4"
+                opacity=".76"
+              />
+              <!-- Permanently installed split-type AC above the painting; same unit and existing remote interaction -->
+              <g
+                id="bedroom-ac"
+                transform="translate(0 -174)"
+                aria-label="Wall-mounted air conditioner above the painting"
+              >
+                <rect
+                  x="358"
+                  y="196"
+                  width="233"
+                  height="57"
+                  rx="11"
+                  fill="#73857b"
+                  opacity=".15"
+                  transform="translate(4 6)"
+                />
+                <rect
+                  x="358"
+                  y="190"
+                  width="233"
+                  height="56"
+                  rx="10"
+                  fill="#f7f8f4"
+                  stroke="#a7b9ae"
+                  stroke-width="3"
+                />
+                <path d="M370 229H578" stroke="#bacac0" stroke-width="3" />
+                <path
+                  id="ac-louver"
+                  d="M376 237H575"
+                  stroke="#536d60"
+                  stroke-width="5"
+                  stroke-linecap="round"
+                />
+                <circle
+                  id="ac-power-indicator"
+                  cx="562"
+                  cy="207"
+                  r="4.5"
+                  fill="#a7b6a9"
+                />
+                <text x="382" y="210" font-size="10" fill="#6c7f72">
+                  AIR CONDITIONER
+                </text>
+                <g
+                  id="ac-airflow"
+                  opacity="0"
+                  fill="none"
+                  stroke="#65a8b7"
+                  stroke-width="5"
+                  stroke-linecap="round"
+                >
+                  <path d="M410 252Q396 270 408 289T406 326" />
+                  <path d="M469 252Q455 270 467 289T465 326" />
+                  <path d="M530 252Q516 270 528 289T526 326" />
+                </g>
+              </g>
+              <!-- upholstered platform bed, proper perspective -->
+              <path
+                d="M274 287Q274 261 302 261H560Q589 261 589 288V402H274Z"
+                fill="#9caa9f"
+              />
+              <path d="M288 275H574V400H288Z" fill="#bbc6ba" />
+              <path d="M302 311L560 305L623 477L263 500Z" fill="#677f70" />
+              <path d="M314 316L554 313L598 458L280 476Z" fill="url(#linenG)" />
+              <path d="M317 320L411 315L429 368L308 376Z" fill="#fbfaf5" />
+              <path d="M450 316L550 314L574 365L452 370Z" fill="#fbfaf5" />
+              <path
+                d="M307 390Q434 412 572 380L597 457L282 476Z"
+                fill="#e6e9e0"
+              />
+              <path d="M287 480L600 459L616 488L273 515Z" fill="#758b7b" />
+              <path
+                d="M280 510V534M608 488V518"
+                stroke="#52695b"
+                stroke-width="12"
+              />
+              <!-- bedside cabinet with lamp -->
+              <path d="M600 363L695 352L713 476L603 486Z" fill="#9c8b76" />
+              <path d="M596 358L690 348L709 367L605 378Z" fill="#c0af96" />
+              <path
+                d="M610 400L694 391M613 441L700 433"
+                stroke="#806f5e"
+                stroke-width="3"
+              />
+              <path d="M629 346L644 298L661 298L678 348Z" fill="#f4edda" />
+              <rect x="648" y="347" width="9" height="10" fill="#9b8e78" />
+              <!-- prominent tactile bedside panic -->
+              <rect
+                x="616"
+                y="378"
+                width="65"
+                height="50"
+                rx="12"
+                fill="#f8f9f5"
+                stroke="#a8b8a9"
+                stroke-width="4"
+              />
+              <circle
+                id="panic-svg-button"
+                cx="649"
+                cy="403"
+                r="17"
+                fill="#cb5148"
+                role="button"
+                tabindex="0"
+                aria-label="Try me: press or release bedside panic button"
+                style="cursor: pointer"
+              />
+              <circle
+                id="panic-pulse"
+                cx="649"
+                cy="403"
+                r="26"
+                fill="none"
+                stroke="#e34b42"
+                stroke-width="6"
+                opacity="0"
+              />
+              <!-- callout, not covering the button -->
+              <g id="try-me-label" pointer-events="none">
+                <rect
+                  x="571"
+                  y="301"
+                  width="120"
+                  height="40"
+                  rx="20"
+                  fill="#173b32"
+                />
+                <text
+                  x="631"
+                  y="327"
+                  text-anchor="middle"
+                  fill="white"
+                  font-size="19"
+                  font-weight="700"
+                >
+                  TRY ME ↓
+                </text>
+                <path
+                  d="M630 341L647 369"
+                  fill="none"
+                  stroke="#173b32"
+                  stroke-width="4"
+                  stroke-linecap="round"
+                />
+              </g>
+              <!-- ceiling tunable fixtures -->
+              <g id="lights">
+                <ellipse
+                  cx="313"
+                  cy="42"
+                  rx="32"
+                  ry="13"
+                  fill="#f7f2d9"
+                  stroke="#c6c9bd"
+                  stroke-width="4"
+                />
+                <ellipse
+                  cx="656"
+                  cy="42"
+                  rx="32"
+                  ry="13"
+                  fill="#f7f2d9"
+                  stroke="#c6c9bd"
+                  stroke-width="4"
+                />
+              </g>
+              <!-- scene state overlays -->
+              <!-- Dimmable ambient lighting overlay: visible only in Sleep mode. -->
+              <rect
+                id="sleep-darkness"
+                x="0"
+                y="0"
+                width="860"
+                height="625"
+                fill="#091b1d"
+                opacity="0"
+                pointer-events="none"
+                aria-hidden="true"
+              />
+              <g id="alarm-box" opacity="0">
+                <rect
+                  x="247"
+                  y="533"
+                  width="382"
+                  height="62"
+                  rx="12"
+                  fill="#b53f39"
+                />
+                <text
+                  x="273"
+                  y="558"
+                  font-size="21"
+                  fill="white"
+                  font-weight="700"
+                >
+                  HELP REQUESTED
+                </text>
+                <text x="273" y="582" font-size="15" fill="white">
+                  Alarm ON · App notification received
+                </text>
+              </g>
+              <g id="bath-box" opacity="0">
+                <rect
+                  x="247"
+                  y="533"
+                  width="382"
+                  height="62"
+                  rx="12"
+                  fill="#e0aa58"
+                />
+                <text
+                  x="270"
+                  y="558"
+                  font-size="21"
+                  fill="#33291d"
+                  font-weight="700"
+                >
+                  8 MINUTES ELAPSED
+                </text>
+                <text x="270" y="582" font-size="15" fill="#33291d">
+                  Caregiver check-in requested
+                </text>
+              </g>
+              <g id="remote-box" opacity="0"></g>
+
+              <g
+                id="bath-hit"
+                role="button"
+                tabindex="0"
+                aria-label="Enter bathroom by clicking the door"
+                style="cursor: pointer"
+              >
+                <rect
+                  x="700"
+                  y="112"
+                  width="130"
+                  height="310"
+                  fill="transparent"
+                />
+                <rect
+                  id="door-ring"
+                  x="704"
+                  y="115"
+                  width="124"
+                  height="303"
+                  rx="7"
+                  fill="none"
+                  stroke="#22704b"
+                  stroke-width="6"
+                  stroke-dasharray="12 8"
+                  opacity="0"
+                />
+              </g></svg
+            ><button id="door-hint" type="button" class="door-hint" hidden>
+              Enter bathroom by clicking the door →</button
+            ><button id="test-fall" type="button" class="fall-button" hidden>
+              TEST FALL<br /><small>8 min in 1 sec</small>
+            </button>
+          </div>
+          <aside class="care-side">
+            <div class="care-tabs">
+              <button type="button" data-scene="panic" class="active">
+                1. Panic Button</button
+              ><button type="button" data-scene="bath">
+                2. Bathroom Safety</button
+              ><button type="button" data-scene="remote">3. Room Remote</button>
+            </div>
+            <div class="care-content">
+              <h2 id="care-heading">Bedside Panic Button</h2>
+              <p id="care-description">
+                Press the bedside panic button to activate a local alarm and
+                show the caregiver notification.
+              </p>
+              <div
+                class="care-statuses"
+                id="care-statuses"
+                aria-live="polite"
+              ></div>
+              <div class="care-actions">
+                <button id="panic-toggle" type="button">
+                  Press Panic Button</button
+                ><button id="exit-bath" type="button" hidden>
+                  Exit Bathroom / Reset
+                </button>
+              </div>
+              <div class="care-info" id="care-info">
+                This is a simulation. Actual LifeSmart App notifications depend
+                on a configured system and connectivity.
+              </div>
+            </div>
+          </aside>
+        </div>
+        <div class="care-remote" id="care-remote" hidden>
+          <div>
+            <h3>One remote. Everyday independence.</h3>
+            <p>
+              Call for assistance, control lighting, curtains, AC and TV.
+              Supported commands may also be operated by voice.
+            </p>
+          </div>
+          <div class="care-remote-buttons" id="care-remote-buttons"></div>
+        </div>
+        <div class="care-feature-row">
+          <button data-jump="panic">
+            <b>1. Panic Button</b
+            ><span
+              >One press requests help and activates the alarm.</span
+            ></button
+          ><button data-jump="bath">
+            <b>2. Bathroom Safety</b
+            ><span
+              >Monitor presence and request a check-in after 8 minutes.</span
+            ></button
+          ><button data-jump="remote">
+            <b>3. Elderly Convenience</b
+            ><span>Eight simple room controls for greater independence.</span>
+          </button>
+        </div>
+        <p class="care-disclaimer">
+          Illustrative demonstration only. Bathroom occupancy sensing does not
+          detect or diagnose falls. “Test Fall” simulates an eight-minute
+          no-exit condition in one second. Actual alerts and voice commands
+          depend on compatible equipment, configuration, power, and
+          connectivity.
+        </p>
+      </div>
+    </section>
+    <section class="ti-lead-cta" aria-label="Request this smart home solution">
+      <div>
+        <strong>Want this solution in your home?</strong>
+        <p>Tell us about your project and our team can get in touch.</p>
+      </div>
+      <button class="ti-want-btn" type="button" data-ti-want>
+        I WANT ONE →
+      </button>
+    </section>
+    <div
+      class="ti-modal"
+      id="ti-lead-modal"
+      hidden
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="ti-lead-title"
+    >
+      <div class="ti-modal-box">
+        <button class="ti-close" type="button" aria-label="Close contact form">
+          ×
+        </button>
+        <h2 id="ti-lead-title">I want this solution</h2>
+        <p>
+          Interested in <strong id="ti-lead-solution"></strong>? Share your
+          contact details to prepare an inquiry.
+        </p>
+        <form id="ti-lead-form" class="ti-lead-form">
+          <label
+            >Full name *<input
+              name="fullName"
+              autocomplete="name"
+              maxlength="100"
+              required /></label
+          ><label
+            >Mobile / WhatsApp number *<input
+              name="phone"
+              autocomplete="tel"
+              type="tel"
+              maxlength="40"
+              required /></label
+          ><label
+            >Email address *<input
+              name="email"
+              type="email"
+              autocomplete="email"
+              maxlength="150"
+              required /></label
+          ><label
+            >Project city / location<input
+              name="location"
+              maxlength="120"
+              autocomplete="address-level2" /></label
+          ><label
+            >Project type<select name="projectType">
+              <option>New home construction</option>
+              <option>Existing home / renovation</option>
+              <option>Commercial property</option>
+              <option>Other</option>
+            </select></label
+          ><label
+            >Tell us about your project<textarea
+              name="message"
+              maxlength="1000"
+              placeholder="What would you like to automate?"
+            ></textarea></label
+          ><small
+            >Clicking “Prepare inquiry email” opens your email application with
+            these details. Please review and send the email to complete your
+            inquiry. Nothing is submitted or stored on this website
+            automatically.</small
+          ><button type="submit" class="ti-send-btn">
+            Prepare inquiry email →</button
+          ><button class="ti-lead-copy" id="ti-lead-copy" type="button" hidden>
+            Copy inquiry text (if email does not open)
+          </button>
+          <div
+            class="ti-lead-feedback"
+            id="ti-lead-feedback"
+            role="status"
+            aria-live="polite"
+          ></div>
+        </form>
+      </div>
+    </div>
+    <footer class="site-footer">
+      <div class="wrap">
+        <div class="footer-top">
+          <a href="../" class="footer-brand" aria-label="Techisland home">
+            <img src="../assets/logo.png" width="650" height="530" alt="Techisland" />
+          </a>
+          <p>
+            We take care of the technology.
+            <br />
+            <em>You focus on living.</em>
+          </p>
+          <a href="#top" class="back-top">
+            BACK TO TOP
+            <svg class="icon" aria-hidden="true">
+              <use href="#i-up-right"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="footer-bottom">
+          <span>
+            &copy;
+            <span id="year">2026</span>
+            Techisland. Making spaces come alive.
+          </span>
+          <div>
+            <a href="../#services">Services</a>
+            <a href="../#questions">FAQs</a>
+            <button class="inline-button" type="button" data-open-privacy>
+              Privacy &amp; website notes
+            </button>
+          </div>
+        </div>
+        <p class="footer-disclaimer">
+          Architectural images are conceptual visualisations, not a completed-project portfolio.
+          Features depend on the agreed design and compatible equipment. Safety integrations
+          supplement, not replace, appropriate certified protection systems and emergency
+          procedures. Energy savings are not guaranteed.
+        </p>
+      </div>
+    </footer>
+    <script src="../js/elderly-safety.js"></script>
+      <script src="../js/header.js"></script>
+  </body>
+</html>

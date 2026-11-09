@@ -959,7 +959,7 @@
             ],
             note: "Detailed engineering, product selection and support deliverables are confirmed in the project proposal.",
             interest: "Complete smart home",
-            demoUrl: "pages/smart-spaces.html",
+            demoUrl: "smart-spaces/",
             demoLabel: "Explore Smart Spaces Concept Catalog →",
           },
           network: {
@@ -986,7 +986,7 @@
             ],
             note: "Coverage and performance are checked against the site conditions and agreed design. No internet provider or wireless system can promise universal uninterrupted service.",
             interest: "Networking & Wi-Fi",
-            demoUrl: "pages/special-solutions.html",
+            demoUrl: "special-solutions/",
             demoLabel: "Explore Special Solutions Portfolio →",
           },
           comfort: {
@@ -1013,7 +1013,7 @@
             ],
             note: "Fixture, appliance and controller compatibility is verified before implementation. Air-quality capabilities depend on the actual detectors specified.",
             interest: "Lighting & comfort",
-            demoUrl: "pages/doors-windows.html",
+            demoUrl: "doors-windows/",
             demoLabel: "Explore Doors, Windows & Curtains Simulation →",
           },
           protection: {
@@ -1065,7 +1065,7 @@
             ],
             note: "Techisland provides planning and smart integration; solar panel supply and installation remain with the chosen solar specialist. Actual savings vary and are not guaranteed.",
             interest: "Energy & solar integration",
-            demoUrl: "pages/energy.html",
+            demoUrl: "energy/",
             demoLabel: "Explore Solar & Energy Simulation →",
           },
           ev: {
@@ -1092,7 +1092,7 @@
             ],
             note: "Charging and solar-aware functions depend on the specific vehicle, charger, inverter and electrical design. Electrical protections and installation remain subject to specialist approval.",
             interest: "EV charging integration",
-            demoUrl: "pages/electric-gate.html",
+            demoUrl: "electric-gate/",
             demoLabel: "Explore Smart Gate & Access Simulation →",
           },
         };
