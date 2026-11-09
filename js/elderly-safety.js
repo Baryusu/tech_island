@@ -43,7 +43,9 @@ function render(){
  $('tv-screen').setAttribute('opacity',current.tv?'1':'0'); $('tv-power-led').setAttribute('fill',current.tv?'#74df96':'#788e80');
  $('bedroom-ac').classList.toggle('is-on',current.ac);
  $('ac-power-indicator').setAttribute('fill',current.ac?'#4bba80':'#a7b6a9');
- $('e-picture-label').textContent='ROOM REMOTE · '+(current.mode==='—'?'Choose a button':current.mode);
+ const acAirflow=$('ac-airflow'); if(acAirflow) acAirflow.setAttribute('opacity',current.ac?'1':'0');
+ const picLabel=$('e-picture-label'); if(picLabel) picLabel.textContent='ROOM REMOTE · '+(current.mode==='—'?'Choose a button':current.mode);
+ const headSub=overlay?overlay.querySelector('.room-remote-head span'):null; if(headSub) headSub.textContent=current.mode==='—'?'SELECT A BUTTON':current.mode;
 }
 function action(i){
  if(i===0)current.call=!current.call;

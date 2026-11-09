@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html>
   <head>
     <meta charset="utf-8" />
@@ -85,8 +85,57 @@
     </section>
     <section class="catalog">
       <div class="wrap">
-        <div class="cards">
-          <a class="card" href="elderly-safety.html"
+        <div class="category-bar">
+          <h2 class="category-title">Explore by application</h2>
+          <div class="filters">
+            <button type="button" class="filter-chip active" data-filter="all">
+              <span class="chip-icon">▦</span><span>All solutions</span>
+            </button>
+            <button type="button" class="filter-chip" data-filter="residential">
+              <span class="chip-icon">⌂</span><span>Residential</span>
+            </button>
+            <button type="button" class="filter-chip" data-filter="commercial">
+              <span class="chip-icon">🏢</span><span>Commercial</span>
+            </button>
+            <button type="button" class="filter-chip" data-filter="safety-care">
+              <span class="chip-icon">🛡️</span><span>Safety &amp; Care</span>
+            </button>
+            <button type="button" class="filter-chip" data-filter="access-automation">
+              <span class="chip-icon">▥</span><span>Access &amp; Entry</span>
+            </button>
+            <button type="button" class="filter-chip" data-filter="outdoor-living">
+              <span class="chip-icon">🌿</span><span>Outdoor &amp; Living</span>
+            </button>
+            <button type="button" class="filter-chip" data-filter="energy-power">
+              <span class="chip-icon">⚡</span><span>Energy &amp; Power</span>
+            </button>
+          </div>
+        </div>
+        <div class="list-head">
+          <div class="list-head-info">
+            <h2 id="listing-title">All Specialized Solutions</h2>
+            <p id="listing-description">
+              Tailored smart automation engineered for private luxury residences, commercial facilities, and estate grounds.
+            </p>
+            <p id="result-count">Showing 10 of 10 solutions</p>
+          </div>
+          <div class="search-wrap">
+            <span class="search-icon" aria-hidden="true">⌕</span>
+            <input
+              type="search"
+              id="solution-search"
+              placeholder="Search solutions by keyword, room or feature…"
+              aria-label="Search special solutions"
+            />
+          </div>
+        </div>
+        <div class="cards" id="solutions-grid">
+          <a
+            class="card"
+            href="elderly-safety.html"
+            data-sectors="residential"
+            data-domains="safety-care"
+            data-keywords="elderly safety senior care panic button bedside bathroom alert fall immobility emergency caregiver assistance"
             ><svg
               preserveAspectRatio="xMidYMid slice"
               class="menu-illustration"
@@ -459,15 +508,26 @@
               </g>
             </svg>
             <div class="card-copy">
-              <span>01</span>
+              <div class="card-meta-top">
+                <span class="card-num">01</span>
+                <div class="card-badges">
+                  <span class="sector-badge">Residential</span>
+                  <span class="domain-tag">Safety &amp; Care</span>
+                </div>
+              </div>
               <h3>Elderly Safety &amp; Care</h3>
               <p>
                 Bedside and shower panic buttons plus bathroom activity
                 awareness.
               </p>
-              <b>Explore solution →</b>
+              <b class="card-cta">Explore simulation <span>↗</span></b>
             </div></a
-          ><a class="card" href="pool-automation.html"
+          ><a
+            class="card"
+            href="pool-automation.html"
+            data-sectors="residential commercial"
+            data-domains="outdoor-living"
+            data-keywords="swimming pool automation waterfall rgbw lighting water feature pump filtration chemistry schedule wellness hotel resort villa"
             ><div class="pool43-scene">
               <svg
                 preserveAspectRatio="xMidYMid slice"
@@ -665,15 +725,26 @@
               </svg>
             </div>
             <div class="card-copy">
-              <span>02</span>
+              <div class="card-meta-top">
+                <span class="card-num">02</span>
+                <div class="card-badges">
+                  <span class="sector-badge">Residential &amp; Commercial</span>
+                  <span class="domain-tag">Outdoor &amp; Living</span>
+                </div>
+              </div>
               <h3>Swimming Pool Automation</h3>
               <p>
                 Filtration schedules, pool lighting, RGBW moods and
                 water-feature control.
               </p>
-              <b>Explore solution →</b>
+              <b class="card-cta">Explore simulation <span>↗</span></b>
             </div></a
-          ><a class="card" href="electric-gate.html"
+          ><a
+            class="card"
+            href="electric-gate.html"
+            data-sectors="residential commercial"
+            data-domains="access-automation"
+            data-keywords="electric gate control vehicle access driveway barrier arm phone app rfid license plate entry parking perimeter community estate"
             ><div class="gate-menu-art">
               <svg
                 id="gate-menu-scene"
@@ -830,15 +901,26 @@
               </svg>
             </div>
             <div class="card-copy">
-              <span>03</span>
+              <div class="card-meta-top">
+                <span class="card-num">03</span>
+                <div class="card-badges">
+                  <span class="sector-badge">Residential &amp; Commercial</span>
+                  <span class="domain-tag">Access &amp; Entry</span>
+                </div>
+              </div>
               <h3>Electric Gate Control</h3>
               <p>
                 Compatible gate control from approved phone, watch or voice
                 controls.
               </p>
-              <b>Explore solution →</b>
+              <b class="card-cta">Explore simulation <span>↗</span></b>
             </div></a
-          ><a class="card" href="doors-windows.html"
+          ><a
+            class="card"
+            href="doors-windows.html"
+            data-sectors="commercial residential"
+            data-domains="access-automation"
+            data-keywords="automatic doors windows ventilation motorized slider rain sensor wind air quality clerestory airflow commercial office corporate"
             ><svg
               class="dw55-menu-svg"
               viewBox="0 0 900 570"
@@ -1190,15 +1272,26 @@
               </g>
             </svg>
             <div class="card-copy">
-              <span>04</span>
+              <div class="card-meta-top">
+                <span class="card-num">04</span>
+                <div class="card-badges">
+                  <span class="sector-badge">Commercial &amp; Residential</span>
+                  <span class="domain-tag">Access &amp; Airflow</span>
+                </div>
+              </div>
               <h3>Automatic Doors, Windows &amp; Ventilation</h3>
               <p>
                 Automated locking and compatible high-window control for access
                 and ventilation.
               </p>
-              <b>Explore solution →</b>
+              <b class="card-cta">Explore simulation <span>↗</span></b>
             </div></a
-          ><a class="card" href="video-doorbell.html"
+          ><a
+            class="card"
+            href="video-doorbell.html"
+            data-sectors="residential commercial"
+            data-domains="access-automation"
+            data-keywords="video doorbell indoor answering intercom visitor touch screen camera 2-way audio door release front door reception entry gatehouse"
             ><svg
               class="menu-illustration"
               preserveAspectRatio="xMidYMid meet"
@@ -1403,15 +1496,26 @@
               </text>
             </svg>
             <div class="card-copy">
-              <span>05</span>
+              <div class="card-meta-top">
+                <span class="card-num">05</span>
+                <div class="card-badges">
+                  <span class="sector-badge">Residential &amp; Commercial</span>
+                  <span class="domain-tag">Access &amp; Entry</span>
+                </div>
+              </div>
               <h3>Video Doorbell &amp; Indoor Answering</h3>
               <p>
                 See and talk to gate visitors from a phone or compatible
                 LifeSmart indoor touch panel.
               </p>
-              <b>Explore solution →</b>
+              <b class="card-cta">Explore simulation <span>↗</span></b>
             </div></a
-          ><a class="card" href="sonos.html"
+          ><a
+            class="card"
+            href="sonos.html"
+            data-sectors="residential commercial"
+            data-domains="outdoor-living"
+            data-keywords="sonos whole home audio architectural sound multi-room music speakers background audio entertainment patio restaurant lounge"
             ><svg
               viewBox="0 0 900 520"
               class="menu-illustration"
@@ -1665,15 +1769,26 @@
               </text>
             </svg>
             <div class="card-copy">
-              <span>06</span>
+              <div class="card-meta-top">
+                <span class="card-num">06</span>
+                <div class="card-badges">
+                  <span class="sector-badge">Residential &amp; Commercial</span>
+                  <span class="domain-tag">Sound &amp; Lifestyle</span>
+                </div>
+              </div>
               <h3>Sonos Whole-Home Audio Integration</h3>
               <p>
                 Supported Sonos zones for home theater and whole-home scenes
                 with LifeSmart touch-panel control.
               </p>
-              <b>Explore solution →</b>
+              <b class="card-cta">Explore simulation <span>↗</span></b>
             </div></a
-          ><a class="card" href="pet-release.html"
+          ><a
+            class="card"
+            href="pet-release.html"
+            data-sectors="residential"
+            data-domains="safety-care"
+            data-keywords="emergency pet release kennel doggy door fire smoke detector evacuation animal safety puppy cat welfare residential care"
             ><svg
               class="menu-illustration"
               preserveAspectRatio="xMidYMid slice"
@@ -1909,14 +2024,25 @@
               </g>
             </svg>
             <div class="card-copy">
-              <span>07</span>
+              <div class="card-meta-top">
+                <span class="card-num">07</span>
+                <div class="card-badges">
+                  <span class="sector-badge">Residential</span>
+                  <span class="domain-tag">Safety &amp; Care</span>
+                </div>
+              </div>
               <h3>Emergency Pet Release</h3>
               <p>
                 Emergency release option for a compatible powered pet enclosure.
               </p>
-              <b>Explore solution →</b>
+              <b class="card-cta">Explore simulation <span>↗</span></b>
             </div></a
-          ><a class="card" href="security.html"
+          ><a
+            class="card"
+            href="security.html"
+            data-sectors="residential commercial"
+            data-domains="safety-care"
+            data-keywords="advanced security alarm perimeter siren intrusion breach window door sensor strobe notification armed guarding commercial retail warehouse"
             ><svg
               id="alarm-house-preview"
               class="menu-illustration"
@@ -2055,15 +2181,26 @@
               </g>
             </svg>
             <div class="card-copy">
-              <span>08</span>
+              <div class="card-meta-top">
+                <span class="card-num">08</span>
+                <div class="card-badges">
+                  <span class="sector-badge">Residential &amp; Commercial</span>
+                  <span class="domain-tag">Safety &amp; Care</span>
+                </div>
+              </div>
               <h3>Advanced Security Alarm</h3>
               <p>
                 Perimeter warning, access detection, local alarms, exterior
                 warning lights and available notifications.
               </p>
-              <b>Explore solution →</b>
+              <b class="card-cta">Explore simulation <span>↗</span></b>
             </div></a
-          ><a class="card" href="sprinklers.html"
+          ><a
+            class="card"
+            href="sprinklers.html"
+            data-sectors="residential commercial"
+            data-domains="outdoor-living"
+            data-keywords="garden sprinkler control irrigation lawn landscape smart watering weather delay soil moisture zones grounds estate commercial landscape"
             ><svg
               id="course-menu"
               viewBox="0 0 900 480"
@@ -2229,12 +2366,23 @@
               </text>
             </svg>
             <div class="card-copy">
-              <span>09</span>
+              <div class="card-meta-top">
+                <span class="card-num">09</span>
+                <div class="card-badges">
+                  <span class="sector-badge">Residential &amp; Commercial</span>
+                  <span class="domain-tag">Outdoor &amp; Living</span>
+                </div>
+              </div>
               <h3>Garden Sprinkler Control</h3>
               <p>Compatible garden irrigation by schedule and zone.</p>
-              <b>Explore solution →</b>
+              <b class="card-cta">Explore simulation <span>↗</span></b>
             </div></a
-          ><a class="card" href="energy.html"
+          ><a
+            class="card"
+            href="energy.html"
+            data-sectors="residential commercial"
+            data-domains="energy-power"
+            data-keywords="solar ev backup ready home battery hybrid inverter v2l generator failover micro-grid blackout resilience charging commercial business"
             ><svg
               id="ev-menu-preview"
               class="menu-illustration"
@@ -2501,15 +2649,27 @@
               </text>
             </svg>
             <div class="card-copy">
-              <span>10</span>
+              <div class="card-meta-top">
+                <span class="card-num">10</span>
+                <div class="card-badges">
+                  <span class="sector-badge">Residential &amp; Commercial</span>
+                  <span class="domain-tag">Energy &amp; Power</span>
+                </div>
+              </div>
               <h3>Solar, EV &amp; Backup-Ready Home</h3>
               <p>
                 Solar, EV charging, backup power and electronics protection as
                 one resilient energy strategy.
               </p>
-              <b>Explore solution →</b>
+              <b class="card-cta">Explore simulation <span>↗</span></b>
             </div></a
           >
+        </div>
+        <div id="no-results" class="no-results" hidden>
+          <div class="no-results-icon" aria-hidden="true">◇</div>
+          <h3>No solutions found</h3>
+          <p>We couldn't find any specialized solutions matching your current search or filters.</p>
+          <button type="button" id="reset-filter-btn" class="button button-forest">Reset all filters</button>
         </div>
       </div>
     </section>
@@ -2553,7 +2713,7 @@
         </p>
       </div>
     </footer>
-    <script src="../js/special-solutions.js"></script>
+    <script src="../js/special-solutions.js" defer></script>
     <script src="../js/header.js"></script>
   </body>
 </html>

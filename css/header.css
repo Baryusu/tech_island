@@ -456,3 +456,105 @@ html {
     padding: 24px 0;
   }
 }
+
+/* Universal Site Dialog Styles (Privacy & Website Notes) */
+.site-dialog {
+  position: fixed;
+  inset: 0;
+  margin: auto;
+  width: min(680px, calc(100% - 32px));
+  max-height: calc(100dvh - 56px);
+  border: 1px solid #cdd9bd;
+  background: #fbfcf6;
+  color: var(--ink, #1b382b);
+  border-radius: 5px;
+  padding: 0;
+  box-shadow: var(--shadow, 0 16px 36px rgba(18, 38, 29, 0.12));
+  overflow: auto;
+  z-index: 1000;
+}
+.site-dialog::backdrop {
+  background: #11281bd1;
+  backdrop-filter: blur(6px);
+}
+.dialog-content {
+  padding: 49px;
+}
+.dialog-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 35px;
+  height: 35px;
+  background: #e9efdf;
+  border: 0;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  z-index: 2;
+  color: var(--forest, #102a20);
+}
+.dialog-close .icon {
+  height: 17px;
+  width: 17px;
+}
+.site-dialog h2 {
+  font-family: var(--serif, "Newsreader", Georgia, serif);
+  font-size: 39px;
+  line-height: 1.1;
+  color: var(--forest, #102a20);
+  margin-top: 0;
+  margin-bottom: 22px;
+}
+.dialog-content > .eyebrow {
+  margin-bottom: 16px;
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  font-weight: 600;
+  color: var(--forest, #102a20);
+}
+.dialog-content > h3 {
+  font-family: var(--sans, 'Inter', system-ui, sans-serif);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--forest, #102a20);
+  margin-top: 28px;
+  margin-bottom: 11px;
+}
+.dialog-content > p:not(.eyebrow):not(.dialog-lead):not(.small-note) {
+  font-family: var(--sans, 'Inter', system-ui, sans-serif);
+  font-size: 12px;
+  line-height: 1.9;
+  color: #627650;
+  margin: 0 0 14px;
+}
+.dialog-content .inquiry-email-text {
+  font-weight: 600;
+  color: var(--forest, #102a20);
+}
+.dialog-content a.text-link {
+  color: var(--forest, #102a20);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+@media (max-width: 600px) {
+  .dialog-content {
+    padding: 42px 20px 24px;
+  }
+  .site-dialog h2 {
+    font-size: 28px;
+  }
+  .dialog-close {
+    width: 31px;
+    height: 31px;
+    top: 10px;
+    right: 10px;
+  }
+}
+@media print {
+  .site-dialog {
+    display: none !important;
+  }
+}
