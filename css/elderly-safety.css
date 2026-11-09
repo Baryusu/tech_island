@@ -1238,6 +1238,13 @@ footer {
 }
 #ac-airflow {
   transition: opacity 0.35s ease;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+#ac-louver {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: transform 0.3s ease;
 }
 #bedroom-ac.is-on #ac-airflow {
   opacity: 0.8;
